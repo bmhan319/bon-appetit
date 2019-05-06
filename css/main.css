@@ -20,11 +20,12 @@ body {
   background-color: #f8f8f8;
 }
 
-.container-nav {
+.section-nav {
   width: 100%;
   height: 50px;
   background-color: #000;
   position: fixed;
+  top: 0;
   z-index: 99;
 }
 
@@ -70,6 +71,7 @@ body {
 
 .nav-logo {
   height: 85%;
+  width: 90%;
 }
 
 .nav-row1-col3 {
@@ -122,8 +124,8 @@ body {
 }
 
 /* ----- Recipe Section ----- */
-.recipe-container {
-  border: 3px solid red;
+.section-recipe {
+  
   background-color: #f8f8f8;
   padding: 0px 5%;
   position: relative;
@@ -199,7 +201,7 @@ body {
 .recipe-row2 {
   width: 100%;
   display: flex;
-  margin: 0px 0 60px;
+  margin: 0px 0 90px;
   position: relative;
 }
 
@@ -249,5 +251,49 @@ body {
 }
 
 .recipe-row2-text-container a:hover{
+  text-decoration: underline;
+}
+
+/* ----- Video1 Section ----- */
+
+.section-video1 {
+  background-color: #e2e1e1;
+  width: 100%;
+  padding: 80 0;
+}
+
+.video1-container {
+  width: 57%;
+  margin: 0 auto;
+}
+
+.video1-row1 {
+  width: 100%;
+}
+
+.shrimp-stir-fry-video {
+  width: 100%;
+}
+
+.video1-row2 {
+  width: 100%;
+  background-color: #fff;
+}
+
+.video1-text-container {
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2% 0;
+}
+
+.video1-text-container a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.75em;
+}
+
+.video1-text-container a:hover {
   text-decoration: underline;
 }
