@@ -1,3 +1,13 @@
+/* Colors
+Light Grey(background) = #f8f8f8
+Dark Grey(background) = #e2e1e1
+White(background) = #fff
+Yellow(muted) = #fcdd78 
+Yellow(brighter) = #ffdb00 
+Salmon = #ffa675
+Blue = #33b8ff
+*/
+
 * {
   font-family: futura-pt,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
   box-sizing: border-box;
@@ -7,6 +17,7 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
+  background-color: #f8f8f8;
 }
 
 .container-nav {
@@ -14,6 +25,7 @@ body {
   height: 50px;
   background-color: #000;
   position: fixed;
+  z-index: 99;
 }
 
 .nav-row1 {
@@ -101,4 +113,40 @@ body {
 
 .search-container:hover {
   background-color: #333;
+}
+
+.main-container {
+  width: 100%;
+  position: relative;
+  top: 50px;
+}
+
+/* ----- Recipe Section ----- */
+.recipe-container {
+  border: 3px solid red;
+  background-color: #f8f8f8;
+  padding: 64px 4%;
+}
+
+.recipe-row1 {
+  width: 100%;
+  display: flex;
+}
+
+.recipe-row1-col1 {
+  width: 50%;
+}
+
+.recipe-img1 {
+  width: 100%;
+}
+
+.recipe-row1-col2 {
+  width: 50%; 
+  background-color: #ffdb00 ;
+}
+
+.recipe-row1-col2 h1 {
+  padding: 0;
+  margin: 0;
 }
