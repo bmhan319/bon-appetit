@@ -315,21 +315,21 @@ body {
 
 /* ----- Culture Section ----- */
 
-.section-culture {
+.section-culture-product {
   width: 100%;
   background-color: #f8f8f8;
   padding: 0px 5%;
   position: relative;
 }
 
-.culture-row1 {
+.culture-p-row1 {
   width: 100%;
   display: flex;
   margin: 60px 0;
   position: relative;
 }
 
-.culture-header {
+.culture-p-header {
   position: absolute;
   top: -16;
   left: 50%;
@@ -343,15 +343,15 @@ body {
   border: 1px solid #fff;
 }
 
-.culture-row1-col1 {
+.culture-p-row1-col1 {
   width: 50%;
 }
 
-.culture-img1 {
+.culture-p-img1 {
   width: 100%;
 }
 
-.culture-row1-col2 {
+.culture-p-row1-col2 {
   width: 50%; 
   background-color: #000;
   display: flex;
@@ -359,20 +359,21 @@ body {
   justify-content: center;
 }
 
-.culture-text-container {
+.culture-p-text-container {
   height: 450px;
   width: 450px;
   text-align: center;
   text-decoration: none;
   color: #000;
+  cursor: pointer;
 }
 
-.culture-line-container {
+.culture-p-line-container {
   display: flex;
   justify-content: center;
 }
 
-.culture-line {
+.culture-p-line {
   color:#fff;
   margin: 30 0 0;
   font-weight: 300;
@@ -380,7 +381,7 @@ body {
   letter-spacing: 2.5;
 }
 
-.culture-line:after{
+.culture-p-line:after{
   content: "";
   display: inline-block;
   width: 50;
@@ -388,7 +389,7 @@ body {
   border-bottom: 1px solid;
 }
 
-.culture-line2 {
+.culture-p-line2 {
   color:#fff;
   margin: 30 0 0 10;
   font-weight: 300;
@@ -396,11 +397,11 @@ body {
   letter-spacing: 2.5;
 }
 
-.culture-text-container:hover > .culture-title{
+.culture-p-text-container:hover > .culture-title{
   text-decoration: underline;
 }
 
-.culture-text-container h1 {
+.culture-p-text-container h1 {
   padding: 0;
   margin: 64 32 30 32;
   font-size: 2.5em;
@@ -410,7 +411,7 @@ body {
   color: #fff;
 }
 
-.culture-text-container p {
+.culture-p-text-container p {
   padding: 0;
   margin: 0 60;
   font-size: .9em;
