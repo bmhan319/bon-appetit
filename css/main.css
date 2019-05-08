@@ -125,7 +125,6 @@ body {
 
 /* ----- Recipe Section ----- */
 .section-recipe {
-  
   background-color: #f8f8f8;
   padding: 0px 5%;
   position: relative;
@@ -312,4 +311,82 @@ body {
 
 .video1-text-container a:hover {
   text-decoration: underline;
+}
+
+/* ----- Culture Section ----- */
+
+.section-culture {
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 0px 5%;
+  position: relative;
+}
+
+.culture-row1 {
+  width: 100%;
+  display: flex;
+  margin: 60px 0 150px;
+  position: relative;
+}
+
+.culture-header {
+  position: absolute;
+  top: -16;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #fff;
+  padding: 8 10;
+  font-weight: 500;
+  font-size: .70em;
+  letter-spacing: 1;
+  border: 1px solid #fff;
+}
+
+.culture-row1-col1 {
+  width: 50%;
+}
+
+.culture-img1 {
+  width: 100%;
+}
+
+.culture-row1-col2 {
+  width: 50%; 
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.culture-text-container {
+  height: 450px;
+  width: 450px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.culture-text-container:hover > .culture-title{
+  text-decoration: underline;
+}
+
+.culture-text-container h1 {
+  padding: 0;
+  margin: 32 32 20 32;
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 1.34;
+  letter-spacing: 1;
+  color: #fff;
+}
+
+.culture-text-container p {
+  padding: 0;
+  margin: 0 100;
+  font-size: .9em;
+  font-weight: 500;
+  letter-spacing: 1;
+  line-height: 1.75;
+  color: #fff;
 }
