@@ -313,7 +313,7 @@ body {
   text-decoration: underline;
 }
 
-/* ----- Culture Section ----- */
+/* ----- Culture Product Section ----- */
 
 .section-culture-product {
   width: 100%;
@@ -419,4 +419,35 @@ body {
   letter-spacing: 1.1;
   line-height: 1.75;
   color: #fff;
+}
+
+/* ----- Culure Food Section ---- */
+
+.section-culture-food {
+  width: 100%;
+  background-color: #fff;
+  padding: 0px 5%;
+  position: relative;
+
+}
+
+.culture-f-row1 {
+  width: 100%;
+  margin: 60px 0;
+  position: relative;
+  border: 1px solid blue;
+}
+
+.culture-p-header {
+  position: absolute;
+  top: -16;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #fff;
+  padding: 8 10;
+  font-weight: 500;
+  font-size: .70em;
+  letter-spacing: 1;
+  border: 1px solid #fff;
 }
