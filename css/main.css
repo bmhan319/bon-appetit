@@ -325,7 +325,7 @@ body {
 .culture-row1 {
   width: 100%;
   display: flex;
-  margin: 60px 0 150px;
+  margin: 60px 0;
   position: relative;
 }
 
@@ -367,15 +367,44 @@ body {
   color: #000;
 }
 
+.culture-line-container {
+  display: flex;
+  justify-content: center;
+}
+
+.culture-line {
+  color:#fff;
+  margin: 30 0 0;
+  font-weight: 300;
+  font-size: .75em;
+  letter-spacing: 2.5;
+}
+
+.culture-line:after{
+  content: "";
+  display: inline-block;
+  width: 50;
+  vertical-align:middle;
+  border-bottom: 1px solid;
+}
+
+.culture-line2 {
+  color:#fff;
+  margin: 30 0 0 10;
+  font-weight: 300;
+  font-size: .75em;
+  letter-spacing: 2.5;
+}
+
 .culture-text-container:hover > .culture-title{
   text-decoration: underline;
 }
 
 .culture-text-container h1 {
   padding: 0;
-  margin: 32 32 20 32;
+  margin: 64 32 30 32;
   font-size: 2.5em;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.34;
   letter-spacing: 1;
   color: #fff;
@@ -383,10 +412,10 @@ body {
 
 .culture-text-container p {
   padding: 0;
-  margin: 0 100;
+  margin: 0 60;
   font-size: .9em;
-  font-weight: 500;
-  letter-spacing: 1;
+  font-weight: 400;
+  letter-spacing: 1.1;
   line-height: 1.75;
   color: #fff;
 }
