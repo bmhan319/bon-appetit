@@ -754,10 +754,10 @@ body {
 
 
 .restaurant2-row2 {
-  width: 90%;
+  width: 85%;
   margin: 60px auto; 90px;
   position: relative;
-  border: 1px solid red;
+
 }
 
 .restaurant2-header {
@@ -776,7 +776,7 @@ body {
 
 .restaurant2-row2 h2 {
   text-align: center;
-  margin: 35;
+  padding: 35 0 0;
   font-weight: 500;
   font-size: 2.7em;
   letter-spacing: 1
@@ -812,45 +812,31 @@ body {
   letter-spacing: 1;
 }
 
-.restaurant2-row2-image-container {
-  margin: 10 0;
-}
-
 .restaurant2-img2,
 .restaurant2-img3,
 .restaurant2-img4 {
   width: 100%;
+  margin: 20 0;
 }
-
-.restaurant2-row2-text-container1,
-.restaurant2-row2-text-container2, 
-.restaurant2-row2-text-container3 {
-  height: 110px;
+ 
+.restaurant2-row2-text-container {
   padding: 0 10;
-  display: flex;
-  align-items: center;
   text-align: center;
 }
 
-.restaurant2-row2-text-container1 {
-  background-color: #f8f8f8;
-}
-
-.restaurant2-row2-text-container2 {
-  background-color: #33b8ff;
-}
-
-.restaurant2-row2-text-container3 {
-  background-color: #ffdb00;
-}
-
-.restaurant2-row2-text-container1 a,
-.restaurant2-row2-text-container2 a,
-.restaurant2-row2-text-container3 a{
+.restaurant2-row2-text-container a:nth-child(1){
   text-decoration: none;
   color: #000;
   font-weight: 500;
   font-size: 1.2em;
+}
+
+.restaurant2-row2-text-container a:nth-child(4){
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: .85em;
+  line-height: 1.4;
 }
 
 .restaurant2-row2-text-container1 a:hover,
