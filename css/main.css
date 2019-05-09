@@ -666,3 +666,165 @@ body {
   line-height: 1.75;
   color: #000;
 }
+
+/* ----- Restuarant2 Section ----- */
+.section-restaurant2 {
+  width: 100%;
+  background-color: #fff;
+  padding: 0px 5%;
+  position: relative;
+  border: 1px solid #fff;
+}
+
+.restaurant2-row1 {
+  width: 100%;
+  display: flex;
+  margin: 60px 0 90px;
+  position: relative;
+}
+
+.restaurant2-header {
+  position: absolute;
+  top: -16;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  color: #000;
+  padding: 8 10;
+  font-weight: 500;
+  font-size: .70em;
+  letter-spacing: 1;
+  border: 1px solid #000;
+}
+
+.restaurant2-row1-col1,
+.restaurant2-row1-col2,
+.restaurant2-row1-col3 {
+  width: 33.333%;
+}
+
+.restaurant2-row1-col1,
+.restaurant2-row1-col2 {
+  margin-right: 20px;
+}
+
+.restaurant2-img2,
+.restaurant2-img3,
+.restaurant2-img4 {
+  width: 100%;
+}
+
+.restaurant2-row1-text-container1,
+.restaurant2-row1-text-container2, 
+.restaurant2-row1-text-container3 {
+  height: 110px;
+  padding: 0 10;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.restaurant2-row1-text-container1 {
+  background-color: #f8f8f8;
+}
+
+.restaurant2-row1-text-container2 {
+  background-color: #33b8ff;
+}
+
+.restaurant2-row1-text-container3 {
+  background-color: #ffdb00;
+}
+
+.restaurant2-row1-text-container1 a,
+.restaurant2-row1-text-container2 a,
+.restaurant2-row1-text-container3 a{
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.restaurant2-row1-text-container1 a:hover,
+.restaurant2-row1-text-container2 a:hover,
+.restaurant2-row1-text-container3 a:hover{
+  text-decoration: underline;
+}
+
+
+
+.restaurant2-row2 {
+  width: 100%;
+  display: flex;
+  margin: 60px 0 90px;
+  position: relative;
+  border: 1px solid red;
+}
+
+.restaurant2-header {
+  position: absolute;
+  top: -16;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  color: #000;
+  padding: 8 10;
+  font-weight: 500;
+  font-size: .70em;
+  letter-spacing: 1;
+  border: 1px solid #000;
+}
+
+.restaurant2-row2-col1,
+.restaurant2-row2-col2,
+.restaurant2-row2-col3 {
+  width: 33.333%;
+}
+
+.restaurant2-row2-col1,
+.restaurant2-row2-col2 {
+  margin-right: 20px;
+}
+
+.restaurant2-img2,
+.restaurant2-img3,
+.restaurant2-img4 {
+  width: 100%;
+}
+
+.restaurant2-row2-text-container1,
+.restaurant2-row2-text-container2, 
+.restaurant2-row2-text-container3 {
+  height: 110px;
+  padding: 0 10;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.restaurant2-row2-text-container1 {
+  background-color: #f8f8f8;
+}
+
+.restaurant2-row2-text-container2 {
+  background-color: #33b8ff;
+}
+
+.restaurant2-row2-text-container3 {
+  background-color: #ffdb00;
+}
+
+.restaurant2-row2-text-container1 a,
+.restaurant2-row2-text-container2 a,
+.restaurant2-row2-text-container3 a{
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.restaurant2-row2-text-container1 a:hover,
+.restaurant2-row2-text-container2 a:hover,
+.restaurant2-row2-text-container3 a:hover{
+  text-decoration: underline;
+}
