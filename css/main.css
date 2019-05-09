@@ -844,3 +844,225 @@ body {
 .restaurant2-row2-text-container3 a:hover{
   text-decoration: underline;
 }
+
+/* ----- Basically Section ----- */
+
+.section-basic {
+  background-color: #f8f8f8;
+  padding: 0px 5%;
+  position: relative;
+}
+
+.basic-row1 {
+  width: 100%;
+  display: flex;
+  margin: 60px 0 150px;
+  position: relative;
+}
+
+.basic-header {
+  position: absolute;
+  top: -16;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 8 10;
+  font-weight: 500;
+  font-size: .70em;
+  letter-spacing: 1;
+  border: 1px solid #ddd;
+}
+
+.basic-row1-col1 {
+  width: 50%;
+}
+
+.basic-img1 {
+  width: 100%;
+}
+
+.basic-row1-col2 {
+  width: 50%; 
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.basic-text-container {
+  height: 450px;
+  width: 450px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.basic-line-container {
+  display: flex;
+  justify-content: center;
+}
+
+.basic-line {
+  color:#000;
+  margin: 30 0 0 10;
+  font-weight: 400;
+  font-size: .75em;
+  letter-spacing: 2.5;
+}
+
+.basic-line:after{
+  content: "";
+  display: inline-block;
+  width: 10;
+  vertical-align:middle;
+  border-bottom: 1px solid;
+}
+
+.basic-line2 {
+  color:#000;
+  margin: 30 0 0 10;
+  font-weight: 400;
+  font-size: .75em;
+  letter-spacing: 2.5;
+}
+
+.basic-text-container:hover > .basic-title{
+  text-decoration: underline;
+}
+
+.basic-text-container h1 {
+  padding: 0;
+  margin: 72 32 20 32;
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 1.34;
+  letter-spacing: 1;
+}
+
+.basic-text-container p {
+  padding: 0;
+  margin: 0 100;
+  font-size: .9em;
+  font-weight: 500;
+  letter-spacing: 1;
+  line-height: 1.75;
+}
+
+
+.basic-row2 {
+  width: 100%;
+  display: flex;
+  margin: 0px 0 90px;
+  position: relative;
+}
+
+.basic-header2 {
+  position: absolute;
+  top: -16;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 8 10;
+  font-weight: 500;
+  font-size: .70em;
+  letter-spacing: 1;
+  border: 1px solid #ddd;
+}
+
+.basic-row2-col1,
+.basic-row2-col2,
+.basic-row2-col3 {
+  width: 33.333%;
+}
+
+.basic-row2-col1,
+.basic-row2-col2 {
+  margin-right: 20px;
+}
+
+.basic-img2,
+.basic-img3,
+.basic-img4 {
+  width: 100%;
+}
+
+.basic-row2-text-container {
+  height: 110px;
+  padding: 0 10;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+}
+
+.basic-row2-text-container a{
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.basic-row2-text-container a:hover{
+  text-decoration: underline;
+}
+
+/* ----- Video2 Section ----- */
+
+.section-video2 {
+  background-color: #e2e1e1;
+  width: 100%;
+  padding: 80 0;
+}
+
+.video2-container {
+  width: 57%;
+  margin: 0 auto;
+}
+
+.video2-row1 {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.shrimp-stir-fry-video {
+  width: 100%;
+}
+
+.play-button {
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%)
+}
+
+.video2-row2 {
+  width: 100%;
+  background-color: #fff;
+}
+
+.video2-text-container {
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5% 0;
+}
+
+.video2-text-container a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.75em;
+}
+
+.video2-text-container a:hover {
+  text-decoration: underline;
+}
