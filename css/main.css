@@ -754,9 +754,8 @@ body {
 
 
 .restaurant2-row2 {
-  width: 100%;
-  display: flex;
-  margin: 60px 0 90px;
+  width: 90%;
+  margin: 60px auto; 90px;
   position: relative;
   border: 1px solid red;
 }
@@ -775,15 +774,46 @@ body {
   border: 1px solid #000;
 }
 
-.restaurant2-row2-col1,
-.restaurant2-row2-col2,
-.restaurant2-row2-col3 {
-  width: 33.333%;
+.restaurant2-row2 h2 {
+  text-align: center;
+  margin: 35;
+  font-weight: 500;
+  font-size: 2.7em;
+  letter-spacing: 1
+}
+
+.restaurant2-cities-container {
+  display: flex;
 }
 
 .restaurant2-row2-col1,
-.restaurant2-row2-col2 {
+.restaurant2-row2-col2,
+.restaurant2-row2-col3,
+.restaurant2-row2-col4,
+.restaurant2-row2-col5 {
+  width: 20%;
+  text-align: center;
+}
+
+.restaurant2-row2-col1,
+.restaurant2-row2-col2,
+.restaurant2-row2-col3,
+.restaurant2-row2-col4 {
   margin-right: 20px;
+}
+
+.city {
+  background-color: #ffdb00;
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 2 10;
+  font-size: .85em;
+  letter-spacing: 1;
+}
+
+.restaurant2-row2-image-container {
+  margin: 10 0;
 }
 
 .restaurant2-img2,
