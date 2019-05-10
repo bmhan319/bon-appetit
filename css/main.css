@@ -1365,3 +1365,26 @@ body {
   font-size: .63em;
   letter-spacing: .4;
 }
+
+/* ----- Aside Section ----- */
+.aside-window {
+  width: 320px;
+  height: 100vh;
+  border: 1px solid red;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  background-color: #f8f8f8;
+}
+
+.aside-top {
+  background-color: #fff;
+}
+
+.aside-bottom {
+  background-color: #f8f8f8;
+}
+
+.social-media {
+  background-color: #000;
+}
