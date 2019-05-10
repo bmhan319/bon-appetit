@@ -13,7 +13,7 @@
     <nav class="section-nav">
       <div class="nav-row1">
         <div class="nav-row1-col1">
-          <div class="hamburger-container">
+          <div class="hamburger-container" onclick="openMenu()">
             <div class="hamburger-row1"></div>
             <div class="hamburger-row2"></div>
             <div class="hamburger-row3"></div>
@@ -440,9 +440,11 @@
     <aside class="aside-window">
       <div class="aside-top">
         <div class="aside-title">
-          <div class="aside-close">X</div>
+          <div class="aside-close" onclick="closeMenu()">
+            <img class="close-icon" src="img/close.png" alt="close icon" />
+          </div>
           <div class="aside-logo-container">
-            <img class="aside-logo" src="img/bonappetit.svg" alt="bon appetit logo"/>
+            <a href="index.html"><img class="aside-logo" src="img/bonappetit.svg" alt="bon appetit logo"/></a>
           </div>
         </div>
         <ul class="aside-menu">

@@ -1373,7 +1373,7 @@ body {
   z-index: 99;
   position: fixed;
   top: 0;
-  left: -000;
+  left: -320;
   background-color: #f8f8f8;
 }
 
@@ -1385,15 +1385,17 @@ body {
 .aside-title {
   width: 100%;
   height: 50px;
-  border: 1px solid blue;
   display: flex;
   position: relative;
+  cursor: pointer;
 }
 
 .aside-close {
-  position: absolute;
   height: 50px;
   width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .aside-logo-container {
