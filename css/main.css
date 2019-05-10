@@ -1431,9 +1431,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 700;
 }
 
- .aside-menu-item {
+.aside-menu-item {
   border-bottom: 1px solid #f8f8f8;
 }
 
