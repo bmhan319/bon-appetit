@@ -1375,6 +1375,7 @@ body {
   top: 0;
   left: -320;
   background-color: #f8f8f8;
+  transition: left .2s ease-in-out;
 }
 
 .aside-top {
