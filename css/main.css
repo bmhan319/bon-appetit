@@ -1370,7 +1370,6 @@ body {
 .aside-window {
   width: 320px;
   height: 100vh;
-  border: 1px solid red;
   z-index: 99;
   position: fixed;
   top: 0;
@@ -1491,13 +1490,60 @@ body {
   background-color: #333;
 }
 
+.aside-privacy {
+  padding: 0 0 20 0;
+}
+
 .aside-privacy a,
 .aside-privacy span {
   color: #000;
   font-weight: 500;
-  font-size: .5em;
+  font-size: .85em;
 }
 
 .social-media {
-  background-color: #000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
+
+.aside-social-containers,
+.aside-social-container-last {
+  background-color: #000;
+  border-radius: 50%;
+  height: 30;
+  width: 30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.facebook:hover {
+  background-color: #3b5998;
+}
+
+.instagram:hover {
+  background-color: #C13584;
+}
+
+.twitter:hover {
+  background-color: #1da1f2;
+}
+
+.pinterest:hover {
+  background-color: #c8232c;
+}
+
+.youtube:hover {
+  background-color: #c4302b;
+}
+
+.aside-social-containers {
+  margin-right: 16;
+}
+
+.aside-social-img {
+  width: 15;
+  height: 15;
+}
+
