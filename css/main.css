@@ -1432,6 +1432,8 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: 700;
+  font-size: .8em;
+  letter-spacing: 1.5
 }
 
 .aside-menu-item {
@@ -1445,6 +1447,55 @@ body {
 
 .aside-bottom {
   background-color: #f8f8f8;
+}
+
+.aside-bottom p {
+  text-align: center;
+  font-weight: 500;
+  font-size: .8em;
+  margin: 24 0 10;
+}
+
+.aside-newsletter {
+  margin: 0 auto;
+  width: 250;
+  border: 1px solid #000;
+  display: flex;
+}
+
+.aside-email {
+  border: none;
+  width: 66.666%;
+  margin: 0;
+  padding: 0 10;
+  height: 44px;
+  letter-spacing: 1.2;
+  outline-color: #000;
+  outline-width: 3px;
+  outline-offset: -3px;
+  cursor: pointer;
+}
+
+.aside-submit {
+  width: 33.334%;
+  height: 44px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  letter-spacing: 1.3;
+  font-size: .5em;
+  cursor: pointer;
+}
+
+.aside-submit:hover {
+  background-color: #333;
+}
+
+.aside-privacy a,
+.aside-privacy span {
+  color: #000;
+  font-weight: 500;
+  font-size: .5em;
 }
 
 .social-media {
