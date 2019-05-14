@@ -141,11 +141,19 @@ body {
 
 .title-header-text {
   background-color: #000;
-  color: #fff;
   padding: 8 10;
   font-weight: 300;
   font-size: .6em;
   letter-spacing: 1.5;
+}
+
+.title-header-text a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.title-header-text a:hover {
+  text-decoration: underline;
 }
 
 .title-text-container {
@@ -201,7 +209,7 @@ body {
 }
 
 .main-image-caption {
-  padding: 8 0 0 32;
+  padding: 8 0 8 32;
   font-weight: 400;
   font-size: .7em;
   letter-spacing: 1;
