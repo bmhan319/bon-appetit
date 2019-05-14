@@ -214,3 +214,55 @@ body {
   font-size: .7em;
   letter-spacing: 1;
 }
+
+/* ----- Section Article ----- */
+
+.section-article {
+  padding: 70 0 0 11%;
+  width: 55%;
+}
+
+.section-article p {
+  font-family: "Times New Roman";
+  font-size: 1.2em;
+  line-height: 1.75;
+}
+
+.section-article p a,
+.section-article p del,
+.section-article p strong {
+  color: #000;
+  font-family: "Times New Roman";
+}
+
+.section-article h2 {
+  font-size: 1.95em;
+  font-weight: 500;
+}
+
+.article-image-container {
+  margin: 50 0;
+}
+
+.article-image {
+  width: 100%;
+}
+
+.article-image-caption1 {
+  font-family: "Times New Roman";
+  padding: 8 0;
+  font-weight: 400;
+  font-size: .9em;
+  letter-spacing: 1;
+}
+
+.article-image-caption1 a{
+  font-family: "Times New Roman";
+  color: #000;
+}
+
+.article-image-caption2 {
+  font-weight: 400;
+  font-size: .7em;
+  letter-spacing: 1;
+}
