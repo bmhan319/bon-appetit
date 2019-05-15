@@ -309,6 +309,10 @@ body {
 }
 
 /* ----- Section ReadMore ----- */
+.section-readmore {
+  margin-bottom: 50;
+}
+
 .readmore-title{
   width: 100%;
   border-top:1px solid #000;
@@ -354,4 +358,10 @@ body {
 .readmore-row2-col1 img,
 .readmore-row2-col2 img{
   width: 100%;
+}
+
+/* ----- Footer ----- */
+footer {
+  background-color: #000;
+  color: #fff;
 }
