@@ -122,7 +122,6 @@ body {
   width: 100%;
   position: relative;
   top: 50px;
-  border: 2px solid red;
 }
 
 .section-title {
@@ -309,9 +308,6 @@ body {
 }
 
 /* ----- Section ReadMore ----- */
-.section-readmore {
-  margin-bottom: 50;
-}
 
 .readmore-title{
   width: 100%;
@@ -346,7 +342,7 @@ body {
   margin-top: -200px;
   height: 200px;
   content: '';
-  transition: all .1s linear;
+  transition: all .1s ease-in-out;
 }
 
 .readmore-col:hover::after {
@@ -412,6 +408,10 @@ body {
 
 /* ----- Footer ----- */
 footer {
+  position: relative;
+  border: 1px solid red;
   background-color: #000;
   color: #fff;
+  margin: 100 0 0 0;
+  
 }
