@@ -594,3 +594,78 @@ body {
   background-color: #ffdb00;
 }
 
+/* ----- Bottom Card ----- */
+.section-bottom-card {
+  width: 100%;
+  height: 186;
+  border-top: 1px solid #000;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 99;
+  
+}
+
+.bottom-card-row1 {
+  position: relative;
+  width: 860;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content:space-around;
+}
+
+.bottom-card-image-container{
+  width: 80;
+  height: 186;
+  margin-top:50;
+}
+
+.bottom-card-text-container{
+  width: 170;
+  height: 186;
+  padding: 10 0 10 0;  
+}
+
+.bottom-card-image {
+  width: 100%;
+}
+
+.bottom-card-header {
+  color: #000;
+  font-size: .65em;
+  font-weight: 500;
+  letter-spacing: 1.5;
+}
+
+.bottom-card-title {
+  color: #000;
+  text-decoration: none;
+  font-size: .80em;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.bottom-card-author {
+  color: #000;
+  font-size: .65em;
+  font-weight: 500;
+  letter-spacing: 1.5;
+  line-height: 1.5;
+}
+
+.bottom-card-close {
+  position: absolute;
+  right: -50;
+  top: 10;
+  cursor: pointer;
+}
+
+.bottom-card-close svg {
+  width: 32;
+  height: 32;
+}
+
+.icon-close:hover > path{
+  fill: #f8f8f8;
+}
