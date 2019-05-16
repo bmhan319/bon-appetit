@@ -600,10 +600,14 @@ body {
   height: 186;
   border-top: 1px solid #000;
   position: fixed;
-  bottom: 0;
   background-color: #fff;
   z-index: 99;
-  
+  bottom: 0;
+}
+
+.visible {
+  opacity: 1;
+  transition: all .075s linear;
 }
 
 .bottom-card-row1 {
