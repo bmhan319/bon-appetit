@@ -602,7 +602,7 @@ body {
   position: fixed;
   background-color: #fff;
   z-index: 99;
-  bottom: 0;
+  bottom: -186;
 }
 
 .visible {
