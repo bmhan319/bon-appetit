@@ -482,8 +482,17 @@ body {
   align-items: center;
 }
 
-.footer-social img{
-  padding-right: 42;
+.icon{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-size:contain;
+  background-repeat: no-repeat;
+  margin-right: 32;
+}
+
+.icon:hover > path {
+  fill: #ffdb00;
 }
 
 .footer-line {
@@ -492,7 +501,7 @@ body {
 }
 
 .footer-row3 {
-  margin: 40 40 0;
+  margin: 44 40 0;
   display: flex;
 }
 
@@ -529,7 +538,7 @@ body {
 }
 
 .footer-row4 p {
-  padding: 20 0;
+  padding: 8 0 28;
   font-weight: 300;
   font-size: .5em;
   letter-spacing: 1;
