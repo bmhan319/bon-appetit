@@ -11,10 +11,10 @@ function closePopUp() {
 function openSlide() {
   let body = document.querySelector("body")
   let bottomCard = document.querySelector(".section-bottom-card")
-  if (body.scrollTop >= 2000) {
-    bottomCard.style.bottom = 0
-  } else {
+  if (body.scrollTop <= 2000) {
     bottomCard.style.bottom = -190
+  } else {
+    bottomCard.style.bottom = -0
   }
 }
 
@@ -52,12 +52,9 @@ function slideDown() {
   // is element in view?
   if (inView()) {
       // element is in view, add class to element
-      console.log(true)
-      bottomCard.style.backgroundColor = "red"
-      bottomCard.style.bottom = 50
+      bottomCard.style.opacity = 0
   } else {
-    bottomCard.style.backgroundColor = "white"
-    bottomCard.style.bottom = 0
+      bottomCard.style.opacity = 1
   }
 }
 
