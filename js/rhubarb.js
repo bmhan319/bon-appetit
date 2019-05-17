@@ -4,25 +4,10 @@ document.querySelector('.article-video').volume = 0.1;
 //Close Bottom Card
 function closePopUp() {
   let bottomCard = document.querySelector(".section-bottom-card")
-  bottomCard.classList.add("invisible")
-  bottomCard.classList.remove("visible")
+  bottomCard.style.display = "none"
 
 }
 
-/*
-//Slide Bottom Card up at specific scrollbar height
-function openSlide() {
-  let body = document.querySelector("body")
-  let bottomCard = document.querySelector(".section-bottom-card")
-  if (body.scrollTop >= 2000) {
-    bottomCard.classList.add("visible")
-    bottomCard.classList.remove("invisible")
-  } else {
-    bottomCard.classList.remove("visible")
-    bottomCard.classList.add("invisible")
-  }
-}
-*/
 //Slide bottom Card down once you get  to the recipes section
 // get the element to animate
 var element = document.getElementById('section-readmore');
@@ -55,8 +40,6 @@ function slideDown() {
   let bottomCard = document.querySelector(".section-bottom-card")
   let body = document.querySelector("body").scrollTop
   let inview = inView()
-  console.log(body)
-  console.log(inview)
   // is element in view?
   if ( (inview == false) && (body >= 2000) ) {
     // element is in view, add class to element
