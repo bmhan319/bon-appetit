@@ -59,10 +59,13 @@ function openMenu() {
   let subscribe = document.querySelector(".subscribe-text")
   let search = document.querySelector(".search-fill")
   let menu = document.querySelector(".hamburger-container")
+  let expand = document.querySelector(".section-nav-expanded")
   subscribe.style.color = "#000"
   search.style.fill = "#000"
   menu.innerHTML = '<svg class="icon-close" focusable="false" viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg">  <title>Close</title><path d="M16 14.586l6.364-6.364 1.414 1.414L17.414 16l6.364 6.364-1.414 1.414L16 17.414l-6.364 6.364-1.414-1.414L14.586 16 8.222 9.636l1.414-1.414z" fill="#fff"></path></svg>'
   menu.classList.add("close-button-container")
   menu.classList.remove("hamburger-container")
   menu.setAttribute("onclick", "closeMenu()")
+  expand.classList.add("nav-active")
+  expand.classList.remove("nav-hidden")
 }
