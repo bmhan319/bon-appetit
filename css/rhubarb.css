@@ -597,17 +597,31 @@ body {
 /* ----- Bottom Card ----- */
 .section-bottom-card {
   width: 100%;
-  height: 190;
   border-top: 1px solid #000;
   position: fixed;
   background-color: #fff;
   z-index: 99;
-  bottom: -190;
 }
 
 .visible {
   opacity: 1;
+  height: 190;
   transition: all .075s linear;
+}
+
+.invisible {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all .075s linear;
+}
+
+.slideUp {
+  bottom: 0;
+}
+
+.slideDown {
+  bottom: -190;
 }
 
 .bottom-card-row1 {
