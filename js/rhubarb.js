@@ -77,3 +77,27 @@ function openMenu() {
   social.classList.add("menu-text-active")
   social.classList.remove("menu-text-hidden")
 }
+
+//close expanded menu
+function closeMenu() {
+  let body = document.querySelector("body")
+  let subscribe = document.querySelector(".subscribe-text")
+  let search = document.querySelector(".search-fill")
+  let menu = document.querySelector(".close-button-container")
+  let expand = document.querySelector(".section-nav-expanded")
+  let list = document.querySelector(".expanded-nav-list-container")
+  let social = document.querySelector(".expanded-nav-social")                                  
+  subscribe.style.color = "#fff"
+  search.style.fill = "#fff"
+  menu.innerHTML = '<div class="hamburger-row1"></div><div class="hamburger-row2"></div><div class="hamburger-row3"></div>'
+  body.style.overflow = "visible"
+  menu.classList.add("hamburger-container")
+  menu.classList.remove("close-button-container")
+  menu.setAttribute("onclick", "openMenu()")
+  expand.classList.add("nav-hidden")
+  expand.classList.remove("nav-active")
+  list.classList.add("menu-text-hidden")
+  list.classList.remove("menu-text-active")
+  social.classList.add("menu-text-hidden")
+  social.classList.remove("menu-text-active")
+}

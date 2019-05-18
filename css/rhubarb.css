@@ -700,12 +700,12 @@ body {
 
 .nav-hidden {
   top: -100vh;
-  transition: all .5s linear;
+  transition: all .4s ease-out .6s;
 }
 
 .nav-active {
   top: 0vh;
-  transition: all .5s linear;
+  transition: all .4s ease-out;
 }
 
 .expanded-nav-list-container {
@@ -719,12 +719,12 @@ body {
 
 .menu-text-hidden {
   opacity: 0;
-  transition: all .4s linear .7s;
+  transition: all .4s linear;
 }
 
 .menu-text-active {
   opacity: 1;
-  transition: all .4s linear .7s;
+  transition: all .4s linear .6s;
 }
 
 .expanded-nav-list-container li {
