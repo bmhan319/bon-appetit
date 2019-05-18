@@ -62,11 +62,14 @@ function openMenu() {
   let menu = document.querySelector(".hamburger-container")
   let expand = document.querySelector(".section-nav-expanded")
   let list = document.querySelector(".expanded-nav-list-container")
-  let social = document.querySelector(".expanded-nav-social")                                  
+  let social = document.querySelector(".expanded-nav-social")
+  let blackout = document.querySelector(".blackout")  
   subscribe.style.color = "#000"
   search.style.fill = "#000"
   menu.innerHTML = '<svg class="icon-close" focusable="false" viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg">  <title>Close</title><path d="M16 14.586l6.364-6.364 1.414 1.414L17.414 16l6.364 6.364-1.414 1.414L16 17.414l-6.364 6.364-1.414-1.414L14.586 16 8.222 9.636l1.414-1.414z" fill="#fff"></path></svg>'
   body.style.overflow = "hidden"
+  blackout.classList.add("blackout-active")
+  blackout.classList.remove("blackout-hidden")
   menu.classList.add("close-button-container")
   menu.classList.remove("hamburger-container")
   menu.setAttribute("onclick", "closeMenu()")
@@ -87,10 +90,13 @@ function closeMenu() {
   let expand = document.querySelector(".section-nav-expanded")
   let list = document.querySelector(".expanded-nav-list-container")
   let social = document.querySelector(".expanded-nav-social")                                  
+  let blackout = document.querySelector(".blackout")                                  
   subscribe.style.color = "#fff"
   search.style.fill = "#fff"
   menu.innerHTML = '<div class="hamburger-row1"></div><div class="hamburger-row2"></div><div class="hamburger-row3"></div>'
   body.style.overflow = "visible"
+  blackout.classList.add("blackout-hidden")
+  blackout.classList.remove("blackout-active")
   menu.classList.add("hamburger-container")
   menu.classList.remove("close-button-container")
   menu.setAttribute("onclick", "openMenu()")

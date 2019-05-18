@@ -700,12 +700,12 @@ body {
 
 .nav-hidden {
   top: -100vh;
-  transition: all .4s ease-out .6s;
+  transition: all .4s ease-out .5s;
 }
 
 .nav-active {
   top: 0vh;
-  transition: all .4s ease-out;
+  transition: all .4s ease-out .2s;
 }
 
 .expanded-nav-list-container {
@@ -724,7 +724,7 @@ body {
 
 .menu-text-active {
   opacity: 1;
-  transition: all .4s linear .6s;
+  transition: all .4s linear .8s;
 }
 
 .expanded-nav-list-container li {
@@ -753,4 +753,23 @@ body {
   width: 20;
   height: 20;
   margin: 0;
+}
+
+.blackout {
+  width: 100%;
+  height: 100%;
+  z-index: 88;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+}
+
+.blackout-hidden {
+  opacity: 0;
+  transition: all .2s ease-out .7s;
+}
+
+.blackout-active {
+  opacity: .8;
+  transition: all .2s ease-out;
 }
