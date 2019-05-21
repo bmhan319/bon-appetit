@@ -16,6 +16,7 @@ Blue = #33b8ff
 
 body {
   width: 100%;
+  height: 100vh;
   padding: 0;
   margin: 0;
   background-color: #f8f8f8;
@@ -107,4 +108,28 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+/* ----- Card1 ----- */
+.card {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.col1,
+.col2{
+  width: 50%;
+  height: 100vh;
+}
+
+.col1-image {
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+  object-position: 50% 50%;
+}
+
+.card1-col2 {
+  background-color: #ffa67a;
 }
