@@ -45,6 +45,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #f8f8f8;
+  overflow: hidden;
 }
 
 .section-nav {
@@ -173,8 +174,11 @@ body {
 
 .col1,
 .col2{
+  position: relative;
   width: 50%;
   height: 100vh;
+  top:0;
+  transition:all .2s linear;
 }
 
 /* ----- Card1 ----- */
@@ -286,4 +290,14 @@ body {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid #fff;
+}
+
+/* ----- Slide CSS ----- */
+
+.card1-col1-slide-down {
+  top: 100vh;
+}
+
+.card1-col2-slide-up {
+  top: -100vh;
 }
