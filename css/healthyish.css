@@ -1,11 +1,14 @@
 /* Colors
+Salmon = #ffa67a
+Light Green Grey = #f4f2e7
+Dark Green Grey = #dedaca
 Light Grey(background) = #f8f8f8
 Dark Grey(background) = #e2e1e1
 White(background) = #fff
 Yellow(muted) = #fbdc7f
 Yellow(brighter) = #ffdb00 
 Vanilla = #fbfaf1
-Salmon = #ffa67a
+
 Blue = #33b8ff
 */
 @font-face {
@@ -21,6 +24,13 @@ Blue = #33b8ff
   src: url('../fonts/renner-medium.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'renner-light';
+  src: url('../fonts/renner-light.otf') format('opentype');
+  font-weight: light;
+  font-style: light;
 }
 
 
@@ -143,19 +153,33 @@ body {
   font-weight: 300;
   letter-spacing: 2;
   cursor: pointer;
+  z-index: 100;
 }
 
-/* ----- Card1 ----- */
+/* ----- MAIN ----- */
+.healthish-main-container {
+ width: 100%; 
+  display:block;
+}
+
+
+/* ----- Cards ----- */
 .card {
   width: 100vw;
   height: 100vh;
   display: flex;
+  position: absolute;
 }
 
 .col1,
 .col2{
   width: 50%;
   height: 100vh;
+}
+
+/* ----- Card1 ----- */
+.card1 {
+  z-index: 95;
 }
 
 .col1-image {
@@ -212,3 +236,54 @@ body {
 }
 
 /* ----- Card2 ----- */
+.card2 {
+  z-index: 90;
+}
+
+.card2-col1 {
+  position: relative;
+  background-color: #f4f2e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card2-col2 {
+  background-color: #dedaca;
+}
+
+.card2-col1-container {
+  width: 70%;
+  text-align: center;
+}
+
+.card2-col1-text p {
+  font-family: 'renner-light', serif;
+  font-size: .8em;
+  letter-spacing: 1.3;
+}
+
+.card2-col1-text a {
+  color: #000;
+  text-decoration: none;
+}
+
+.card2-col1-text a:hover {
+  text-decoration: underline;
+}
+
+.card2-col1-text a h3 {
+  font-family: 'renner', serif;
+  font-size: 1em;
+  letter-spacing: 1.1;
+  padding: 0 40;
+}
+
+.triangle {
+  margin: 0 auto 32;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fff;
+}
