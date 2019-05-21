@@ -8,6 +8,21 @@ Vanilla = #fbfaf1
 Salmon = #ffa67a
 Blue = #33b8ff
 */
+@font-face {
+  font-family: 'grouchregular';
+  src: url('../fonts/grouch_regular-webfont.woff2') format('woff2'),
+       url('../fonts/grouch_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'renner';
+  src: url('../fonts/renner-medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 * {
   font-family: futura-pt,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
@@ -132,4 +147,48 @@ body {
 
 .card1-col2 {
   background-color: #ffa67a;
+  display: flex;
+  align-items: center;
 }
+
+.card1-col2-text-container {
+  width: 350;
+  margin: 0 auto 0 80;
+}
+
+.card1-col2-text {
+  width: 100%;
+}
+
+.card1-col2-text a {
+  text-decoration: none;
+  color: #000;
+}
+
+.card1-col2-text a h1 {
+  font-family: 'grouchregular', serif;
+  font-weight: 500;
+  font-size: 3.2em;
+  margin-top: 0;
+  margin-bottom: 16;
+  line-height: 1.2;
+  letter-spacing: -3;
+}
+
+.card1-col2-text a:hover {
+  text-decoration: underline;
+}
+
+.card1-col2-blurb {
+  width: 60%;
+}
+
+.card1-col2-blurb p {
+  margin-top: 0;
+  font-family: 'renner', serif;
+  font-weight: bold;
+  font-size: 1.20em;
+  line-height: 1.4;
+}
+
+/* ----- Card2 ----- */
