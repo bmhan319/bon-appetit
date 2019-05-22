@@ -1,3 +1,10 @@
+
+
+
+
+
+
+/*
 //Column Slide Animation
 let cardNum = 0
 
@@ -26,3 +33,4 @@ function runSlide(){
       console.log(card)
   }
 }
+*/

@@ -45,18 +45,20 @@
       NEXT
     </div>
     
-    <main class="healthish-main-container">
+    <main id="mainContainer" class="healthish-main-container">
+      
       <section class="card card1">
         <div class="card1-col1 col1">
-          <a href="#"><img class="col1-image" src="img/BA060119unfiltered.jpg" alt="wine and veggies" /></a>
+          <a href="#"><img id="card1Image1" class="col1-image" src="" alt="" /></a>
         </div>
         <div class="card1-col2 col2">
           <div class="card1-col2-text-container">
             <div class="card1-col2-text">
-              <a href="#"><h1>We'll Be Drinking Co-Fermented Wines All Summer Long</h1></a>
+              <p id="card1Category" class="card1-category"></p>
+              <a href="#"><h1 id="card1Title"></h1></a>
             </div>
             <div class="card1-col2-blurb">
-              <p>Made by fermenting multiple grape varieties in one vessel, co-fermented wines are this summer's most delicious drink.</p>
+              <p id="card1Blurb"></p>
             </div>
           </div>
         </div>
@@ -67,12 +69,13 @@
           <div class="card2-col1-container">
             <div class="card2-col1-text-container">
               <div class="card2-col1-text">
-                <p>CHEF</p>
-                <a href="#"><h3>I Moved From Tokyo to the U.S. for Love But Became a Chef Instead</h3></a>
+                <p id="card2Category"></p>
+                <a href="#"><h3 id="card2Title"></h3></a>
+                <p id="card2Blurb" class="card2-blurb"></p>
                 <div class="triangle"></div>
               </div>
               <div class="card2-col1-image-conatiner">
-                <a href="#"><img src="img/PIKUNICO_KunikoYagi_0024.jpg" alt="Kuniko Yagi"/></a>
+                <a href="#"><img id="card2Image1" src="" alt=""/></a>
               </div>
             </div>
           </div>
@@ -83,15 +86,16 @@
       
       <section class="card card3">
         <div class="card3-col1 col1">
-          <a href="#"><img class="col1-image" src="img/adrienne-maree1.jpg" alt="Adrienne Maree" /></a>
+          <a href="#"><img id="card3Image1" class="col1-image" src="" alt="" /></a>
         </div>
         <div class="card3-col2 col2">
           <div class="card3-col2-text-container">
             <div class="card3-col2-text">
-              <a href="story/kuniko-yagi"><h1>Adrienne Maree Brown on Why Joy Is a Form of Resistance</h1></a>
+              <p id="card3Category" class="card3-category"></p>
+              <a href="#"><h1 id="card3Title"></h1></a>
             </div>
             <div class="card3-col2-blurb">
-              <p>The author and social justice activist finds pleasure in slightly melted ice cream and a good solo dance party.</p>
+              <p id="card3Blurb"></p>
             </div>
           </div>
         </div>
@@ -99,15 +103,16 @@
       
       <section class="card card4">
         <div class="card4-col1 col1">
-          <a href="#"><img class="col1-image" src="img/Caitlin-Tartine-lede.jpg" alt="Caitlin Tartine" /></a>
+          <a href="#"><img id="card4Image1" class="col1-image" src="" alt="" /></a>
         </div>
         <div class="card4-col2 col2">
           <div class="card4-col2-text-container">
             <div class="card4-col2-text">
-              <a href="story/kuniko-yagi"><h1>Inside the Mad-Science World of a Professional Fermentation Chef</h1></a>
+              <p id="card4Category" class="card4-category"></p>
+              <a href="story/kuniko-yagi"><h1 id="card4Title"></h1></a>
             </div>
             <div class="card4-col2-blurb">
-              <p>How Caitlin Hata, the fermentation chef at The Manufactory, turns food waste into kimchi and more.</p>
+              <p id="card4Blurb"></p>
             </div>
           </div>
         </div>
@@ -118,26 +123,28 @@
           <div class="card5-col1-container">
             <div class="card5-col1-text-container">
               <div class="card5-col1-text">
-                <p>PROFILE</p>
-                <a href="#"><h3>Lauren Friel Is Making Boston Drinking Culture a Little Less Bro-y</h3></a>
+                <p id="card5Category"></p>
+                <a href="#"><h3 id="card5Title"></h3></a>
+                <p id="card5Blurb" class="card5-blurb"></p>
                 <div class="triangle-down"></div>
               </div>
               <div class="card5-col1-image-conatiner">
-                <a href="#"><img src="img/Healthyish-Lauren-Friel-Lede.jpg" alt="Lauren Friel"/></a>
+                <a href="#"><img id="card5Image1" src="" alt=""/></a>
               </div>
             </div>
           </div>
         </div>
-        <div class="card5-col2 col2">
-          <div class="card5-col2-container">
-            <div class="card5-col2-text-container">
-              <div class="card5-col2-image-conatiner">
-                <a href="#"><img src="img/Manuka-Honey-2.jpg" alt="manuka honey"/></a>
+        <div class="card6-col2 col2">
+          <div class="card6-col2-container">
+            <div class="card6-col2-text-container">
+              <div class="card6-col2-image-conatiner">
+                <a href="#"><img id="card6Image1" src="" alt=""/></a>
               </div>
-              <div class="card5-col2-text">
+              <div class="card6-col2-text">
                 <div class="triangle-up"></div>
-                <p>TRENDS</p>
-                <a href="#"><h3>Mānuka Honey Is a Wellness Wonder—But Your Jar Could Be a Fake</h3></a>
+                <p id="card6Category"></p>
+                <a href="#"><h3 id="card6Title"></h3></a>
+                <p id="card6Blurb" class="card6-blurb"></p>
               </div>
             </div>
           </div>
@@ -147,6 +154,7 @@
     </main>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/healthyish-array.js"></script>
   <script src="js/healthyish.js"></script>
   </body>
 </html>
