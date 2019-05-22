@@ -8,6 +8,7 @@ White(background) = #fff
 Yellow(muted) = #fbdc7f
 Yellow(brighter) = #ffdb00 
 Vanilla = #fbfaf1
+Mint = #d1f9f0
 
 Blue = #33b8ff
 */
@@ -166,7 +167,7 @@ body {
 }
 
 .pulse:active {
-  animation: pulse-single .4s 1 ease-in;
+  animation: pulse-single .2s 1 ease-in-out;
 }
 
 /* ----- MAIN ----- */
@@ -302,6 +303,64 @@ body {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid #fff;
+}
+
+/* ----- Card3 ----- */
+.card3 {
+  z-index: 85;
+}
+
+.col1-image {
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+  object-position: 50% 50%;
+}
+
+.card3-col2 {
+  background-color: #d1f9f0;
+  display: flex;
+  align-items: center;
+}
+
+.card3-col2-text-container {
+  width: 350;
+  margin: 0 auto 0 80;
+}
+
+.card3-col2-text {
+  width: 100%;
+}
+
+.card3-col2-text a {
+  text-decoration: none;
+  color: #000;
+}
+
+.card3-col2-text a h1 {
+  font-family: 'grouchregular', serif;
+  font-weight: 500;
+  font-size: 3.2em;
+  margin-top: 0;
+  margin-bottom: 16;
+  line-height: 1.2;
+  letter-spacing: -3;
+}
+
+.card3-col2-text a:hover {
+  text-decoration: underline;
+}
+
+.card3-col2-blurb {
+  width: 60%;
+}
+
+.card3-col2-blurb p {
+  margin-top: 0;
+  font-family: 'renner', serif;
+  font-weight: bold;
+  font-size: 1.20em;
+  line-height: 1.4;
 }
 
 /* ----- Slide CSS ----- */
