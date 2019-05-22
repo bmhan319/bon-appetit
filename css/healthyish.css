@@ -157,6 +157,18 @@ body {
   z-index: 100;
 }
 
+@keyframes pulse-single {
+  from{ width: 80;
+        height: 80;}
+  to {width:70;
+      height:70;
+      background-color: #333;}
+}
+
+.pulse:active {
+  animation: pulse-single .4s 1 ease-in;
+}
+
 /* ----- MAIN ----- */
 .healthish-main-container {
  width: 100%; 
