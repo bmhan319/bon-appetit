@@ -10,7 +10,7 @@ Yellow(brighter) = #ffdb00
 Vanilla = #fbfaf1
 Mint = #d1f9f0
 Light BLue = #daf3f5
-
+Canary Yellow = #fbf0a0
 
 Blue = #33b8ff
 */
@@ -327,7 +327,7 @@ body {
 }
 
 .card3-col2 {
-  background-color: #ffa67a;
+  background-color: #fbf0a0;
   display: flex;
   align-items: center;
 }
@@ -525,7 +525,7 @@ body {
 }
 
 .card7-col2 {
-  background-color: #daf3f5;
+  background-color: #fbdc7f;
   display: flex;
   align-items: center;
 }
@@ -644,7 +644,7 @@ body {
 }
 
 .card9-col2 {
-  background-color: #daf3f5;
+  background-color: #fbf0a0;
   display: flex;
   align-items: center;
 }
@@ -786,7 +786,7 @@ body {
 }
 
 .card11-col2 {
-  background-color: #daf3f5;
+  background-color: #ffa67a;
   display: flex;
   align-items: center;
 }
@@ -967,7 +967,7 @@ body {
 }
 
 .card14-col2 {
-  background-color: #daf3f5;
+  background-color: #fbdc7f;
   display: flex;
   align-items: center;
 }
