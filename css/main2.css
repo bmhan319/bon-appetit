@@ -99,23 +99,16 @@ body {
 }
 
 /* ----- Recipe Section ----- */
-.section-recipe {
-  background-color: #f8f8f8;
-  padding: 0px 5%;
-  position: relative;
-}
 
-/*
 .recipe-row1 {
   width: 100%;
-  display: flex;
-  margin: 60px 0 150px;
+  margin: 0;
   position: relative;
 }
 
 .recipe-header {
   position: absolute;
-  top: -16;
+  top: 20;
   left: 50%;
   transform: translateX(-50%);
   background-color: #ffdb00;
@@ -126,7 +119,7 @@ body {
 }
 
 .recipe-row1-col1 {
-  width: 50%;
+  width: 100%;
 }
 
 .recipe-img1 {
@@ -134,16 +127,18 @@ body {
 }
 
 .recipe-row1-col2 {
-  width: 50%; 
+  width: 100%;
+  padding: 19% 0;
   background-color: #ffdb00;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
 .recipe-text-container {
-  height: 450px;
-  width: 450px;
+  width: 300;
+}
+
+.recipe-text-link {
   text-align: center;
   text-decoration: none;
   color: #000;
@@ -156,16 +151,16 @@ body {
 
 .recipe-text-container h1 {
   padding: 0;
-  margin: 88 32 20 32;
-  font-size: 2.5em;
+  margin: 0;
+  font-size: 1.2em;
   font-weight: 700;
-  line-height: 1.34;
+  line-height: 1.20;
   letter-spacing: 1;
 }
 
 .recipe-text-container p {
   padding: 0;
-  margin: 0 100;
+  margin: 8 10;
   font-size: .9em;
   font-weight: 500;
   letter-spacing: 1;
@@ -175,14 +170,14 @@ body {
 
 .recipe-row2 {
   width: 100%;
-  display: flex;
-  margin: 0px 0 90px;
+  margin: 0px 0 0px;
   position: relative;
+  border: 1px solid blue;
 }
 
 .recipe-header2 {
   position: absolute;
-  top: -16;
+  top: 20;
   left: 50%;
   transform: translateX(-50%);
   background-color: #ffdb00;
@@ -192,30 +187,35 @@ body {
   letter-spacing: 1;
 }
 
-.recipe-row2-col1,
+.recipe-row2-col1 {
+  width: 100%;
+  background-color: #ffdb00;
+}
+
 .recipe-row2-col2,
 .recipe-row2-col3 {
-  width: 33.333%;
+  display: none;
 }
 
-.recipe-row2-col1,
-.recipe-row2-col2 {
-  margin-right: 20px;
-}
-
-.recipe-img2,
-.recipe-img3,
-.recipe-img4 {
+.recipe-img2 {
   width: 100%;
 }
 
 .recipe-row2-text-container {
-  height: 110px;
-  padding: 0 10;
+  width: 100%;
+  height: none;
+  padding: 26% 10;
   display: flex;
   align-items: center;
-  text-align: center;
-  background-color: #fff;
+  justify-content: center;
+}
+
+.recipe-row2-text-container:hover > .recipe-title{
+  text-decoration: underline;
+}
+
+.recipe-row2-text-innerbox {
+  width: 300;
 }
 
 .recipe-row2-text-container a{
@@ -228,4 +228,378 @@ body {
 .recipe-row2-text-container a:hover{
   text-decoration: underline;
 }
+
+.recipe-row2-text-container h1 {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 1.0em;
+  font-weight: 700;
+  line-height: 1.20;
+  letter-spacing: 1;
+}
+
+/* ----- Video1 Section ----- */
+
+.section-video1 {
+  background-color: #e2e1e1;
+  width: 100%;
+  padding: 110 0;
+}
+
+.video1-container {
+  width: 94%;
+  margin: 0 auto;
+}
+
+.video1-row1 {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.shrimp-stir-fry-video {
+  width: 100%;
+}
+
+.play-button {
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%)
+}
+
+.video1-row2 {
+  width: 100%;
+  background-color: #fff;
+}
+
+.video1-text-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.video1-text-innerbox {
+  width: 350;
+  margin: 25% 10%;
+}
+
+.video1-text-container a{
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.video1-text-container a:hover{
+  text-decoration: underline;
+}
+
+.video1-text-container h1 {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 1.0em;
+  font-weight: 700;
+  line-height: 1.20;
+  letter-spacing: 1;
+}
+
+/* ----- Culture Product Section ----- */
+
+.section-culture-product {
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 0;
+  position: relative;
+}
+
+.culture-p-row1 {
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.culture-p-header {
+  position: absolute;
+  top: 20;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #fff;
+  padding: 8 10;
+  font-weight: 500;
+  font-size: .70em;
+  letter-spacing: 1;
+  border: 1px solid #fff;
+}
+
+.culture-p-row1-col1 {
+  width: 100%;
+}
+
+.culture-p-img1 {
+  width: 100%;
+}
+
+.culture-p-row1-col2 {
+  width: 100%; 
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.culture-p-text-container {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.culture-p-line-container {
+  display: none;
+}
+
+.culture-p-text-container .culture-p-text-innerbox a:hover > .culture-p-title{
+  text-decoration: underline;
+}
+
+.culture-p-text-innerbox {
+  width: 300;
+  margin: 25% 10%;
+}
+
+.culture-p-title {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 1.0em;
+  font-weight: 700;
+  line-height: 1.20;
+  letter-spacing: 1;
+  color: #fff;
+}
+
+.culture-p-text-container p {
+  display: none;
+}
+
+/* ----- Culure Food Section ---- */
+
+.section-culture-food {
+  width: 100%;
+  background-color: #fff;
+  padding: 0;
+  position: relative;
+}
+
+.culture-f-row1 {
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.culture-f-header {
+  position: absolute;
+  top: 20;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #fff;
+  padding: 8 10;
+  font-weight: 500;
+  font-size: .70em;
+  letter-spacing: 1;
+  border: 1px solid #fff;
+  z-index: 10;
+}
+
+.culture-f-row1-col1 {
+  width: 100%;
+  position: relative;
+}
+
+.culture-f-img1 {
+  width: 100%;
+}
+
+.culture-f-text-container {
+  position: absolute;
+  width: 45%;
+  background-color: #ffdb00;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.culture-f-text-container h1 {
+  display: none;
+}
+
+
+.culture-f-row2 {
+  width: 100%;
+  display: flex;
+  margin: 0px;
+  position: relative;
+}
+
+.culture-f-header2 {
+  position: absolute;
+  top: 20;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #fff;
+  padding: 8 10;
+  font-weight: 500;
+  font-size: .70em;
+  letter-spacing: 1;
+  border: 1px solid #fff;
+}
+
+.culture-f-row2-col1{
+  width: 100%;
+}
+
+.culture-f-row2-col2,
+.culture-f-row2-col3 {
+  display: none;
+}
+
+.culture-f-img2 {
+  width: 100%;
+}
+
+.culture-f-row2-text-container1 {
+  padding: 0 10;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.culture-f-row2-text-container1 {
+  background-color: #000; 
+}
+
+.culture-f-row2-innerbox1 {
+  width: 300;
+  margin: 25% 10%;
+}
+
+.culture-f-row2-text-container1 .culture-f-row2-innerbox1 a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.culture-f-row2-text-container1 .culture-f-row2-innerbox1 a:hover{
+  text-decoration: underline;
+}
+
+/* ----- Healthy1 Section ----- */
+
+.section-healthy1 {
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 0;
+  position: relative;
+}
+
+.healthy1-row1 {
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.healthy1-header {
+  position: absolute;
+  top: 20;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffa67a;
+  color: #000;
+  padding: 8 10;
+  font-weight: 500;
+  font-size: .70em;
+  letter-spacing: 1;
+  border: 1px solid #000;
+}
+
+.healthy1-row1-col1 {
+  width: 100%;
+}
+
+.healthy1-img1 {
+  width: 100%;
+}
+
+.healthy1-row1-col2 {
+  width: 100%; 
+  background-color: #ffa67a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.healthy1-text-container {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.healthy1-line-container {
+  display: flex;
+  justify-content: center;
+}
+
+.healthy1-line {
+  display: none;
+}
+
+.healthy1-line2 {
+  display: none;
+}
+
+.healthy1-text-container:hover > .healthy1-title{
+  text-decoration: underline;
+}
+
+.healthy1-text-innerbox {
+  width: 300;
+}
+
+.healthy1-text-container h1 {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 1.0em;
+  font-weight: 700;
+  line-height: 1.20;
+  letter-spacing: 1;
+  color: #000;
+}
+
+.healthy1-text-container p {
+  display: none;
+}
+
 */
