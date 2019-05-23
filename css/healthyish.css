@@ -1016,6 +1016,165 @@ body {
   display: none;
 }
 
+/* ----- card-nl ----- */
+.card-nl {
+  z-index: 80;
+}
+
+.col1-image {
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+  object-position: 50% 50%;
+}
+
+.card-nl-col2 {
+  background-color: #fadb7f;
+  display: flex;
+  align-items: center;
+}
+
+.card-nl-col2-text-container {
+  width: 350;
+  margin: 0 auto 0 80;
+  text-align: center;
+}
+
+.card-nl-col2-text {
+  width: 100%;
+}
+
+.card-nl-col2-text h1 {
+  font-family: 'grouchregular', serif;
+  font-weight: 500;
+  font-size: 3.3em;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.2;
+  letter-spacing: -3;
+  text-decoration: none;
+  color: #000;
+}
+.card-nl-col2-blurb {
+  width: 100%;
+}
+
+.card-nl-col2-blurb p {
+  margin-top: 0;
+  font-family: 'renner-light', serif;
+  font-weight: normal;
+  font-size: .75em;
+  line-height: 1.4;
+  letter-spacing: 1;
+}
+
+.card-nl-category {
+  display: none;
+}
+
+.card-nl-newsletter {
+  margin: 0 auto;
+  width: 250;
+  border: 1px solid #000;
+  display: flex;
+}
+
+.card-nl-email {
+  border: none;
+  width: 150;
+  margin: 0;
+  padding: 0 10;
+  height: 44px;
+  letter-spacing: 1.5;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.card-nl-submit {
+  width: 100;
+  height: 44px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  letter-spacing: 1.95;
+  font-size: .6em;
+  cursor: pointer;
+}
+
+.card-nl-privacy {
+  font-family: 'renner-light', serif;
+  font-size: .6em;
+}
+
+.card-nl-privacy a {
+  color: #4f4b4c;
+}
+
+/* ----- card-sub ----- */
+.card-sub {
+  z-index: 80;
+}
+
+.col1-image {
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+  object-position: 50% 50%;
+}
+
+.card-sub-col2 {
+  background-color: #faf9f0;
+  display: flex;
+  align-items: center;
+}
+
+.card-sub-col2-text-container {
+  width: 350;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card-sub-col2-logo {
+  width: 100%;
+  margin-bottom: 20;
+}
+
+.card-sub-col2-logo a img {
+  width: 90%;
+}
+
+.card-sub-col2-blurb {
+  width: 100%;
+}
+
+.card-sub-col2-blurb p {
+  margin: 0;
+  font-family: 'renner-light', serif;
+  font-weight: normal;
+  font-size: .75em;
+  line-height: 1.4;
+  letter-spacing: 1;
+}
+
+
+.card-sub-newsletter {
+  margin: 0 auto;
+  width: 250;
+  border: 1px solid #000;
+  display: flex;
+}
+
+.card-sub-submit {
+  width: 100%;
+  height: 44px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  letter-spacing: 1.95;
+  font-size: .6em;
+  cursor: pointer;
+}
+
 /* ----- Aside Section ----- */
 .aside-window {
   width: 320px;
