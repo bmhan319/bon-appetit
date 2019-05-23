@@ -49,7 +49,7 @@ body {
   margin: 0;
   background-color: #f8f8f8;
   overflow-x: hidden;
-  /*overflow: hidden;*/
+  /*overflow-y: hidden;*/
 }
 
 .section-nav {
@@ -196,16 +196,45 @@ body {
   transition:all .2s linear;
 }
 
-/* ----- Card1 ----- */
-.card1 {
-}
-
 .col1-image {
   height: 100%;
   width: 100%;
   object-fit:cover;
   object-position: 50% 50%;
 }
+
+.type-1-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.type1-title {
+  font-family: 'grouchregular', serif;
+  font-weight: 500;
+  font-size: 3.0em;
+  margin-top: 0;
+  margin-bottom: 16;
+  line-height: 1.2;
+  letter-spacing: -3.1;
+}
+
+.type-1-blurb-container {
+  width: 60%;
+}
+
+.type1-blurb {
+  margin-top: 0;
+  font-family: 'renner', serif;
+  font-weight: bold;
+  font-size: 1.15em;
+  line-height: 1.4;
+}
+
+/* ----- Card1 ----- */
+.card1 {
+}
+
+
 
 .card1-col2 {
   background-color: #ffa67a;
@@ -223,18 +252,11 @@ body {
 }
 
 .card1-col2-text a {
-  text-decoration: none;
-  color: #000;
+  
 }
 
 .card1-col2-text a h1 {
-  font-family: 'grouchregular', serif;
-  font-weight: 500;
-  font-size: 3.2em;
-  margin-top: 0;
-  margin-bottom: 16;
-  line-height: 1.2;
-  letter-spacing: -3;
+  
 }
 
 .card1-col2-text a:hover {
@@ -242,15 +264,11 @@ body {
 }
 
 .card1-col2-blurb {
-  width: 60%;
+  
 }
 
 .card1-col2-blurb p {
-  margin-top: 0;
-  font-family: 'renner', serif;
-  font-weight: bold;
-  font-size: 1.20em;
-  line-height: 1.4;
+  
 }
 
 .card1-category {
@@ -349,7 +367,7 @@ body {
 .card3-col2-text a h1 {
   font-family: 'grouchregular', serif;
   font-weight: 500;
-  font-size: 3.2em;
+  font-size: 3.1em;
   margin-top: 0;
   margin-bottom: 16;
   line-height: 1.2;
@@ -368,7 +386,7 @@ body {
   margin-top: 0;
   font-family: 'renner', serif;
   font-weight: bold;
-  font-size: 1.20em;
+  font-size: 1.15em;
   line-height: 1.4;
 }
 
@@ -410,7 +428,7 @@ body {
 .card4-col2-text a h1 {
   font-family: 'grouchregular', serif;
   font-weight: 500;
-  font-size: 3.2em;
+  font-size: 3.1em;
   margin-top: 0;
   margin-bottom: 16;
   line-height: 1.2;
@@ -429,7 +447,7 @@ body {
   margin-top: 0;
   font-family: 'renner', serif;
   font-weight: bold;
-  font-size: 1.20em;
+  font-size: 1.15em;
   line-height: 1.4;
 }
 
