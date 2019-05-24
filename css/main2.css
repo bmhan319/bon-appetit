@@ -127,7 +127,7 @@ body {
 
 .innerbox {
   width: 300;
-  margin: 20% 10%;
+  margin: 22% 10%;
   min-height: 80;
   display: flex;
   justify-content: center;
@@ -658,12 +658,12 @@ body {
 
 /* ----- Aside Section ----- */
 .aside-window {
-  width: 320px;
+  width: 100vw;
   height: 100vh;
   z-index: 99;
   position: fixed;
   top: 0;
-  left: -320;
+  left: -100vw;
   background-color: #f8f8f8;
   transition: left .2s ease-in-out;
 }

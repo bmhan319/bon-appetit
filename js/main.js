@@ -1,6 +1,8 @@
 function closeMenu() {
   let closed = document.querySelector(".aside-window")
-  closed.style.left = -320;
+  closed.style.left = '-100vw';
+  //closed.style.left = -320;  changes to this at 768pixels wide
+  
 }
 
 function openMenu() {
