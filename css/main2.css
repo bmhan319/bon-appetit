@@ -386,10 +386,6 @@ body {
   cursor: pointer;
 }
 
-.healthy1-line-container {
-  display: none;
-}
-
 .healthy1-blurb {
   display: none;
 }
@@ -428,5 +424,55 @@ body {
   background-color: #ffa67b;
 }
 
+/* ----- Basically Section ----- */
+
+.section-basic {
+  position: relative;
+}
+
+.basic-row1 {
+  width: 100%;
+  position: relative;
+}
+
+.basic-header {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.basic-row1-col1 {
+  width: 100%;
+}
+
+.basic-row1-col2 {
+  width: 100%; 
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.basic-blurb {
+  display: none;
+}
+
+
+.basic-row2 {
+  width: 100%;
+  position: relative;
+}
+
+.basic-header2 {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.basic-row2-col1 {
+  width: 100%:
+}
+.basic-row2-col2,
+.basic-row2-col3 {
+  display: none;
+}
 
 */
