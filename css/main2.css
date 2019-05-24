@@ -9,8 +9,22 @@ Salmon = #ffa67a
 Blue = #33b8ff
 */
 
+@font-face {
+  font-family: 'renner';
+  src: url('../fonts/renner-medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'renner-light';
+  src: url('../fonts/renner-light.otf') format('opentype');
+  font-weight: light;
+  font-style: light;
+}
+
 * {
-  font-family: futura-pt,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  font-family: 'renner','Helvetica Neue','Helvetica','Roboto','Arial',sans-serif;
   box-sizing: border-box;
 }
 
@@ -663,14 +677,14 @@ body {
   z-index: 99;
   position: fixed;
   top: 0;
-  left: -100vw;
+  left: -150vw;
   background-color: #f8f8f8;
   transition: left .2s ease-in-out;
 }
 
 .aside-top {
   background-color: #fff;
-  height: 528;
+  height: 588;
 }
 
 .aside-title {
@@ -838,5 +852,37 @@ body {
 .aside-social-img {
   width: 15;
   height: 15;
+}
+
+.mobile-menu {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-menu:hover {
+  background-color: #000; 
+}
+
+.subscribe,
+.login {
+  font-size: .60em;
+  font-weight: 400;
+}
+
+.subscribe a,
+.login a{
+  color:#fff;
+  text-decoration: none;
+  background-color: #000;
+}
+ 
+.subscribe{
+  margin-left: 16;
+}
+
+.login {
+  margin-right: 32;
 }
 */
