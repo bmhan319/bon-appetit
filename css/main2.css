@@ -203,7 +203,7 @@ body {
   display: none;
 }
 
-.recipe2-row1-text-container {
+.recipe2-text-container {
   background-color: #ffdb00;
 }
 
@@ -261,10 +261,11 @@ body {
   position: relative;
 }
 
-.culture-p-header {
+.culture-header {
   background-color: #000;
   color: #fff;
   border: 1px solid #fff;
+  z-index: 10;
 }
 
 .culture-p-row1-col1 {
@@ -317,34 +318,34 @@ body {
   display: none;
 }
 
-.culture-f-row2 {
+.culture-mp-row1 {
   width: 100%;
   display: flex;
   margin: 0px;
   position: relative;
 }
 
-.culture-f-row2-col1{
+.culture-mp-row1-col1{
   width: 100%;
 }
 
-.culture-f-row2-col2,
-.culture-f-row2-col3 {
+.culture-mp-row1-col2,
+.culture-mp-row1-col3 {
   display: none;
 }
 
-.culture-f-row2-text-container {
+.culture-mp-text-container {
   padding: 0 10;
   display: flex;
   align-items: center;
   text-align: center;
 }
 
-.culture-f-row2-text-container {
+.culture-mp-text-container {
   background-color: #000; 
 }
 
-.culture-f-title {
+.culture-mp-title {
   color: #fff;
 }
 
@@ -396,7 +397,7 @@ body {
   position: relative;
 }
 
-.healthy2-row2 {
+.healthy2-row1 {
   width: 100%;
   display: flex;
   position: relative;
@@ -408,19 +409,15 @@ body {
   border: 1px solid #000;
 }
 
-.healthy2-row2-col1{
+.healthy2-row1-col1{
   width: 100%;
 }
-.healthy2-row2-col2,
-.healthy2-row2-col3 {
+.healthy2-row1-col2,
+.healthy2-row1-col3 {
   display: none;
 }
 
-.healthy2-img2{
-  width: 100%;
-}
-
-.healthy2-row2-text-container {
+.healthy2-text-container {
   background-color: #ffa67b;
 }
 
@@ -456,22 +453,17 @@ body {
   display: none;
 }
 
-
-.basic-row2 {
+/* ----- Basically2 Section ----- */
+.basic2-row1 {
   width: 100%;
   position: relative;
 }
 
-.basic-header2 {
-  background-color: #fff;
-  border: 1px solid #ddd;
-}
-
-.basic-row2-col1 {
+.basic2-row1-col1 {
   width: 100%:
 }
-.basic-row2-col2,
-.basic-row2-col3 {
+.basic2-row1-col2,
+.basic2-row1-col3 {
   display: none;
 }
 
