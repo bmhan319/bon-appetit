@@ -123,7 +123,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   padding: 8 10;
-  font-weight: 500;
+  font-family: 'renner', sans-serif;
   font-size: .70em;
   letter-spacing: 1;
 }
@@ -160,7 +160,7 @@ body {
 .title {
   padding: 0;
   margin: 0;
-  font-size: 1.0em;
+  font-size: 1.1em;
   font-weight: 700;
   line-height: 1.20;
   letter-spacing: 1;
@@ -225,7 +225,7 @@ body {
 .section-video {
   background-color: #e2e1e1;
   width: 100%;
-  padding: 110 0;
+  padding: 26% 0;
 }
 
 .video-container {
