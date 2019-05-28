@@ -112,6 +112,7 @@
     background-color: #f8f8f8;
     padding: 0px 5%;
     position: relative;
+    bordeR: 1px solid transparent;
   }
   
   .header {
@@ -178,9 +179,16 @@
   }
   
   /* ----- 2Col Sections ----- */
+  .section-2col {
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 0px 5%;
+    position: relative;
+    }
+  
   .two-col-row1 {
     display: flex;
-    margin: 60px 0 150px;
+    margin: 60px 0 60px;
   }
 
   .twocol-col1 {
@@ -192,7 +200,76 @@
     align-items: center;
   }
   
+  .twocol-text-container {
+    height: 450px;
+    width: 450px;
+    cursor: pointer;
+  }
+
+  .twocol-line-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .line {
+    margin: 16 0 0 10;
+    font-weight: 300;
+    font-size: .75em;
+    letter-spacing: 2.5;
+  }
+
+  .line:after{
+    content: "";
+    display: inline-block;
+    width: 50;
+    vertical-align:middle;
+    border-bottom: 1px solid;
+  }
+
+  .line2 {
+    margin: 16 0 0 10;
+    font-weight: 300;
+    font-size: .75em;
+    letter-spacing: 2.5;
+  }
+  
+  .twocol-innerbox {
+    bordeR: 1px solid yellow;
+    margin-top: 20;
+  }
+
+  .twocol-text-container:hover > .twocol-title{
+    text-decoration: underline;
+  }
+
+  .twocol-title {
+    padding: 0;
+    margin: 30 16;
+    font-size: 2.5em;
+    font-weight: 500;
+    line-height: 1.34;
+    letter-spacing: 1;
+  }
+
+  .twocol-blurb {
+    display: block;
+    padding: 0;
+    margin: 0 60;
+    font-size: .9em;
+    font-weight: 400;
+    letter-spacing: 1.1;
+    line-height: 1.75;
+  }
+  
   /* ----- 3Col Sections ----- */
+  .section-3col {
+    width: 100%;
+    background-color: #fff;
+    padding: 0px 5%;
+    position: relative;
+    border: 1px solid #fff;
+  }
+
   .three-col-row1 {
     width: 100%;
     display: flex;
@@ -356,7 +433,15 @@
     color:#000;
   }
   
-   /*----- Healtyish Section -----*/
+  .culture-p-blurb {
+    color: #fff;
+  }
+  
+  /*----- Healtyish Section -----*/
+  .healthy1-line:after {
+    width: 10;
+  }
+  
   .healthy2-text-container1 {
     background-color: #ffa67a;
   }
@@ -369,7 +454,20 @@
     background-color: #fbdc7f;
   }
   
+  /*----- Basically Section -----*/
+  .basic-line:after {
+    width: 10;
+  }
+  
+  .basic-text-innerbox {
+    margin-top: 60;
+  }
+  
   /*----- Restaurant Section -----*/
+  .restaurant-text-container {
+    background-color: #fff;
+  }
+  
   .restaurant2-text-container1 {
     background-color: #f8f8f8;
   }
@@ -380,5 +478,18 @@
   
   .restaurant2-text-container3 {
     background-color: #ffdb00;
+  }
+  
+  .section-restaurant3 {
+    background-color: #fff;
+  }
+  
+  /* ----- Podcast Section ----- */
+  .section-podcast {
+    background-color: #fff;
+  }
+  
+  .podcast-row1-col2 {
+    background-color: #f8f8f8;
   }
   
