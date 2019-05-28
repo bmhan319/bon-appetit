@@ -305,6 +305,39 @@
     text-decoration: underline;
   }
   
+  /* ----- Video1 Section ----- */
+
+  .section-video {
+    background-color: #e2e1e1;
+    padding: 80 0;
+  }
+
+  .video-container {
+    width: 57%;
+  }
+
+  .video-row2 {
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  .video-text-innerbox {
+    width: 500;
+    min-height: 90;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .video-title {
+    margin: 16 0;
+    font-size: 1.5em;
+  }
+
+  .video-title:hover {
+    text-decoration: underline;
+  }
+  
   /*----- Culture Section -----*/
   .culture-mp-text-container1 {
     background-color: #ffdb00;
