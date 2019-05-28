@@ -188,7 +188,7 @@
   
   .two-col-row1 {
     display: flex;
-    margin: 60px 0 60px;
+    margin: 60px 0;
   }
 
   .twocol-col1 {
@@ -234,7 +234,6 @@
   }
   
   .twocol-innerbox {
-    bordeR: 1px solid yellow;
     margin-top: 20;
   }
 
@@ -264,16 +263,14 @@
   /* ----- 3Col Sections ----- */
   .section-3col {
     width: 100%;
-    background-color: #fff;
     padding: 0px 5%;
     position: relative;
-    border: 1px solid #fff;
   }
 
   .three-col-row1 {
     width: 100%;
     display: flex;
-    margin: 0px 0 90px;
+    margin: 90px 0;
   }
 
   .threecol-col1,
@@ -437,6 +434,10 @@
     color: #fff;
   }
   
+  .section-culture-mp {
+    background-color: #fff;
+  }
+  
   /*----- Healtyish Section -----*/
   .healthy1-line:after {
     width: 10;
@@ -452,6 +453,10 @@
   
   .healthy2-text-container3 {
     background-color: #fbdc7f;
+  }
+  
+  .section-healthy2 {
+    background-color: #fff;
   }
   
   /*----- Basically Section -----*/
@@ -480,6 +485,7 @@
     background-color: #ffdb00;
   }
   
+  .section-restaurant2,
   .section-restaurant3 {
     background-color: #fff;
   }
