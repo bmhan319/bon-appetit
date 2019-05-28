@@ -243,6 +243,68 @@
     letter-spacing: 1;
   }
   
+  /* ----- 5Col Sections ----- */
+  .five-col-row1 {
+    width: 775;
+    margin: 60px auto; 90px;
+    position: relative;
+  }
+
+  .five-col-row1 a h2 {
+    text-align: center;
+    padding: 35 0 0;
+    font-weight: 500;
+    font-size: 2.7em;
+    letter-spacing: 1;
+  }
+  
+  .five-col-row1 a{
+    text-decoration: none;
+  }
+  
+  .five-col-row1 h2:hover {
+    text-decoration: underline;
+  }
+  
+  .cities-container {
+    display: flex;
+  }
+
+  .fivecol-col1,
+  .fivecol-col2,
+  .fivecol-col3,
+  .fivecol-col4,
+  .fivecol-col5 {
+    width: 20%;
+    text-align: center;
+    display: block;
+  }
+
+  .fivecol-col1,
+  .fivecol-col2,
+  .fivecol-col3,
+  .fivecol-col4 {
+    margin-right: 20px;
+  }
+
+  .city {
+    padding: 2 10;
+    font-size: .85em;
+  }
+
+  .restaurant3-img1,
+  .restaurant3-img2,
+  .restaurant3-img3,
+  .restaurant3-img4,
+  .restaurant3-img5 {
+    margin: 15 0 20;
+  }
+ 
+  .fivecol-text-container:hover > .restaurant,
+  .fivecol-text-container:hover > .fivecol-text-link {
+    text-decoration: underline;
+  }
+  
   /*----- Culture Section -----*/
   .culture-mp-text-container1 {
     background-color: #ffdb00;
@@ -259,5 +321,31 @@
   .culture-mp-text-container1 .culture-mp-title,
   .culture-mp-text-container2 .culture-mp-title{
     color:#000;
+  }
+  
+   /*----- Healtyish Section -----*/
+  .healthy2-text-container1 {
+    background-color: #ffa67a;
+  }
+  
+  .healthy2-text-container2 {
+    background-color: #fbfaf1;
+  }
+  
+  .healthy2-text-container3 {
+    background-color: #fbdc7f;
+  }
+  
+  /*----- Restaurant Section -----*/
+  .restaurant2-text-container1 {
+    background-color: #f8f8f8;
+  }
+  
+  .restaurant2-text-container2 {
+    background-color: #33b8ff;
+  }
+  
+  .restaurant2-text-container3 {
+    background-color: #ffdb00;
   }
   
