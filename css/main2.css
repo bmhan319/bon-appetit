@@ -253,6 +253,16 @@ body {
   transform:translate(-50%, -50%)
 }
 
+.video1-box::after,
+.video2-box::after {
+  display: block;
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #000 100%);
+  margin-top: -150px;
+  height: 150px;
+  content: '';
+}
+
 .video1,
 .video1-tn,
 .video2,
@@ -266,9 +276,11 @@ body {
 }
 
 .video1-off,
+.video1-box-off,
 .video1-tn-off,
 .play-button1-off,
 .video2-off,
+.video2-box-off,
 .video2-tn-off,
 .play-button2-off{
   display: none;
