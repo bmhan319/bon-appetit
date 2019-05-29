@@ -123,7 +123,6 @@
     width: 400;
     margin: 0 auto;
     min-height: none;
-    /*border: 1px solid red;*/
   }
 
   .title {
@@ -161,21 +160,6 @@
   .onecol-col1 {
     width: 100%;
     position: relative;
-  }
-
-  .culture-f-text-container {
-    position: absolute;
-    width: 45%;
-    background-color: #ffdb00;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-  .culture-f-title {
-    font-size: 2.1em;
-    margin: 0;
   }
   
   /* ----- 2Col Sections ----- */
@@ -298,7 +282,6 @@
     width: 280;
     height: 100%;
     margin: 0;
-    /*border: 1px solid green;*/
   }
 
   .threecol-text-link{
@@ -413,6 +396,25 @@
   }
   
   /*----- Culture Section -----*/
+  .culture-p-blurb {
+    color: #fff;
+  }
+  
+  .culture-f-text-container {
+    position: absolute;
+    width: 45%;
+    background-color: #ffdb00;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .culture-f-title {
+    font-size: 2.1em;
+    margin: 0;
+  }
+  
   .culture-mp-text-container1 {
     background-color: #ffdb00;
   }
@@ -428,10 +430,6 @@
   .culture-mp-text-container1 .culture-mp-title,
   .culture-mp-text-container2 .culture-mp-title{
     color:#000;
-  }
-  
-  .culture-p-blurb {
-    color: #fff;
   }
   
   .section-culture-mp {

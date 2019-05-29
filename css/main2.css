@@ -502,12 +502,12 @@ body {
 
 /* ----- Restuarant1 Section ----- */
 
-.section-restaurant1 {
+.section-restaurant {
   width: 100%;
   position: relative;
 }
 
-.restaurant1-row1 {
+.restaurant-row1 {
   width: 100%;
   position: relative;
 }
@@ -518,11 +518,11 @@ body {
   border: 1px solid #000;
 }
 
-.restaurant1-row1-col1 {
+.restaurant-row1-col1 {
   width: 100%;
 }
 
-.restaurant1-row1-col2 {
+.restaurant-row1-col2 {
   width: 50%; 
   background-color: #fff;
   display: flex;
