@@ -253,8 +253,25 @@ body {
   transform:translate(-50%, -50%)
 }
 
-.video-tn {
+.video1,
+.video1-tn,
+.video2,
+.video2-tn{
   width: 100%;
+}
+
+.video1-on,
+.video2-on{
+  display: block;
+}
+
+.video1-off,
+.video1-tn-off,
+.play-button1-off,
+.video2-off,
+.video2-tn-off,
+.play-button2-off{
+  display: none;
 }
 
 .video-row2 {
