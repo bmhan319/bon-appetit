@@ -535,7 +535,7 @@ body {
 }
 
 .restaurant-row1-col2 {
-  width: 50%; 
+  width: 100%; 
   background-color: #fff;
   display: flex;
   align-items: center;
