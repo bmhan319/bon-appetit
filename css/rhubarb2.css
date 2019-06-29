@@ -115,7 +115,7 @@ body {
 .title-row1 {
   width: 100%;
   text-align: center;
-  margin: 36 0 59;
+  margin: 36 0 16;
 }
 
 .title-header {
@@ -189,7 +189,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid red;
 }
 
 .social-fb,
@@ -197,7 +196,6 @@ body {
   margin-right: 24;
   width: 40;
   height: 40;
-  
 }
 
 .social-em {
