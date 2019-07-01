@@ -229,7 +229,7 @@ body {
 
 .section-article {
   position: relative;
-  padding: 64 16 0 ;
+  padding: 0 16 0 ;
   width: 100%;
 }
 
@@ -285,7 +285,7 @@ body {
   border-top:1px solid #000;
   border-bottom:1px solid #000;
   padding: 20 0;
-  margin: 32 0 0 0;
+  margin: 32 0 32 0;
 }
 
 .article-end span {
@@ -388,7 +388,7 @@ body {
 }
 
 .readmore-header{
-  width: 22%;
+  width: 90;
   margin: 0 auto;
   position: relative;
   background-color: #fff;
