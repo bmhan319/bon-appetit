@@ -114,10 +114,14 @@ function expandMenu(num) {
   let triangle = document.querySelector(".triangle" + num)
   let list = document.querySelector(".foldable-list" + num)
   
-  expand.setAttribute("onclick","collapseMenu(" + num + ")")
-  triangle.classList.add("triangle-up")
-  triangle.classList.remove("triangle-down")
-  list.style.display = "block"
+  if (window.innerWidth <= 768) {
+    expand.setAttribute("onclick","collapseMenu(" + num + ")")
+    triangle.style.animation = "roll .25s 1";
+    triangle.style.transform ="rotate(180deg)"
+    list.style.display = "block"
+  } else {
+    list.style.display = "block"
+  }
 }
 
 //collapse footer menu
@@ -126,8 +130,12 @@ function collapseMenu(num) {
   let triangle = document.querySelector(".triangle" + num)
   let list = document.querySelector(".foldable-list" + num)
   
-  expand.setAttribute("onclick","expandMenu(" + num + ")")
-  triangle.classList.add("triangle-down")
-  triangle.classList.remove("triangle-up")
-  list.style.display = "none"
+  if (window.innerWidth <= 768) {
+    expand.setAttribute("onclick","expandMenu(" + num + ")")
+    triangle.style.animation = "rollBack .25s 1";
+    triangle.style.transform ="rotate(0)"
+    list.style.display = "none"
+  } else{
+    list.style.display = "block"
+  }
 }
