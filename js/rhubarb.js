@@ -54,11 +54,7 @@ function slideDown() {
   }
 } 
 
-function expandMenu() {
-  console.log("hi")
-}
-
-//open expanded menu
+//open expanded nav menu
 function openMenu() {
   let body = document.querySelector("body")
   let subscribe = document.querySelector(".subscribe-text")
@@ -85,7 +81,7 @@ function openMenu() {
   social.classList.remove("menu-text-hidden")
 }
 
-//close expanded menu
+//close expanded nav menu
 function closeMenu() {
   let body = document.querySelector("body")
   let subscribe = document.querySelector(".subscribe-text")
@@ -110,4 +106,28 @@ function closeMenu() {
   list.classList.remove("menu-text-active")
   social.classList.add("menu-text-hidden")
   social.classList.remove("menu-text-active")
+}
+
+// expand footer menu
+function expandMenu(num) {
+  let expand = document.querySelector(".expand-menu" + num)
+  let triangle = document.querySelector(".triangle" + num)
+  let list = document.querySelector(".foldable-list" + num)
+  
+  expand.setAttribute("onclick","collapseMenu(" + num + ")")
+  triangle.classList.add("triangle-up")
+  triangle.classList.remove("triangle-down")
+  list.style.display = "block"
+}
+
+//collapse footer menu
+function collapseMenu(num) {
+  let expand = document.querySelector(".expand-menu" + num)
+  let triangle = document.querySelector(".triangle" + num)
+  let list = document.querySelector(".foldable-list" + num)
+  
+  expand.setAttribute("onclick","expandMenu(" + num + ")")
+  triangle.classList.add("triangle-down")
+  triangle.classList.remove("triangle-up")
+  list.style.display = "none"
 }

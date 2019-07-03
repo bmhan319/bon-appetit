@@ -536,6 +536,7 @@ body {
 .footer-row2-co3 ul{
   padding: 10 0 0 0;
   text-align: center;
+  display: none;
 }
 
 .footer-row2-co2 ul li,
