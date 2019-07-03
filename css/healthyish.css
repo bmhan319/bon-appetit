@@ -1193,6 +1193,49 @@ body {
   cursor: pointer;
 }
 
+/* ----- Essay Section ----- */
+
+.end-link {
+  position: absolute;
+  bottom: 15;
+  width: 220;
+  padding-left: 32;
+}
+
+.end-link p {
+  font-family: 'renner-light', serif;
+  font-weight: normal;
+  font-size: .75em;
+  line-height: 1.4;
+  letter-spacing: 1;
+}
+
+.end-link a {
+  color: #000;
+  text-decoration: none;
+}
+
+.end-link a:hover {
+  text-decoration: underline;
+}
+
+.triangle-side {
+  position: absolute;
+  bottom: 60;
+  left: -60;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid transparent;
+  transform: rotate(90deg)
+}
+
+.triangle-nl {
+  border-top: 40px solid #fadb7f;
+}
+
+.triangle-sub {
+  border-top: 40px solid #faf9f0;
+}
 /* ----- Aside Section ----- */
 .aside-window {
   width: 320px;
