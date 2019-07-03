@@ -133,6 +133,10 @@
   .footer-row2-co3 {
     width: 50%;
   }
+  
+  .footer-more-container {
+    margin-bottom: 24;
+  }
 
   .footer-row2-co2 h3,
   .footer-row2-co3 h3 {
@@ -150,7 +154,12 @@
 
   .footer-row2-co2 ul,
   .footer-row2-co3 ul{
-    display: none;
+    display: block;
+  }
+  
+  .footer-row2-co2 ul li,
+  .footer-row2-co3 ul li {
+    margin: 0 0 40 0;
   }
 
   .footer-line {
@@ -163,6 +172,12 @@
 
   .footer-row3-co1 li {
     display: inline;
+  }
+  
+  .vertical-line::after {
+    content: " | ";
+    padding-right: 8;
+    padding-left: 8;
   }
 
   .footer-row3-co2 {
@@ -323,12 +338,6 @@
 
   .footer-row3-co1 li {
     margin-bottom: 48;
-  }
-  
-  .vertical-line::after {
-    content: " | ";
-    padding-right: 8;
-    padding-left: 8;
   }
 
   .footer-row3-co2 {

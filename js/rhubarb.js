@@ -54,6 +54,10 @@ function slideDown() {
   }
 } 
 
+function expandMenu() {
+  console.log("hi")
+}
+
 //open expanded menu
 function openMenu() {
   let body = document.querySelector("body")
