@@ -139,3 +139,18 @@ function collapseMenu(num) {
     list.style.display = "block"
   }
 }
+
+//collapse footer menu on window resize
+function collapseFooterMenu() {
+  let width = window.innerWidth
+  let list1 = document.querySelector(".foldable-list1")
+  let list2 = document.querySelector(".foldable-list2")
+  
+  if (width <= 768) {
+    list1.style.display = "none"
+    list2.style.display = "none"
+  } else {
+    list1.style.display = "block"
+    list2.style.display = "block"
+  }
+}
