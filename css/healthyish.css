@@ -293,6 +293,10 @@ body {
 
 .card2-col1-container {
   width: 70%;
+  max-width: 440px;
+}
+
+.card2-col1-text {
   text-align: center;
 }
 
@@ -330,6 +334,16 @@ body {
 
 .card2-blurb {
   display: none;
+}
+
+.card2-col1-image-conatiner {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card2-image {
+  width: 100%;
+  max-width: 440;
 }
 
 /* ----- Card3 ----- */
