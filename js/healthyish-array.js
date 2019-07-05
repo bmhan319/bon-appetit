@@ -13,6 +13,7 @@ let healthArray = [
    title: "I Moved From Tokyo to the U.S. for Love But Became a Chef Instead",
    blurb: "How Kuniko Yagi went from banker to udon waitress to owning her own restaurant in L.A.",
    image: "img/PIKUNICO_KunikoYagi_0024.jpg",
+   imageBig: "img/PIKUNICO_KunikoYagi_0024-big.jpg",
    alt: "Kuniko Yagi",
    bgColor1:"#f4f2e7",
    bgColor2:"#dedaca"
@@ -93,7 +94,7 @@ let healthArray = [
    category: "RECIPE",
    title: "Why Scientists See Fiber As More Important Than Ever Before",
    blurb: "Fiber used to be the most boring nutrient we eat. Then scientists started looking at our microbes.",
-   image: "img/HLY-Fiber-1-Big.jpg",
+   image: "img/HLY-Fiber-1-Big-rec.jpg",
    alt: "green veggies",
    bgColor1:"",
    bgColor2:""

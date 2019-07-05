@@ -52,7 +52,7 @@
 
   /* ----- Section Main Image ----- */
   .main-image-caption {
-    padding: 12 0 24 32;
+    padding: 12 0 24 16;
   }
   
   /* ----- Section Article ----- */
@@ -220,6 +220,10 @@
   
   .social-container {
     display: none;
+  }
+  
+  .main-image-caption {
+    padding: 12 0 24 32;
   }
   
   .section-article {
