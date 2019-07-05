@@ -504,6 +504,10 @@
   }
   
   /* ----- Bottom Card ----- */
+  .visible {
+    height:200;
+  }
+  
   .bottom-card-row1 {
     height: 100%;
   }
