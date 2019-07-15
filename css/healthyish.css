@@ -49,7 +49,7 @@ body {
   margin: 0;
   background-color: #f8f8f8;
   overflow-x: hidden;
-  /*overflow-y: hidden;*/
+  overflow-y: hidden;
 }
 
 .section-nav {
@@ -185,6 +185,7 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
+  position: absolute;
 }
 
 .col1,
@@ -232,6 +233,7 @@ body {
 
 /* ----- Card1 ----- */
 .card1 {
+  z-index: 95;
 }
 
 
@@ -277,6 +279,7 @@ body {
 
 /* ----- Card2 ----- */
 .card2 {
+  z-index: 90;
 }
 
 .card2-col1 {
@@ -469,7 +472,9 @@ body {
   display: none;
 }
 /* ----- Card 5 & 6 ----- */
-.card5 {
+.card5,
+.card6 {
+  z-index: 75;
 }
 
 .card5-col1 {
@@ -546,7 +551,7 @@ body {
 
 /* ----- Card7 ----- */
 .card7 {
-  z-index: 80;
+  z-index: 70;
 }
 
 .col1-image {
@@ -608,6 +613,7 @@ body {
 
 /* ----- Card8 ----- */
 .card8 {
+  z-index: 65;
 }
 
 .card8-col1 {
@@ -665,7 +671,7 @@ body {
 
 /* ----- Card9 ----- */
 .card9 {
-  z-index: 80;
+  z-index: 60;
 }
 
 .col1-image {
@@ -727,7 +733,7 @@ body {
 
 /* ----- card10 ----- */
 .card10 {
-  z-index: 80;
+  z-index: 55;
 }
 
 .col1-image {
@@ -807,7 +813,7 @@ body {
 
 /* ----- card11 ----- */
 .card11 {
-  z-index: 80;
+  z-index: 60;
 }
 
 .col1-image {
@@ -869,6 +875,7 @@ body {
 
 /* ----- Card 12 ----- */
 .card12 {
+  z-index: 55;
 }
 
 .card12-col1 {
@@ -926,7 +933,7 @@ body {
 
 /* ----- card13 ----- */
 .card13 {
-  z-index: 80;
+  z-index: 50;
 }
 
 .col1-image {
@@ -988,7 +995,7 @@ body {
 
 /* ----- card14 ----- */
 .card14 {
-  z-index: 80;
+  z-index: 45;
 }
 
 .col1-image {
@@ -1050,7 +1057,7 @@ body {
 
 /* ----- card-nl ----- */
 .card-nl {
-  z-index: 80;
+  z-index: 40;
 }
 
 .col1-image {
@@ -1144,7 +1151,7 @@ body {
 
 /* ----- card-sub ----- */
 .card-sub {
-  z-index: 80;
+  z-index: 35;
 }
 
 .col1-image {

@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.carousel-container {
+  width: 500;
+  margin: auto;
+  bordeR: 5px solid red;
+  overflow:hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 2500;
+  height: 500;
+}
+
+.color {
+  width: 500;
+  height 500;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.beige {
+  background-color: beige;
+}
+
+button {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100;
+  height: 100;
+  border-radius: 50%;
+}
+
