@@ -5,6 +5,9 @@ let counter = 0;
 const size = carouselImages[0].clientWidth
 
 next.addEventListener('click',()=>{
+  if (counter >= carouselImages.length -1) {
+    return
+  }
   carouselSlide.style.transition = 'transform 0.4s linear'
   counter++
   carouselSlide.style.transform = "translateX(" + (-size * counter) + "px)"
