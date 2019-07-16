@@ -9,14 +9,63 @@
     <link rel="shortcut icon" href="ba.ico" type="image/x-icon">
   </head>
   <body>
-    <div id="mainContainer" class="carousel-container">
+    
+    <nav class="section-nav">
+      <div class="nav-row1">
+        <div class="nav-row1-col1">
+          <div class="hamburger-container" onclick="openMenu()">
+            <div class="hamburger-row1"></div>
+            <div class="hamburger-row2"></div>
+            <div class="hamburger-row3"></div>
+          </div>
+        </div>
+        <div class="nav-row1-col2">
+          <a href="healthyish.html">
+            <svg class="nav-logo" xmlns="http://www.w3.org/2000/svg" width="530" height="121" viewBox="0 0 530 121" class="HealthyishHeader__logo-image" data-reactid="70"><title data-reactid="71">Healthyish</title><g fill="#231F1F" transform="translate(-174 -169)" fill-rule="evenodd" data-reactid="72"><path d="M572.82 289.197H704v-13.404H572.82v13.404zm75.606-119.645v93.94h15.849v-28.478c0-3.224.13-7.216 2.467-10.821 2.34-3.48 5.583-4.902 9.745-4.902 1.56 0 4.933.26 7.404 2.839 2.857 2.96 2.987 7.861 2.987 10.951v30.41h15.848V228.44c0-5.413-.515-10.952-4.413-15.72-4.417-5.412-11.695-6.83-16.629-6.83-9.094 0-14.422 4.898-17.409 9.024v-45.362h-15.849zm-277.02 93.94h15.848v-93.94h-15.849v93.94zm199.808-84.536c0 5.157 4.287 9.409 9.485 9.409 5.193 0 9.485-4.252 9.485-9.41 0-5.152-4.292-9.403-9.485-9.403-5.198 0-9.485 4.251-9.485 9.404zm35.294 30.93c-3.247 2.705-5.848 7.216-5.848 12.63 0 4.506 1.691 7.986 4.288 10.695 3.377 3.48 8.054 5.283 12.081 6.7l3.637 1.287c2.081.776 4.938 2.193 4.938 5.673 0 3.866-3.377 6.06-7.794 6.06-4.678 0-9.35-2.84-12.472-6.45l-8.315 9.54c3.507 3.735 10.136 9.273 21.823 9.273 6.888 0 12.346-1.803 16.893-5.924 4.548-4.126 6.238-9.149 6.238-14.176 0-3.606-1.17-6.956-2.86-9.279-3.248-4.381-9.872-6.57-14.293-7.987l-3.763-1.161c-4.422-1.417-5.072-3.61-5.072-5.028 0-2.704 2.34-4.511 6.108-4.511 1.69 0 5.458.26 9.225 3.736l7.794-9.145c-7.148-5.413-13.768-5.928-17.93-5.928-4.547 0-10.26.515-14.678 3.996zm-60.013-2.191l-15.593 31.702-17.405-31.702h-18.45l26.765 47.42-17.634 32.335h17.853l42.394-79.755h-17.93zm-108.35-38.143v93.94h15.85v-28.478c0-3.224.13-7.216 2.466-10.821 2.341-3.48 5.588-4.902 9.745-4.902 1.56 0 4.938.26 7.409 2.839 2.856 2.96 2.987 7.861 2.987 10.951v30.41h15.848V228.44c0-5.413-.52-10.952-4.417-15.72-4.417-5.412-11.696-6.83-16.63-6.83-9.094 0-14.422 4.898-17.409 9.024v-45.362h-15.848zm-34.805 19.072v19.073h-6.238v13.4h6.238v42.394h15.849v-42.394h10.915v-13.4H419.19v-19.073h-15.85zm169.43 74.867h15.849v-55.797H572.77v55.797zM299.924 235.53c0 16.364 11.436 29.764 28.716 29.764 4.027 0 11.557-.901 17.279-9.014v7.212h15.849v-55.798h-15.85v7.22c-5.327-8.247-13.771-9.023-18.059-9.023-16.629 0-27.935 13.144-27.935 29.639zm16.374 0c0-8.893 6.494-15.723 15.588-15.723 9.095 0 15.59 6.83 15.59 15.723 0 8.888-6.495 15.848-15.59 15.848-9.094 0-15.588-6.96-15.588-15.848zm-71.885-21.782c-4.027 3.996-8.57 10.826-8.57 21.907 0 8.763 2.597 15.984 8.835 21.782 5.583 5.283 12.472 7.857 21.567 7.857 19.616 0 25.984-13.27 27.67-17.396l-14.548-2.314c-2.601 4.507-7.144 7.346-13.122 7.346-6.108 0-9.615-2.969-11.302-5.287-1.82-2.449-2.73-6.055-2.73-9.405h42.092v-1.291c0-6.054-.78-14.817-6.754-21.908-3.901-4.641-10.525-9.148-21.957-9.148-6.758 0-14.552 1.417-21.18 7.857zm21.572 3.224c5.843 0 12.081 3.61 13.382 11.212h-26.639c1.3-7.472 7.409-11.212 13.257-11.212zM174 169v95.24h16.068v-28.872c0-3.265.135-7.319 2.507-10.974 2.368-3.53 5.66-4.964 9.876-4.964 1.578 0 5.004.26 7.507 2.87 2.897 3.01 3.027 7.974 3.027 11.108v30.832h16.073v-35.536c0-5.485-.53-11.104-4.48-15.938-4.476-5.485-11.853-6.925-16.858-6.925-9.22 0-14.62 4.965-17.652 9.149V169H174z" id="a" data-reactid="73"></path></g></svg>
+          </a>
+        </div>
+        <div class="nav-row1-col3">
+          <span class="nav-row1-col3-cola">
+            <a href="">STORIES</a>
+          </span>
+          <span class="nav-row1-col3-colb">
+            <a href="#">RECIPES</a>
+          </span>
+          <span class="nav-row1-col3-colc">
+            <div class="search-container">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" data-reactid="112">
+                <path fill="#000" d="M10.643 9.85L15 14.207l-1.5 1.5-4.484-4.483a6.013 6.013 0 1 1 1.627-1.374zm-4.63.054a3.89 3.89 0 1 0 0-7.782 3.89 3.89 0 0 0 0 7.782z" data-reactid="113"></path>
+              </svg>
+            </div>
+          </span>
+        </div>
+      </div>
+    </nav>
+    
+    <main id="mainContainer" class="carousel-container healthish-main-container">
       <button class="next">Next</button>
       
       <div class="carousel-slideUp">
-        <div class="color lightsalmon">
+        <div class="color lightsalmon card1-col1 col1">
           <a href="#"><img id="card1Image1" class="col1-image" src="" alt="" /></a>
         </div>
-        <div class="color pink">2</div>
+        <div class="color pink card card2">
+          <div class="card2-col1 col1">
+            <div class="card2-col1-container">
+              <div class="card2-col1-text-container">
+                <div class="card2-col1-text">
+                  <p id="card2Category"></p>
+                  <a href="#"><h3 id="card2Title"></h3></a>
+                  <p id="card2Blurb" class="card2-blurb"></p>
+                  <div class="triangle"></div>
+                </div>
+                <div class="card2-col1-image-conatiner">
+                  <a href="#"><img id="card2Image1" class="card2-image" src="" alt=""/></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="color yellow">3</div>
         <div class="color beige">4</div>
         <div class="color lightsalmon">5</div>
@@ -54,7 +103,7 @@
         <div class="color lightgreen">1</div>
       </div>
       
-    </div>
+    </main>
   
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
