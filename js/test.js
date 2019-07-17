@@ -6,6 +6,7 @@ function loadHTML() {
     let title = document.querySelector("#card" + (i + 1) + "Title") 
     let blurb = document.querySelector("#card" + (i + 1) + "Blurb")
     let category = document.querySelector("#card" + (i + 1) + "Category")
+    let card5 = document.querySelector(".card5-col1")
     
     if (image1.parentElement.parentElement.id == "lastClone") {
       image1.setAttribute("src", healthArray[0].image)
@@ -20,6 +21,9 @@ function loadHTML() {
       blurb.innerHTML = healthArray[i].blurb
       category.innerHTML = healthArray[i].category
     }
+    
+    card5.style.backgroundColor = healthArray[4].bgColor1
+    
   }
 }
 
