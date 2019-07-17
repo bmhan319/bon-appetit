@@ -6,7 +6,7 @@ let healthArray = [
    image: "img/BA060119unfiltered.jpg",
    alt: "wine and veggies",
    bgColor1:"",
-   bgColor2:"#ffa67a"
+   bgColor2:"#fee332"
   },
   {index: 14,
    category: "CHEF",
@@ -15,8 +15,8 @@ let healthArray = [
    image: "img/PIKUNICO_KunikoYagi_0024.jpg",
    imageBig: "img/PIKUNICO_KunikoYagi_0024-big.jpg",
    alt: "Kuniko Yagi",
-   bgColor1:"#f4f2e7",
-   bgColor2:"#dedaca"
+   bgColor1:"",
+   bgColor2:""
   },
   {index: 13,
    category: "PROFILE",

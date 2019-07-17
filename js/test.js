@@ -7,6 +7,7 @@ function loadHTML() {
     let blurb = document.querySelector("#card" + (i + 1) + "Blurb")
     let category = document.querySelector("#card" + (i + 1) + "Category")
     let bgColor = document.querySelector("#card" + (i + 1) + "Color")
+    
     let card5 = document.querySelector(".card5-col1")
     let card6Triangle = document.querySelector(".triangle-up")
     
