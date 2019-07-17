@@ -43,7 +43,7 @@ let healthArray = [
    image: "img/Healthyish-Lauren-Friel-Lede.jpg",
    alt: "Lauren Friel",
    bgColor1:"#d1f9f0",
-   bgColor2:""
+   bgColor2:"#d1f9f0"
   },
   {index: 10,
    category: "TRENDS",
@@ -61,7 +61,7 @@ let healthArray = [
    image: "img/HLY-Veggie-Enchilada-Vertical.jpg",
    alt: "veggie enchilada",
    bgColor1:"",
-   bgColor2:""
+   bgColor2:"#fbdc7f"
   },
   {index: 8,
    category: "ESSAY",
@@ -70,7 +70,7 @@ let healthArray = [
    image: "img/HLY-nutrition-school.jpg",
    alt: "nutrition",
    bgColor1:"",
-   bgColor2:""
+   bgColor2:"#dedaca"
   },
   {index: 7,
    category: "RECIPE",
@@ -79,7 +79,7 @@ let healthArray = [
    image: "img/HLY-Asparagus-Vertical.jpg",
    alt: "citrus asparagus stir fry",
    bgColor1:"",
-   bgColor2:""
+   bgColor2:"#fbf0a0"
   },
   {index: 6,
    category: "PRODUCTS",
@@ -88,7 +88,7 @@ let healthArray = [
    image: "img/loves-it-napkins3_lg.jpg",
    alt: "linen napkins",
    bgColor1:"",
-   bgColor2:""
+   bgColor2:"#daf3f5"
   },
   {index: 5,
    category: "RECIPE",
@@ -97,7 +97,7 @@ let healthArray = [
    image: "img/HLY-Fiber-1-Big-rec.jpg",
    alt: "green veggies",
    bgColor1:"",
-   bgColor2:""
+   bgColor2:"#ffa67a"
   },
   {index: 4,
    category: "PRODUCTS",
@@ -106,7 +106,7 @@ let healthArray = [
    image: "img/20190416-STAFF-HEADSHOTS4817.jpg",
    alt: "Kosas Face Oil",
    bgColor1:"",
-   bgColor2:""
+   bgColor2:"#dedaca"
   },
   {index: 3,
    category: "LIFESTYLE",
@@ -115,7 +115,7 @@ let healthArray = [
    image: "img/healthyish-partying-lede.jpg",
    alt: "healthyish partying",
    bgColor1:"",
-   bgColor2:""
+   bgColor2:"#daf3f5"
   },
   {index: 2,
    category: "PROFILE",
@@ -124,7 +124,7 @@ let healthArray = [
    image: "img/HLY-Christina-Lecki.jpg",
    alt: "Christina Lecki",
    bgColor1:"",
-   bgColor2:""
+   bgColor2:"#fbdc7f"
   }
 ]
 

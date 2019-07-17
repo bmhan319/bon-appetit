@@ -6,7 +6,9 @@ function loadHTML() {
     let title = document.querySelector("#card" + (i + 1) + "Title") 
     let blurb = document.querySelector("#card" + (i + 1) + "Blurb")
     let category = document.querySelector("#card" + (i + 1) + "Category")
+    let bgColor = document.querySelector("#card" + (i + 1) + "Color")
     let card5 = document.querySelector(".card5-col1")
+    let card6Triangle = document.querySelector(".triangle-up")
     
     if (image1.parentElement.parentElement.id == "lastClone") {
       image1.setAttribute("src", healthArray[0].image)
@@ -20,9 +22,10 @@ function loadHTML() {
       title.innerHTML = healthArray[i].title
       blurb.innerHTML = healthArray[i].blurb
       category.innerHTML = healthArray[i].category
+      bgColor.style.backgroundColor = healthArray[i].bgColor2
     }
-    
     card5.style.backgroundColor = healthArray[4].bgColor1
+    card6Triangle.style.borderBottom = "10px solid" + healthArray[4].bgColor1
     
   }
 }
