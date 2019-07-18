@@ -275,7 +275,7 @@
     padding-top: 0;
   }
   
-  .type-2col1-text {
+  .cardnl-col1-text {
     display: none;
   }
   
@@ -368,6 +368,76 @@
 
   .card-nl-privacy a {
     color: #4f4b4c;
+  }
+  
+  /* ----- card-sub ----- */
+  .card-sub-col1 {
+    padding-top: 0;
+  }
+  
+  .card-sub-col1-text {
+    display: none;
+  }
+  
+  .card-sub-col1 img {
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    object-position: 50% 50%;
+  }
+
+  .card-sub-col2 {
+    background-color: #faf9f0;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .card-sub-col2-text-container {
+    width: 350;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .card-sub-col2-logo {
+    width: 100%;
+    margin-bottom: 20;
+  }
+
+  .card-sub-col2-logo a img {
+    width: 90%;
+  }
+
+  .card-sub-col2-blurb {
+    width: 100%;
+  }
+
+  .card-sub-col2-blurb p {
+    margin: 0;
+    font-family: 'renner-light', serif;
+    font-weight: normal;
+    font-size: .75em;
+    line-height: 1.4;
+    letter-spacing: 1;
+  }
+
+
+  .card-sub-newsletter {
+    margin: 0 auto;
+    width: 220;
+    border: 1px solid #000;
+    display: flex;
+  }
+
+  .card-sub-submit {
+    width: 100%;
+    height: 44px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 1.95;
+    font-size: .6em;
+    cursor: pointer;
   }
   
   /* ----- Essay Section ----- */

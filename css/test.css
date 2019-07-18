@@ -252,7 +252,8 @@ body {
 }
 
 /* ----- card-nl ----- */
-.cardnl-col1 {
+.cardnl-col1,
+.card-sub-col1{
   position: relative;
   margin: 0;
   padding-top: 88;
@@ -260,19 +261,13 @@ body {
   text-align: center;
 }
 
-.cardnl-col1 img {
+.cardnl-col1 img,
+.card-sub-col1 img{
   width: 70%;
   height: auto;
   object-fit:contain;
   object-position: 0;
 }
-
-
-
-
-
-
-
 
 /* ----- Aside Section ----- */
 .aside-window {
