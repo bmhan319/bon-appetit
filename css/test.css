@@ -147,5 +147,13 @@ body {
 
 /* ----- Next Button ----- */
 .next {
-  display: none;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #000000;
+  background-color: transparent;
+  position: absolute;
+  bottom: 30;
+  right: 30;
 }

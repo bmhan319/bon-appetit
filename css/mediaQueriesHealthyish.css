@@ -1,4 +1,5 @@
 @media only screen and (min-width: 768px) {
+  /* ----- Nav Bar ----- */
   .section-nav {
     background-color: transparent;
   }
@@ -22,5 +23,89 @@
     width: 33.3333%;
     position: relative;
     right: 0;
+  }
+  
+  /* ----- Next Button ----- */
+  .next {
+    background-color: #000;
+    width: 80;
+    height: 80;
+    top: 50%;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    font-size: .65em;
+    font-weight: 300;
+    letter-spacing: 2.5;
+    cursor: pointer;
+    z-index: 100;
+    outline: none;
+  }
+
+  @-webkit-keyframes pulse-single {
+    0%  { width: 80;
+          height: 80;}
+    50% { width:60;
+          height:60;
+          background-color: #333;}
+    100% { width:80;
+          height:80;
+          background-color: #333;}
+  }
+
+  @-moz-keyframes pulse-single {
+    0%  { width: 80;
+          height: 80;}
+    50% { width:60;
+          height:60;
+          background-color: #333;}
+    100% { width:80;
+          height:80;
+          background-color: #333;}
+  }
+
+  @-ms-keyframes pulse-single {
+    0%  { width: 80;
+          height: 80;}
+    50% { width:60;
+          height:60;
+          background-color: #333;}
+    100% { width:80;
+          height:80;
+          background-color: #333;}
+  }
+
+  @-o-keyframes pulse-single {
+    0%  { width: 80;
+          height: 80;}
+    50% { width:60;
+          height:60;
+          background-color: #333;}
+    100% { width:80;
+          height:80;
+          background-color: #333;}
+  }
+
+  @keyframes pulse-single {
+    0%  { width: 80;
+          height: 80;}
+    50% { width:60;
+          height:60;
+          background-color: #333;}
+    100% { width:80;
+          height:80;
+          background-color: #333;}
+  }
+
+  .pulse:active {
+    -webkit-animation: pulse-single .6s 1 ease-in-out;
+    -moz-animation: pulse-single .6s 1 ease-in-out;
+    -ms-animation: pulse-single .6s 1 ease-in-out;
+    -o-animation: pulse-single .6s 1 ease-in-out;
+    animation: pulse-single .6s 1 ease-in-out;
   }
 }
