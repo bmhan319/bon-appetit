@@ -108,4 +108,325 @@
     -o-animation: pulse-single .6s 1 ease-in-out;
     animation: pulse-single .6s 1 ease-in-out;
   }
+  
+  /* ----- Main ----- */
+  .carousel-slideUp {
+    width: 50%;
+  }
+  
+  .carousel-slideDown {
+    display: block;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    top: -1500%;
+  }
+  
+  /* -----Card Type 2 ----- */
+  .type-2col1 {
+    align-items: center;
+    padding-top: 0;
+  }
+  
+  .type-2col1-container {
+    max-width: 440px;
+  }
+  
+  .type-2col1-text p {
+    font-size: .8em;
+  }
+  
+  .type-2col1-text a h3 {
+    font-size: 1em;
+  }
+  
+  .triangle {
+    display: block;
+    margin: 0 auto 32;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff;
+  }
+  
+  /* -----Right Column ----- */
+  /* -----Card Type 3 ----- */
+  .type-3col2 {
+    display: flex;
+    align-items: center;
+  }
+
+  .type-3col2-text-container {
+    width: 350;
+    margin: 0 auto 0 80;
+  }
+
+  .type-3col2-text {
+    width: 100%;
+  }
+
+  .type-3col2-category {
+    display: none;
+  }
+
+  .type-3col2-text a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .type-3col2-text a h1 {
+    font-family: 'grouchregular', serif;
+    font-weight: 500;
+    font-size: 3.1em;
+    margin-top: 0;
+    margin-bottom: 16;
+    line-height: 1.2;
+    letter-spacing: -3;
+  }
+
+  .type-3col2-text a:hover {
+    text-decoration: underline;
+  }
+
+  .type-3col2-blurb-container {
+    width: 60%;
+  }
+
+  .type-3col2-blurb {
+    margin-top: 0;
+    font-family: 'renner', serif;
+    font-weight: bold;
+    font-size: 1.15em;
+    line-height: 1.4;
+  }
+
+  /* -----Card Type 4 ----- */
+  .type-4col2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .type-4col2-container {
+    width: 70%;
+    text-align: center;
+  }
+
+  .type-4col2-text p {
+    font-family: 'renner-light', serif;
+    font-size: .8em;
+    letter-spacing: 1.3;
+    padding-top: 16
+  }
+
+  .type-4col2 a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .type-4col2 a:hover {
+    text-decoration: underline;
+  }
+
+  .type-4col2 a h3 {
+    font-family: 'renner', serif;
+    font-size: 1em;
+    letter-spacing: 1.1;
+    padding: 0 40;
+    line-height: 1.5;
+  }
+
+  .triangle-up {
+    margin: 32 auto 0;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+
+  .type-4col2-blurb {
+    display: none;
+  }
+  
+  /* ----- Card BgColors ----- */
+  /* -----Card 1 ----- */
+  .card1-col2 {
+    background-color: #ffa67a !important;
+  }
+
+  /* -----Card 2 ----- */
+  .type-2col1 {
+    background-color: #f4f2e7;
+  }
+  .type-5col2 {
+    background-color: #dedaca !important;
+  }
+
+  /* -----Card 6 ----- */
+  .type-4col2 {
+    background-color: #fff !important;
+  }
+  
+  /* ----- card-nl ----- */
+  .cardnl-col1 {
+    padding-top: 0;
+  }
+  
+  .type-2col1-text {
+    display: none;
+  }
+  
+  .cardnl-col1 img {
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    object-position: 50% 50%;
+  }
+  
+  .card-nl-col2 {
+    background-color: #fadb7f;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .card-nl-col2-text-container {
+    width: 350;
+    margin: 0 auto 0 80;
+    text-align: center;
+  }
+
+  .card-nl-col2-text {
+    width: 100%;
+  }
+
+  .card-nl-col2-text h1 {
+    font-family: 'grouchregular', serif;
+    font-weight: 500;
+    font-size: 3.3em;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.2;
+    letter-spacing: -3;
+    text-decoration: none;
+    color: #000;
+  }
+  .card-nl-col2-blurb {
+    width: 100%;
+  }
+
+  .card-nl-col2-blurb p {
+    margin: 8 0;
+    font-family: 'renner-light', serif;
+    font-weight: normal;
+    font-size: .75em;
+    line-height: 1.4;
+    letter-spacing: 1;
+  }
+
+  .card-nl-category {
+    display: none;
+  }
+
+  .card-nl-newsletter {
+    margin: 0 auto;
+    width: 250;
+    border: 1px solid #000;
+    display: flex;
+  }
+
+  .card-nl-email {
+    border: none;
+    width: 150;
+    margin: 0;
+    padding: 0 10;
+    height: 44px;
+    letter-spacing: 1.5;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  .card-nl-submit {
+    width: 100;
+    height: 44px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 1.95;
+    font-size: .6em;
+    cursor: pointer;
+  }
+
+  .card-nl-privacy {
+    font-family: 'renner-light', serif;
+    font-size: .6em;
+    margin-top: 8
+  }
+
+  .card-nl-privacy a {
+    color: #4f4b4c;
+  }
+  
+  /* ----- Essay Section ----- */
+  
+  .end-link {
+    position: absolute;
+    bottom: 25;
+    width: 220;
+    padding-left: 32;
+  }
+
+  .end-link p {
+    font-family: 'renner-light', serif;
+    font-weight: normal;
+    font-size: .75em;
+    line-height: 1.4;
+    letter-spacing: 1;
+    padding-bottom: 12;
+  }
+
+  .end-link a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .end-link a:hover {
+    text-decoration: underline;
+  }
+
+  .type1-blurb {
+    margin-top: 0;
+    font-family: 'renner', serif;
+    font-weight: bold;
+    font-size: 1.15em;
+    line-height: 1.4;
+  }
+
+  .triangle-side {
+    position: absolute;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 40px solid transparent;
+    transform: rotate(90deg)
+  }
+
+  .triangle-nl {
+    top: 3090;
+    left: -60;
+    border-top: 40px solid #fadb7f;
+  }
+
+  .triangle-sub {
+    top: 2030;
+    left: -60;
+    border-top: 40px solid #faf9f0;
+  }
 }
+
+
+
+
+

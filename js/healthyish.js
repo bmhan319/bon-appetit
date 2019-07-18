@@ -45,7 +45,7 @@ let counterDown =  15
 let size = carouselImagesUp[0].clientHeight
 
 //Window Resize
-window.addEventListener("resize", ()=>{
+/*window.addEventListener("resize", ()=>{
   size = carouselImagesUp[0].clientHeight
   counter = 0
   counterDown =  15
@@ -53,7 +53,7 @@ window.addEventListener("resize", ()=>{
   carouselSlideDown.style.transition = 'none'
   carouselSlideUp.style.transform = "translateY(" + (-size * counter) + "px)"
   carouselSlideDown.style.transform = "translateY(" + (size * counter) + "px)"
-})
+})*/
 
 
 //Next Button Click Action
