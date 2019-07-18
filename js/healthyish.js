@@ -42,7 +42,12 @@ const carouselImagesDown = document.querySelectorAll(".carousel-slideDown .divs"
 const next = document.querySelector(".next")
 let counter = 0
 let counterDown =  15
-const size = carouselImagesUp[0].clientHeight
+let size = carouselImagesUp[0].clientHeight
+
+//Window Resize
+window.addEventListener("resize", ()=>{
+  size = carouselImagesUp[0].clientHeight
+})
 
 
 //Next Button Click Action
