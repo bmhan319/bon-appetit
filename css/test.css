@@ -160,24 +160,10 @@ body {
   outline: none;
 }
 
-/*
-@keyframes pulse-single {
-  from{ width: 80;
-        height: 80;}
-  to {width:70;
-      height:70;
-      background-color: #333;}
-}
-
-.pulse:active {
-  animation: pulse-single .2s 1 ease-in-out;
-}
-*/
-
 /* ----- Main ------ */
 .carousel-container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   overflow: hidden;
 }
@@ -185,34 +171,18 @@ body {
 .carousel-slideUp {
   display: block;
   width: 50%;
-  height: 100vh;
+  height: 100%;
 }
 
 .carousel-slideDown {
   display: block;
   position: relative;
   width: 50%;
-  height: 100vh;
-  top: -1500vh;
+  height: 100%;
+  top: -1500%;
 }
 
 /* ----- Cards ---- */
-.lightgreen {
-  background-color: lightgreen;
-}
-
-.lightblue {
-  background-color: lightblue;
-}
-
-.lightyellow {
-  background-color: lightyellow;
-}
-
-.lightcyan {
-  background-color: lightcyan;
-}
-
 .divs {
   width: 100%;
   height: 100vh;
@@ -405,4 +375,210 @@ body {
 /* -----Card 6 ----- */
 .type-4col2 {
   background-color: #fff !important;
+}
+
+/* ----- card-nl ----- */
+.cardnl-col1 {
+  position: relative;
+}
+
+.card-nl-col2 {
+  background-color: #fadb7f;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.card-nl-col2-text-container {
+  width: 350;
+  margin: 0 auto 0 80;
+  text-align: center;
+}
+
+.card-nl-col2-text {
+  width: 100%;
+}
+
+.card-nl-col2-text h1 {
+  font-family: 'grouchregular', serif;
+  font-weight: 500;
+  font-size: 3.3em;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.2;
+  letter-spacing: -3;
+  text-decoration: none;
+  color: #000;
+}
+.card-nl-col2-blurb {
+  width: 100%;
+}
+
+.card-nl-col2-blurb p {
+  margin: 8 0;
+  font-family: 'renner-light', serif;
+  font-weight: normal;
+  font-size: .75em;
+  line-height: 1.4;
+  letter-spacing: 1;
+}
+
+.card-nl-category {
+  display: none;
+}
+
+.card-nl-newsletter {
+  margin: 0 auto;
+  width: 250;
+  border: 1px solid #000;
+  display: flex;
+}
+
+.card-nl-email {
+  border: none;
+  width: 150;
+  margin: 0;
+  padding: 0 10;
+  height: 44px;
+  letter-spacing: 1.5;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.card-nl-submit {
+  width: 100;
+  height: 44px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  letter-spacing: 1.95;
+  font-size: .6em;
+  cursor: pointer;
+}
+
+.card-nl-privacy {
+  font-family: 'renner-light', serif;
+  font-size: .6em;
+  margin-top: 8
+}
+
+.card-nl-privacy a {
+  color: #4f4b4c;
+}
+
+/* ----- card-sub ----- */
+.col1-image {
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+  object-position: 50% 50%;
+}
+
+.card-sub-col2 {
+  background-color: #faf9f0;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.card-sub-col2-text-container {
+  width: 350;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card-sub-col2-logo {
+  width: 100%;
+  margin-bottom: 20;
+}
+
+.card-sub-col2-logo a img {
+  width: 90%;
+}
+
+.card-sub-col2-blurb {
+  width: 100%;
+}
+
+.card-sub-col2-blurb p {
+  margin: 0;
+  font-family: 'renner-light', serif;
+  font-weight: normal;
+  font-size: .75em;
+  line-height: 1.4;
+  letter-spacing: 1;
+}
+
+
+.card-sub-newsletter {
+  margin: 0 auto;
+  width: 220;
+  border: 1px solid #000;
+  display: flex;
+}
+
+.card-sub-submit {
+  width: 100%;
+  height: 44px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  letter-spacing: 1.95;
+  font-size: .6em;
+  cursor: pointer;
+}
+
+/* ----- Essay Section ----- */
+
+.end-link {
+  position: absolute;
+  bottom: 25;
+  width: 220;
+  padding-left: 32;
+}
+
+.end-link p {
+  font-family: 'renner-light', serif;
+  font-weight: normal;
+  font-size: .75em;
+  line-height: 1.4;
+  letter-spacing: 1;
+  padding-bottom: 12;
+}
+
+.end-link a {
+  color: #000;
+  text-decoration: none;
+}
+
+.end-link a:hover {
+  text-decoration: underline;
+}
+
+.type1-blurb {
+  margin-top: 0;
+  font-family: 'renner', serif;
+  font-weight: bold;
+  font-size: 1.15em;
+  line-height: 1.4;
+}
+
+.triangle-side {
+  position: absolute;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid transparent;
+  transform: rotate(90deg)
+}
+
+.triangle-nl {
+  top: 3090;
+  left: -60;
+  border-top: 40px solid #fadb7f;
+}
+
+.triangle-sub {
+  top: 2030;
+  left: -60;
+  border-top: 40px solid #faf9f0;
 }
