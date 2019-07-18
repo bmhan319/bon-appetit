@@ -1,0 +1,151 @@
+/* Colors
+Salmon = #ffa67a
+Light Green Grey = #f4f2e7
+Dark Green Grey = #dedaca
+Light Grey(background) = #f8f8f8
+Dark Grey(background) = #e2e1e1
+White(background) = #fff
+Yellow(muted) = #fbdc7f
+Yellow(brighter) = #ffdb00 
+Vanilla = #fbfaf1
+Mint = #d1f9f0
+Light BLue = #daf3f5
+Canary Yellow = #fbf0a0
+
+Blue = #33b8ff
+*/
+@font-face {
+  font-family: 'grouchregular';
+  src: url('../fonts/grouch_regular-webfont.woff2') format('woff2'),
+       url('../fonts/grouch_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'renner';
+  src: url('../fonts/renner-medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'renner-light';
+  src: url('../fonts/renner-light.otf') format('opentype');
+  font-weight: light;
+  font-style: light;
+}
+
+* {
+  font-family: futura-pt,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: #f8f8f8;
+}
+
+/* -----Nav Bar----- */
+.section-nav {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+.nav-row1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.nav-row1-col1 {
+  width: 50;
+  height: 100%;
+  color: #fff;
+}
+
+.hamburger-container {
+  width: 50px;
+  height: 50px;
+  padding: 20px 0 0 16px;
+  cursor: pointer;
+}
+
+.hamburger-row1, 
+.hamburger-row2, 
+.hamburger-row3 {
+  height:4px;
+  width: 15px;
+  border-top: 2px solid #000;
+}
+
+.nav-row1-col2 {
+  width: 150;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 15;
+  z-index: -10;
+}
+
+.nav-logo {
+  height: 40%;
+  width: 100%;
+}
+
+.nav-row1-col3 {
+  width: 200;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+}
+
+.nav-row1-col3-cola,
+.nav-row1-col3-colb {
+  font-size: .60em;
+  font-weight: 400;
+}
+
+.nav-row1-col3-cola {
+  padding-right: 30px;
+}
+
+.nav-row1-col3-cola a,
+.nav-row1-col3-colb a{
+  color: #000;
+  text-decoration: none;
+  letter-spacing: 2.5px;
+}
+
+.nav-row1-col3-cola a:hover,
+.nav-row1-col3-colb a:hover {
+  text-decoration: underline;
+}
+
+.search-container {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* ----- Next Button ----- */
+.next {
+  display: none;
+}

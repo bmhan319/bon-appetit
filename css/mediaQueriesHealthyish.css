@@ -1,0 +1,26 @@
+@media only screen and (min-width: 768px) {
+  .section-nav {
+    background-color: transparent;
+  }
+
+  .nav-row1-col1{
+    width: 33.3333%;
+  }
+  
+  .nav-row1-col2 {
+    width: 33.3333%;
+    position: relative;
+    left: 0;
+    z-index: 0;
+  }
+  
+  .nav-logo {
+    height: 55%;
+  }
+  
+  .nav-row1-col3{
+    width: 33.3333%;
+    position: relative;
+    right: 0;
+  }
+}
