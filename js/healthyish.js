@@ -88,6 +88,8 @@ function fade() {
   if (card.parentElement.id == "lastClone") {
     document.querySelector(".opacity-change0").style.opacity = 1;
     document.querySelector(".opacity2-change0").style.opacity = 1;
+    document.querySelector(".opacity-change15").style.opacity = 0;
+    document.querySelector(".opacity2-change15").style.opacity = 0;
   }
   
   prevCard.style.opacity = 0;
