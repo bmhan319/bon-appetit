@@ -156,12 +156,13 @@
   }
 
   .type-3col2-text-container {
-    width: 350;
-    margin: 0 auto 0 80;
+    width: 250;
+    margin: 0 10 0 70;
   }
 
   .type-3col2-text {
     width: 100%;
+    
   }
 
   .type-3col2-category {
@@ -176,7 +177,7 @@
   .type-3col2-text a h1 {
     font-family: 'grouchregular', serif;
     font-weight: 500;
-    font-size: 3.1em;
+    font-size: 2.1em;
     margin-top: 0;
     margin-bottom: 16;
     line-height: 1.2;
@@ -188,15 +189,15 @@
   }
 
   .type-3col2-blurb-container {
-    width: 60%;
+    width: 80%;
   }
 
   .type-3col2-blurb {
     margin-top: 0;
     font-family: 'renner', serif;
     font-weight: bold;
-    font-size: 1.15em;
-    line-height: 1.4;
+    font-size: .15em;
+    line-height: .5;
   }
 
   /* -----Card Type 4 ----- */
@@ -495,6 +496,28 @@
 }
 
 
+@media only screen and (min-width: 1024px) {
+  .type-3col2-text-container {
+    width: 350;
+  }
+  
+  .type-3col2-text a h1 {
+    font-size: 3.1em;
+  }
 
+  .type-3col2-blurb-container {
+    width: 60%;
+  }
+
+  .type-3col2-blurb {
+    margin-top: 0;
+    font-family: 'renner', serif;
+    font-weight: bold;
+    font-size: 1.15em;
+    line-height: 1.4;
+  }
+
+
+}
 
 
