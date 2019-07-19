@@ -127,7 +127,7 @@
   }
   
   .type-2col1-container {
-    max-width: 440px;
+    max-width: 321px;
   }
   
   .type-2col1-text p {
@@ -196,8 +196,8 @@
     margin-top: 0;
     font-family: 'renner', serif;
     font-weight: bold;
-    font-size: .15em;
-    line-height: .5;
+    font-size: .95em;
+    line-height: 1.25;
   }
 
   /* -----Card Type 4 ----- */
@@ -267,6 +267,10 @@
   /* -----Card 6 ----- */
   .type-4col2 {
     background-color: #fff !important;
+  }
+  
+  .type-4col2-container {
+    width: 85%;
   }
   
   /* ----- card-nl ----- */
@@ -466,7 +470,7 @@
     text-decoration: underline;
   }
 
-  .type1-blurb {
+  .end-link-blurb {
     margin-top: 0;
     font-family: 'renner', serif;
     font-weight: bold;
@@ -510,9 +514,6 @@
   }
 
   .type-3col2-blurb {
-    margin-top: 0;
-    font-family: 'renner', serif;
-    font-weight: bold;
     font-size: 1.15em;
     line-height: 1.4;
   }
