@@ -11,7 +11,7 @@ function loadHTML() {
     let card5 = document.querySelector(".card5-col1")
     let card6Triangle = document.querySelector(".triangle-up")
     
-    if (image1.parentElement.parentElement.id == "lastClone") {
+    if (image1.parentElement.parentElement.parentElement.id == "lastClone") {
       image1.setAttribute("src", healthArray[0].image)
       image1.setAttribute("alt", healthArray[0].alt)
       title.innerHTML = healthArray[0].title
@@ -58,21 +58,25 @@ window.addEventListener("resize", ()=>{
 
 //Next Button Click Action
 next.addEventListener('click',()=>{
-  //let card = document.querySelector(".card" + (counter + 1) + "-col1")
-  let card = document.querySelector(".card2-col1-container")
-  console.log(card)
+  let card = document.querySelector(".opacity-change" + (counter + 1) )
+  let card2 = document.querySelector(".opacity2-change" + (counter + 1) )
+
   if (counter >= carouselImagesUp.length -1) {
     return
   }
-  console.log("before:" + counter)
+
   card.style.opacity = 1;
-  
+  card2.style.opacity = 1;
   
   carouselSlideUp.style.transition = 'transform 0.4s linear'
   carouselSlideDown.style.transition = 'transform 0.4s linear'
+  
   counter++
   counterDown--
+  
   console.log("after:" + counter)
+  console.log("after:" + counterDown)
+  
   carouselSlideUp.style.transform = "translateY(" + (-size * counter) + "px)"
   carouselSlideDown.style.transform = "translateY(" + (size * counter) + "px)"
 })

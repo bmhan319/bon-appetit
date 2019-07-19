@@ -210,8 +210,6 @@ body {
 
 .type-2col1-container {
   width: 100%;
-  opacity: 0;
-  transition: opacity 0s ease-in .4s;
 }
 
 .type-2col1-text {
@@ -454,4 +452,41 @@ body {
 .aside-social-img {
   width: 15;
   height: 15;
+}
+
+/* ----- Slideshow Opacity Change ----- */
+.opacity-change1,
+.opacity-change2,
+.opacity-change3,
+.opacity-change4,
+.opacity-change5,
+.opacity-change6,
+.opacity-change7,
+.opacity-change8,
+.opacity-change9,
+.opacity-change10,
+.opacity-change11,
+.opacity-change12,
+.opacity-change13,
+.opacity-change14,
+.opacity-change15,
+.opacity2-change1,
+.opacity2-change2,
+.opacity2-change3,
+.opacity2-change4,
+.opacity2-change5,
+.opacity2-change6,
+.opacity2-change7,
+.opacity2-change8,
+.opacity2-change8,
+.opacity2-change8,
+.opacity2-change9,
+.opacity2-change10,
+.opacity2-change11,
+.opacity2-change12,
+.opacity2-change13,
+.opacity2-change14,
+.opacity2-change15 {
+  opacity: 0;
+  transition: opacity .1s ease-in .4s;
 }
