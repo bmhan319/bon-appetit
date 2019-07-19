@@ -25,7 +25,7 @@
     right: 0;
   }
   
-  /* ----- Next Button ----- */
+  /* ----- Next Button ----- */  
   .next {
     background-color: #000;
     width: 80;
@@ -41,9 +41,7 @@
     font-size: .65em;
     font-weight: 300;
     letter-spacing: 2.5;
-    cursor: pointer;
     z-index: 100;
-    outline: none;
   }
 
   @-webkit-keyframes pulse-single {
@@ -484,13 +482,13 @@
   }
 
   .triangle-nl {
-    top: 3075;
+    top: 3080;
     left: -60;
     border-top: 40px solid #fadb7f;
   }
 
   .triangle-sub {
-    top: 2025;
+    top: 2030;
     left: -60;
     border-top: 40px solid #faf9f0;
   }
