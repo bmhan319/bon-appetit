@@ -294,6 +294,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    overflow: visible;
   }
 
   .card-nl-col2-text-container {
@@ -394,6 +395,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    overflow: visible;
   }
 
   .card-sub-col2-text-container {
@@ -477,27 +479,25 @@
     font-size: 1.15em;
     line-height: 1.4;
   }
-
+  
   .triangle-side {
     position: absolute;
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;
     border-top: 40px solid transparent;
-    transform: rotate(90deg)
-  }
-
-  .triangle-nl {
-    top: 3080;
+    transform: rotate(90deg);
+    bottom: 55;
     left: -60;
-    border-top: 40px solid #fadb7f;
-  }
-
-  .triangle-sub {
-    top: 2030;
-    left: -60;
-    border-top: 40px solid #faf9f0;
   }
   
+  .triangle-nl {
+    border-top: 40px solid #fadb7f;
+  }
+  
+  .triangle-sub {
+    border-top: 40px solid #faf9f0;
+  }
+
   /* ----- Aside ----- */
   .aside-window {
     width: 320px;
