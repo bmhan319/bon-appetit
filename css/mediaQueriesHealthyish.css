@@ -497,6 +497,12 @@
     left: -60;
     border-top: 40px solid #faf9f0;
   }
+  
+  /* ----- Aside ----- */
+  .aside-window {
+    width: 320px;
+    left: -320px;
+  }
 }
 
 
