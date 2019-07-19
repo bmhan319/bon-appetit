@@ -58,13 +58,21 @@ window.addEventListener("resize", ()=>{
 
 //Next Button Click Action
 next.addEventListener('click',()=>{
+  //let card = document.querySelector(".card" + (counter + 1) + "-col1")
+  let card = document.querySelector(".card2-col1-container")
+  console.log(card)
   if (counter >= carouselImagesUp.length -1) {
     return
   }
+  console.log("before:" + counter)
+  card.style.opacity = 1;
+  
+  
   carouselSlideUp.style.transition = 'transform 0.4s linear'
   carouselSlideDown.style.transition = 'transform 0.4s linear'
   counter++
   counterDown--
+  console.log("after:" + counter)
   carouselSlideUp.style.transform = "translateY(" + (-size * counter) + "px)"
   carouselSlideDown.style.transform = "translateY(" + (size * counter) + "px)"
 })
