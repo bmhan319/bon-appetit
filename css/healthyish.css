@@ -491,5 +491,5 @@ body {
 
 .opacity-change0,
 .opacity2-change0 {
-  opacity: 1 !important;
+  transition: opacity .1s ease-in .4s;
 }

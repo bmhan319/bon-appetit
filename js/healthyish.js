@@ -58,21 +58,11 @@ window.addEventListener("resize", ()=>{
 
 //Next Button Click Action
 next.addEventListener('click',()=>{
-  let card = document.querySelector(".opacity-change" + (counter + 1) )
-  let card2 = document.querySelector(".opacity2-change" + (counter + 1) )
-  let prevCard = document.querySelector(".opacity-change" + (counter) )
-  let prevCard2 = document.querySelector(".opacity2-change" + (counter) )
-
-  
-  
   if (counter >= carouselImagesUp.length -1) {
     return
   }
-
-  card.style.opacity = 1;
-  card2.style.opacity = 1;
-  prevCard.style.opacity = 0;
-  prevCard2.style.opacity = 0;
+  
+  fade()
   
   carouselSlideUp.style.transition = 'transform 0.4s linear'
   carouselSlideDown.style.transition = 'transform 0.4s linear'
@@ -80,12 +70,30 @@ next.addEventListener('click',()=>{
   counter++
   counterDown--
   
-  console.log("after:" + counter)
-  console.log("after:" + counterDown)
-  
   carouselSlideUp.style.transform = "translateY(" + (-size * counter) + "px)"
   carouselSlideDown.style.transform = "translateY(" + (size * counter) + "px)"
 })
+
+
+// Divs Fade in during slideshow
+function fade() {
+  let card = document.querySelector(".opacity-change" + (counter + 1) )
+  let card2 = document.querySelector(".opacity2-change" + (counter + 1) )
+  let prevCard = document.querySelector(".opacity-change" + (counter) )
+  let prevCard2 = document.querySelector(".opacity2-change" + (counter) )
+  
+  card.style.opacity = 1;
+  card2.style.opacity = 1;
+  
+  if (card.parentElement.id == "lastClone") {
+    document.querySelector(".opacity-change0").style.opacity = 1;
+    document.querySelector(".opacity2-change0").style.opacity = 1;
+  }
+  
+  prevCard.style.opacity = 0;
+  prevCard2.style.opacity = 0;
+}
+
 
 
 //Looping slideshow around to first slide
