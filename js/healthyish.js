@@ -60,13 +60,19 @@ window.addEventListener("resize", ()=>{
 next.addEventListener('click',()=>{
   let card = document.querySelector(".opacity-change" + (counter + 1) )
   let card2 = document.querySelector(".opacity2-change" + (counter + 1) )
+  let prevCard = document.querySelector(".opacity-change" + (counter) )
+  let prevCard2 = document.querySelector(".opacity2-change" + (counter) )
 
+  
+  
   if (counter >= carouselImagesUp.length -1) {
     return
   }
 
   card.style.opacity = 1;
   card2.style.opacity = 1;
+  prevCard.style.opacity = 0;
+  prevCard2.style.opacity = 0;
   
   carouselSlideUp.style.transition = 'transform 0.4s linear'
   carouselSlideDown.style.transition = 'transform 0.4s linear'

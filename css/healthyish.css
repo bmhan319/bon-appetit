@@ -478,8 +478,6 @@ body {
 .opacity2-change6,
 .opacity2-change7,
 .opacity2-change8,
-.opacity2-change8,
-.opacity2-change8,
 .opacity2-change9,
 .opacity2-change10,
 .opacity2-change11,
@@ -489,4 +487,9 @@ body {
 .opacity2-change15 {
   opacity: 0;
   transition: opacity .1s ease-in .4s;
+}
+
+.opacity-change0,
+.opacity2-change0 {
+  opacity: 1 !important;
 }
