@@ -105,6 +105,7 @@ body {
 
 .img {
   width: 100%;
+  vertical-align: top;
 }
 
 .header {
@@ -255,6 +256,7 @@ body {
 .video2,
 .video2-tn {
   width: 100%;
+  vertical-align: top;
 }
 
 .video1-on,
@@ -734,15 +736,9 @@ body {
   list-style: none;
 }
 
-.aside-menu a {
-  width: 100%;
-  text-decoration: none;
-  color: #000;
-  background-color: #f8f8f8;
-}
-
 .aside-menu-item,
 .aside-menu-item-last {
+  background-color: #f8f8f8;
   padding: 0;
   margin: 0;
   height: 60px;
@@ -762,6 +758,16 @@ body {
 .aside-menu-item:hover,
 .aside-menu-item-last:hover {
   background-color: #ffdb00;
+}
+
+.aside-menu-item a,
+.aside-menu-item-last a {
+  width: 100%;
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .aside-bottom {
