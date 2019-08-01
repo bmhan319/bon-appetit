@@ -1,0 +1,348 @@
+/* dynamic basic css */
+.AR_14.ob-widget .ob-widget-items-container {
+  margin: 0;
+  padding: 0;
+}
+.AR_14.ob-widget .ob-widget-items-container .ob-clearfix {
+  display: block;
+  width: 100%;
+  float: none;
+  clear: both;
+  height: 0px;
+  line-height: 0px;
+  font-size: 0px;
+}
+.AR_14.ob-widget .ob-widget-items-container.ob-multi-row {
+  padding-top: 2%;
+}
+.AR_14.ob-widget .ob-dynamic-rec-container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.AR_14.ob-widget .ob-dynamic-rec-link,
+.AR_14.ob-widget .ob-dynamic-rec-link:hover {
+  text-decoration: none;
+}
+.AR_14.ob-widget .ob-rec-image-container .ob-video-icon-container {
+  position: absolute;
+  left: 0;
+  height: 30%;
+  width: 100%;
+  text-align: center;
+  top: 35%;
+}
+.AR_14.ob-widget .ob-rec-image-container .ob-video-icon {
+  display: inline-block;
+  height: 100%;
+  float: none;
+  opacity: 0.7;
+  transition: opacity 500ms;
+}
+.AR_14.ob-widget .ob-rec-image-container .ob-video-icon:hover {
+  opacity: 1;
+}
+.AR_14.ob-widget .ob-rec-image-container .ob-rec-rtb-image {
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.AR_14.ob-widget .ob_what {
+  direction: ltr;
+  clear: both;
+  padding: 5px 10px 0px;
+}
+.AR_14 .ob_what a:after {
+  content: "";
+  vertical-align: text-bottom;
+  margin-left: 5px;
+  background-image: url("#");
+  background-size: 75% 75%;
+  width: 12px;
+  height: 12px;
+  padding-left: 4px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: right center;
+  border-left: 1px solid #999;
+}
+.AR_14.ob-widget .ob_what a {
+  color: #999;
+  font-size: 11px;
+  font-family: arial;
+  text-decoration: none;
+}
+.AR_14.ob-widget .ob_what.ob-hover:hover a {
+  text-decoration: underline;
+}
+.AR_14.ob-widget .ob_amelia,
+.AR_14.ob-widget .ob_logo,
+.AR_14.ob-widget .ob_feed_logo,
+.AR_14.ob-widget .ob_sfeed_logo,
+.AR_14.ob-widget .ob_text_logo {
+  vertical-align: baseline !important;
+  display: inline-block;
+  vertical-align: text-bottom;
+  padding: 0px 5px;
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+}
+.AR_14.ob-widget .ob_amelia {
+  background: url("https://widgets.outbrain.com/images/widgetIcons/ob_logo_16x16.png")
+    no-repeat center top;
+  width: 16px;
+  height: 16px;
+  margin-bottom: -2px;
+}
+.AR_14.ob-widget .ob_logo {
+  background: url("https://widgets.outbrain.com/images/widgetIcons/ob_logo_67x12.png")
+    no-repeat center top;
+  width: 67px;
+  height: 12px;
+}
+.AR_14.ob-widget .ob_text_logo {
+  background: url("https://widgets.outbrain.com/images/widgetIcons/ob_text_logo_67x22.png")
+    no-repeat center top;
+  width: 67px;
+  height: 22px;
+}
+.AR_14.ob-widget .ob_feed_logo {
+  background: url("https://widgets.outbrain.com/images/widgetIcons/ob_feed_logo.png")
+    no-repeat center top;
+  width: 86px;
+  height: 23px;
+}
+.AR_14.ob-widget .ob_sfeed_logo {
+  background: url("https://widgets.outbrain.com/images/widgetIcons/ob_smartFeedLogo.min.svg")
+    no-repeat center top;
+  width: 140px;
+  height: 21px;
+}
+.AR_14.ob-widget .ob_sphere_logo {
+  background: url("https://widgets.outbrain.com/images/widgetIcons/ob_sphere.svg")
+    no-repeat center top;
+  width: 93px;
+  height: 27px;
+  vertical-align: baseline !important;
+  display: inline-block;
+  vertical-align: text-bottom;
+  padding: 0px 0px;
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+  .AR_14.ob-widget .ob_amelia {
+    background: url("https://widgets.outbrain.com/images/widgetIcons/ob_logo_16x16@2x.png")
+      no-repeat center top;
+    width: 16px;
+    height: 16px;
+    margin-bottom: -2px;
+    background-size: 16px 32px;
+  }
+  .AR_14.ob-widget .ob_logo {
+    background: url("https://widgets.outbrain.com/images/widgetIcons/ob_logo_67x12@2x.png")
+      no-repeat center top;
+    width: 67px;
+    height: 12px;
+    background-size: 67px 24px;
+  }
+  .AR_14.ob-widget .ob_text_logo {
+    background: url("https://widgets.outbrain.com/images/widgetIcons/ob_text_logo_67x22@2x.png")
+      no-repeat center top;
+    width: 67px;
+    height: 20px;
+    background-size: 67px 40px;
+  }
+  .AR_14.ob-widget .ob_feed_logo {
+    background: url("https://widgets.outbrain.com/images/widgetIcons/ob_feed_logo@2x.png")
+      no-repeat center top;
+    width: 86px;
+    height: 23px;
+    background-size: 86px 23px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .AR_14.ob-widget .ob_sfeed_logo {
+    width: 90px;
+    height: 20px;
+    background-size: 90px 20px;
+  }
+}
+
+.AR_14.ob-widget:hover .ob_amelia,
+.AR_14.ob-widget:hover .ob_logo,
+.AR_14.ob-widget:hover .ob_text_logo {
+  background-position: center bottom;
+}
+.AR_14.ob-widget {
+  position: relative;
+}
+.AR_14.ob-widget .ob_what {
+  position: absolute;
+  top: 5px;
+  right: 0px;
+}
+.AR_14.ob-widget .ob_what {
+  text-align: right;
+}
+.AR_14.ob-widget .ob-rec-image-container .ob-rec-image {
+  display: block;
+}
+
+/* dynamic strip css */
+.AR_14.ob-widget .ob-rec-image-container {
+  position: relative;
+}
+.AR_14.ob-widget .ob-rec-image-container .ob-image-ratio {
+  height: 0px;
+  line-height: 0px;
+  padding-top: 56.666666666666664%;
+}
+.AR_14.ob-widget .ob-rec-image-container img.ob-rec-image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 750ms;
+}
+.AR_14.ob-widget .ob-rec-image-container img.ob-show {
+  opacity: 1;
+}
+.AR_14.ob-widget .ob-rec-image-container .ob-rec-label {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 0px 3px;
+  background-color: #666;
+  color: white;
+  font-size: 10px;
+  line-height: 15px;
+}
+.AR_14.ob-widget {
+  width: auto;
+  min-width: 360px;
+}
+.AR_14.ob-widget .ob-dynamic-rec-container {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 50px;
+  width: 31.8%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.AR_14.ob-widget .ob-unit.ob-rec-brandName,
+.AR_14.ob-widget .ob-unit.ob-rec-brandLogo-container,
+.AR_14.ob-widget .ob-rec-brandLogoAndName {
+  display: inline-block;
+}
+.AR_14.ob-widget .ob-rec-brandLogo {
+  width: 20px;
+  height: 20px;
+}
+.AR_14.ob-widget .ob-rec-brandName {
+  vertical-align: bottom;
+}
+.AR_14.ob-widget .ob-unit.ob-rec-brandName {
+  vertical-align: super;
+}
+.AR_14.ob-widget .ob-widget-items-container {
+  direction: ltr;
+}
+.AR_14.ob-widget .ob-dynamic-rec-container {
+  margin-left: 0;
+}
+.AR_14.ob-widget .ob-dynamic-rec-container ~ .ob-dynamic-rec-container {
+  margin: 0 0 0 2.3%;
+}
+.AR_14.ob-widget .ob-widget-header {
+  direction: ltr;
+}
+.AR_14.ob-widget .ob-unit {
+  display: block;
+}
+.AR_14.ob-widget .ob-rec-text {
+  max-height: 60px;
+  overflow: hidden;
+  font-weight: bold;
+}
+.AR_14.ob-widget .ob-rec-source {
+}
+.AR_14.ob-widget .ob-rec-date {
+  font-weight: bold;
+}
+
+/* dynamic customized css */
+.AR_14.ob-strip-layout .ob-widget-header {
+  font-family: inherit;
+  font-size: 19px;
+  color: #212121;
+  padding-bottom: 20px;
+  padding-top: 25px;
+}
+.AR_14.ob-strip-layout .ob-dynamic-rec-container {
+  max-width: 240px;
+}
+.AR_14.ob-strip-layout .ob-rec-text {
+  font-family: inherit;
+  color: #212121;
+  padding: 0px 0 0px;
+  text-align: left;
+  line-height: 1.25;
+  font-size: 16px;
+}
+.AR_14.ob-strip-layout .ob-rec-text:hover {
+  color: #212121;
+}
+.AR_14.ob-strip-layout .ob-rec-source {
+  font-family: inherit;
+  color: #000;
+  padding: 15px 0 10px;
+  text-align: left;
+  font-size: 12px;
+}
+.AR_14.ob-strip-layout .ob-rec-date {
+  font-family: inherit;
+  color: black;
+  padding: 0px 0 0px;
+  text-align: left;
+  font-size: 12px;
+}
+.AR_14.ob-strip-layout .ob-rec-author {
+  font-family: inherit;
+  color: black;
+  padding: 0px 0 0px;
+  text-align: left;
+  font-size: 12px;
+}
+.AR_14.ob-strip-layout .ob-rec-description {
+  font-family: inherit;
+  color: black;
+  padding: 0px 0 0px;
+  text-align: left;
+  font-size: 12px;
+}
+.AR_14.ob-strip-layout .ob-rec-brandName {
+  font-family: inherit;
+  padding: 0px 0 0px;
+  line-height: 1.25;
+  font-size: 13px;
+  font-weight: 400;
+}
+.AR_14.ob-strip-layout .ob-rec-brandLogo {
+  width: 20px;
+  height: 20px;
+}

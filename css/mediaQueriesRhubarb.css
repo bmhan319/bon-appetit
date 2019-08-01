@@ -3,7 +3,7 @@
   .hamburger-container {
     padding: 20px 0 0 16px;
   }
-  
+
   .nav-row1-col3 {
     width: 33.3333%;
     height: 100%;
@@ -11,14 +11,14 @@
     align-items: center;
     justify-content: flex-end;
   }
-  
+
   .nav-row1-col3-colb {
     display: flex;
-    font-size: .60em;
+    font-size: 0.6em;
     font-weight: 400;
   }
-  
-  .subscribe-text{
+
+  .subscribe-text {
     color: #fff;
     text-decoration: none;
     letter-spacing: 2.5px;
@@ -27,24 +27,24 @@
   .nav-row1-col3-colb a:hover {
     text-decoration: underline;
   }
-  
+
   /* ----- Section Title ----- */
   .title-row1 {
-    margin: 52 0 16;
+    margin: 52px 0 16px;
   }
 
   .title-header {
-    margin-bottom: 28;
+    margin-bottom: 28px;
   }
 
   .title-blurb {
-    margin: 36 0 0;
+    margin: 36px 0 0;
   }
 
   .social-container {
-    margin: 38 auto 36 auto;
-    width: 200;
-    height: 40;
+    margin: 38px auto 36px auto;
+    width: 200px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,34 +52,34 @@
 
   /* ----- Section Main Image ----- */
   .main-image-caption {
-    padding: 12 0 24 16;
+    padding: 12px 0 24px 16px;
   }
-  
+
   /* ----- Section Article ----- */
   .section-article p {
-    font-size: 1.30em;
-    line-height: 1.55;
+    font-size: 1.3em;
+    line-height: 1.55em;
   }
 
   .article-end {
-    padding: 18 0;
+    padding: 18px 0;
   }
-  
+
   .ads {
-    margin-bottom: 180;
+    margin-bottom: 180px;
   }
-  
+
   /* ----- Section ReadMore ----- */
-  .readmore-title{
-    padding: 14 0;
+  .readmore-title {
+    padding: 14px 0;
   }
 
   .readmore-row1,
-  .readmore-row2{
+  .readmore-row2 {
     display: flex;
   }
 
-  .readmore-col::after{
+  .readmore-col::after {
     margin-top: -100px;
     height: 100px;
   }
@@ -94,53 +94,53 @@
   }
 
   .readmore-text-container {
-    height: 214;
+    height: 214px;
     width: 100%;
   }
 
-  .readmore-header{
-    margin: 4 auto 0;
+  .readmore-header {
+    margin: 4px auto 0;
   }
 
-  .readmore-article-title{
+  .readmore-article-title {
     height: 50%;
-    margin: 12 0 0;
-    padding: 0 48;
+    margin: 12px 0 0;
+    padding: 0 48px;
   }
 
-  .readmore-author{
-    margin:24 0 0;
-    padding: 0 48;
+  .readmore-author {
+    margin: 24px 0 0;
+    padding: 0 48px;
   }
-  
+
   /* ----- Footer ----- */
-  
+
   .footer-row1-co1 p {
     width: 100%;
-    padding: 0 48;
+    padding: 0 48px;
   }
-  
+
   .footer-social-container {
-    margin: 48 auto 44;
+    margin: 48px auto 44px;
   }
 
   .footer-row2 {
     display: flex;
-    padding: 0 100;
+    padding: 0 100px;
   }
-  
+
   .footer-row2-co2,
   .footer-row2-co3 {
     width: 50%;
   }
-  
+
   .footer-more-container {
-    margin-bottom: 24;
+    margin-bottom: 24px;
   }
 
   .footer-row2-co2 h3,
   .footer-row2-co3 h3 {
-    cursor:text;
+    cursor: text;
   }
 
   .footer-row2-co2 h3:hover,
@@ -149,35 +149,35 @@
   }
 
   .triangle-container {
-    display:none;
+    display: none;
   }
 
   .footer-row2-co2 ul,
-  .footer-row2-co3 ul{
+  .footer-row2-co3 ul {
     display: block;
   }
-  
+
   .footer-row2-co2 ul li,
   .footer-row2-co3 ul li {
-    margin: 0 0 40 0;
+    margin: 0 0 40px 0;
   }
 
   .footer-line {
-    margin: 0 100 0;
+    margin: 0 100px 0;
   }
 
   ul.footer-row3-co1 {
-    margin-bottom: 20;
+    margin-bottom: 20px;
   }
 
   .footer-row3-co1 li {
     display: inline;
   }
-  
+
   .vertical-line::after {
     content: " | ";
-    padding-right: 8;
-    padding-left: 8;
+    padding-right: 8px;
+    padding-left: 8px;
   }
 
   .footer-row3-co2 {
@@ -185,26 +185,26 @@
     text-align: center;
   }
 
-  .footer-row3-co2 p{
+  .footer-row3-co2 p {
     margin: 0;
     font-weight: 300;
-    font-size: .75em;
-    letter-spacing: 2.5;
+    font-size: 0.75em;
+    letter-spacing: 2.5px;
   }
 
   .footer-row4 {
-    padding: 10 100;
+    padding: 10px 100px;
     text-align: center;
   }
 
   .footer-row4 p {
-    padding: 8 0 28;
+    padding: 8px 0 28px;
     font-weight: 300;
-    font-size: .5em;
-    letter-spacing: 1;
-    line-height: 2;
+    font-size: 0.5em;
+    letter-spacing: 1px;
+    line-height: 2em;
   }
-  
+
   /* ----- Bottom Card ----- */
   .section-bottom-card {
     width: 100%;
@@ -217,15 +217,15 @@
 
   .visible {
     opacity: 1;
-    height: 190;
-    transition: all .075s linear;
+    height: 190px;
+    transition: all 0.075s linear;
   }
 
   .invisible {
     opacity: 0;
     height: 0;
     overflow: hidden;
-    transition: all .075s linear;
+    transition: all 0.075s linear;
   }
 
   .slideUp {
@@ -233,7 +233,7 @@
   }
 
   .slideDown {
-    bottom: -190;
+    bottom: -190px;
   }
 
   .bottom-card-row1 {
@@ -242,19 +242,19 @@
     height: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
   }
 
-  .bottom-card-image-container{
-    width: 130;
-    height: 190;
-    margin-top:50;
+  .bottom-card-image-container {
+    width: 130px;
+    height: 190px;
+    margin-top: 50px;
   }
 
-  .bottom-card-text-container{
-    width: 170;
-    height: 1;
-    padding: 10 0 10 0;  
+  .bottom-card-text-container {
+    width: 170px;
+    height: 1px;
+    padding: 10px 0;
   }
 
   .bottom-card-image {
@@ -263,43 +263,43 @@
 
   .bottom-card-header {
     color: #000;
-    font-size: .65em;
+    font-size: 0.65em;
     font-weight: 500;
-    letter-spacing: 1.5;
+    letter-spacing: 1.5px;
   }
 
   .bottom-card-title {
     color: #000;
     text-decoration: none;
-    font-size: .80em;
+    font-size: 0.5em;
     font-weight: 700;
-    line-height: 1.5;
+    line-height: 1.5em;
   }
 
   .bottom-card-author {
     color: #000;
-    font-size: .65em;
+    font-size: 0.65em;
     font-weight: 500;
-    letter-spacing: 1.5;
-    line-height: 1.5;
+    letter-spacing: 1.5px;
+    line-height: 1.5em;
   }
 
   .bottom-card-close {
     position: absolute;
-    right: -50;
-    top: 10;
+    right: -50px;
+    top: 10px;
     cursor: pointer;
   }
 
   .bottom-card-close svg {
-    width: 32;
-    height: 32;
+    width: 32px;
+    height: 32px;
   }
 
-  .icon-close:hover > path{
+  .icon-close:hover > path {
     fill: #f8f8f8;
   }
-  
+
   .bottom-card-col3,
   .bottom-card-col4 {
     display: none;
@@ -309,73 +309,77 @@
 @media only screen and (min-width: 1024px) {
   .title-text-container {
     width: 50%;
-    margin-bottom: 36;
+    margin-bottom: 36px;
   }
 
   .title-text {
     font-weight: 700;
     font-size: 2.6em;
-    line-height: 1.25;
+    line-height: 1.25em;
   }
-  
+
   .social-container {
     display: none;
   }
-  
+
   .main-image-caption {
-    padding: 12 0 24 32;
+    padding: 12px 0 24px 32px;
   }
-  
+
   .section-article {
     padding: 0 0 0 11%;
     width: 55%;
   }
 
   /* ----- Section ReadMore ----- */
-  .readmore-col::after{
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #000 100%);
+  .readmore-col::after {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0,
+      #000 100%
+    );
     margin-top: -200px;
     height: 200px;
   }
 
   .readmore-col:hover::after {
     margin-top: -125px;
-    height:  125px;
+    height: 125px;
   }
 
   .readmore-text-container {
     position: relative;
-    height: 280;
-    width: 400;
+    height: 280px;
+    width: 400px;
   }
 
-  .readmore-header{
-    margin: 68 auto 0;
+  .readmore-header {
+    margin: 68px auto 0;
   }
 
-  .readmore-article-title{
-    margin: 20 0 0;
+  .readmore-article-title {
+    margin: 20px 0 0;
   }
-  
-  .readmore-author{
-    margin: -20 0 0;
+
+  .readmore-author {
+    margin: -20px 0 0;
   }
-  
+
   /* ----- Footer ----- */
   .section-footer {
-    margin-top: 132;
+    margin-top: 132px;
     padding: 0 4%;
     border: 2px solid #000;
   }
-  
+
   .footer-first-section-container {
     display: flex;
   }
 
   .footer-row1,
-  .footer-row2{
+  .footer-row2 {
     width: 50%;
-    padding: 52 0 0 0; 
+    padding: 52px 0 0 0;
   }
 
   .footer-row1-co1,
@@ -383,27 +387,27 @@
     width: 100%;
     text-align: left;
   }
-  
+
   .footer-row1-co1 img {
-    width: 140;
-    padding: 0 0 0 0;
+    width: 140px;
+    padding: 0;
   }
 
   .footer-row1-co1 p {
     width: 70%;
     margin: 0;
-    padding: 24 0 0 0;
+    padding: 24px 0 0 0;
   }
-  
+
   .footer-social-container {
-    margin: 52 0 40 0;
+    margin: 52px 0 40px 0;
   }
 
   .footer-row2-co2,
   .footer-row2-co3 {
     width: 50%;
   }
-  
+
   .footer-more-container {
     display: block;
     margin-bottom: 0;
@@ -411,27 +415,27 @@
 
   .footer-row2-co2 h3,
   .footer-row2-co3 h3 {
-    margin: 12 0 0 0 ;
+    margin: 12px 0 0 0;
   }
 
   .footer-row2-co2 ul,
-  .footer-row2-co3 ul{
+  .footer-row2-co3 ul {
     display: block;
     text-align: left;
   }
 
   .footer-row2-co2 ul li,
   .footer-row2-co3 ul li {
-    margin: 0 0 24 0;
+    margin: 0 0 24px 0;
   }
 
   .footer-line {
-    margin: 8 0 6;
+    margin: 8px 0 6px;
   }
 
   .footer-row3 {
     width: 100%;
-    margin: 44 0 0;
+    margin: 44px 0 0;
     display: flex;
   }
 
@@ -441,7 +445,7 @@
   }
 
   .footer-row3-co1 li {
-    margin-bottom: 48;
+    margin-bottom: 48px;
   }
 
   .footer-row3-co2 {
@@ -449,7 +453,7 @@
     padding-right: 0;
   }
 
-  .footer-row3-co2 p{
+  .footer-row3-co2 p {
     text-align: right;
   }
 
@@ -458,7 +462,7 @@
   }
 
   .footer-row4 p {
-    padding: 0 0 24;
+    padding: 0 0 24px;
     text-align: left;
   }
 
@@ -466,15 +470,15 @@
 
   .section-aside {
     position: absolute;
-    top: 50;
-    left:0;
+    top: 50px;
+    left: 0;
     display: block;
   }
 
   .aside-container {
     position: relative;
-    width:56;
-    height: 168;
+    width: 56px;
+    height: 168px;
   }
 
   .aside-fb,
@@ -486,15 +490,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background .15s ease-in;
+    transition: background 0.15s ease-in;
   }
 
   .icon-twitter {
-    width: 18;
+    width: 18px;
   }
 
   .icon-email {
-    width: 32;
+    width: 32px;
   }
 
   .aside-fb:hover,
@@ -502,27 +506,26 @@
   .aside-email:hover {
     background-color: #ffdb00;
   }
-  
+
   /* ----- Bottom Card ----- */
   .visible {
-    height:200;
+    height: 200px;
   }
-  
+
   .bottom-card-row1 {
     height: 100%;
   }
 
-  .bottom-card-image-container{
-    width: 80;
+  .bottom-card-image-container {
+    width: 80px;
   }
-  
+
   .bottom-card-image {
     width: 100%;
   }
-  
+
   .bottom-card-col3,
   .bottom-card-col4 {
     display: block;
-  
+  }
 }
-
