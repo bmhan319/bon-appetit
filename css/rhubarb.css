@@ -528,6 +528,7 @@ body {
 
 .footer-row2-co2 ul,
 .footer-row2-co3 ul {
+  padding: 0;
   padding-top: 10px;
   text-align: center;
   display: none;
