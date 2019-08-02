@@ -10,13 +10,13 @@
 
   .nav-row1-col2 {
     width: 33.3333%;
-    position: relative;
-    left: 0;
     z-index: 0;
+    text-align: center;
   }
 
   .nav-logo {
-    height: 55%;
+    width: 44%;
+    max-width: 245px;
   }
 
   .nav-row1-col3 {
