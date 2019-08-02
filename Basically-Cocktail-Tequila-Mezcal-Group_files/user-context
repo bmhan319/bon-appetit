@@ -1,5 +1,0 @@
-try {
-document.cookie = "CN_segments=; expires=Wed, 05 May 2021 19:53:50 GMT; path=/";
-console.log("BAD REQUEST experiments: request from a non-verso app");
-
-} catch (uce) { console.log('user context error:', uce)}
