@@ -693,6 +693,7 @@ body {
   position: fixed;
   top: 0;
   left: -150vw;
+  opacity: 0;
   background-color: #f8f8f8;
   transition: left 0.2s ease-in-out;
 }
