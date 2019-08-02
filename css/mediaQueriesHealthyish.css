@@ -4,32 +4,32 @@
     background-color: transparent;
   }
 
-  .nav-row1-col1{
+  .nav-row1-col1 {
     width: 33.3333%;
   }
-  
+
   .nav-row1-col2 {
     width: 33.3333%;
     position: relative;
     left: 0;
     z-index: 0;
   }
-  
+
   .nav-logo {
     height: 55%;
   }
-  
-  .nav-row1-col3{
+
+  .nav-row1-col3 {
     width: 33.3333%;
     position: relative;
     right: 0;
   }
-  
-  /* ----- Next Button ----- */  
+
+  /* ----- Next Button ----- */
   .next {
     background-color: #000;
-    width: 80;
-    height: 80;
+    width: 80px;
+    height: 80px;
     top: 50%;
     bottom: 0;
     left: 50%;
@@ -38,80 +38,110 @@
     border-radius: 50%;
     border: none;
     color: #fff;
-    font-size: .65em;
+    font-size: 0.65em;
     font-weight: 300;
-    letter-spacing: 2.5;
+    letter-spacing: 2.5px;
     z-index: 100;
   }
 
   @-webkit-keyframes pulse-single {
-    0%  { width: 80;
-          height: 80;}
-    50% { width:60;
-          height:60;
-          background-color: #333;}
-    100% { width:80;
-          height:80;
-          background-color: #333;}
+    0% {
+      width: 80px;
+      height: 80px;
+    }
+    50% {
+      width: 60px;
+      height: 60px;
+      background-color: #333;
+    }
+    100% {
+      width: 80px;
+      height: 80px;
+      background-color: #333;
+    }
   }
 
   @-moz-keyframes pulse-single {
-    0%  { width: 80;
-          height: 80;}
-    50% { width:60;
-          height:60;
-          background-color: #333;}
-    100% { width:80;
-          height:80;
-          background-color: #333;}
+    0% {
+      width: 80px;
+      height: 80px;
+    }
+    50% {
+      width: 60px;
+      height: 60px;
+      background-color: #333;
+    }
+    100% {
+      width: 80px;
+      height: 80px;
+      background-color: #333;
+    }
   }
 
   @-ms-keyframes pulse-single {
-    0%  { width: 80;
-          height: 80;}
-    50% { width:60;
-          height:60;
-          background-color: #333;}
-    100% { width:80;
-          height:80;
-          background-color: #333;}
+    0% {
+      width: 80px;
+      height: 80px;
+    }
+    50% {
+      width: 60px;
+      height: 60px;
+      background-color: #333;
+    }
+    100% {
+      width: 80px;
+      height: 80px;
+      background-color: #333;
+    }
   }
 
   @-o-keyframes pulse-single {
-    0%  { width: 80;
-          height: 80;}
-    50% { width:60;
-          height:60;
-          background-color: #333;}
-    100% { width:80;
-          height:80;
-          background-color: #333;}
+    0% {
+      width: 80px;
+      height: 80px;
+    }
+    50% {
+      width: 60px;
+      height: 60px;
+      background-color: #333;
+    }
+    100% {
+      width: 80px;
+      height: 80px;
+      background-color: #333;
+    }
   }
 
   @keyframes pulse-single {
-    0%  { width: 80;
-          height: 80;}
-    50% { width:60;
-          height:60;
-          background-color: #333;}
-    100% { width:80;
-          height:80;
-          background-color: #333;}
+    0% {
+      width: 80px;
+      height: 80px;
+    }
+    50% {
+      width: 60px;
+      height: 60px;
+      background-color: #333;
+    }
+    100% {
+      width: 80px;
+      height: 80px;
+      background-color: #333;
+    }
   }
 
   .pulse:active {
-    -webkit-animation: pulse-single .6s 1 ease-in-out;
-    -moz-animation: pulse-single .6s 1 ease-in-out;
-    -ms-animation: pulse-single .6s 1 ease-in-out;
-    -o-animation: pulse-single .6s 1 ease-in-out;
-    animation: pulse-single .6s 1 ease-in-out;
+    -webkit-animation: pulse-single 0.6s 1 ease-in-out;
+    -moz-animation: pulse-single 0.6s 1 ease-in-out;
+    -ms-animation: pulse-single 0.6s 1 ease-in-out;
+    -o-animation: pulse-single 0.6s 1 ease-in-out;
+    animation: pulse-single 0.6s 1 ease-in-out;
   }
-  
+
   /* ----- Main ----- */
   .carousel-slideUp {
     width: 50%;
   }
-  
+
   .carousel-slideDown {
     display: block;
     position: relative;
@@ -119,35 +149,35 @@
     height: 100%;
     top: -1500%;
   }
-  
+
   /* -----Card Type 2 ----- */
   .type-2col1 {
     align-items: center;
     padding-top: 0;
   }
-  
+
   .type-2col1-container {
     max-width: 321px;
   }
-  
+
   .type-2col1-text p {
-    font-size: .8em;
+    font-size: 0.8em;
   }
-  
+
   .type-2col1-text a h3 {
     font-size: 1em;
   }
-  
+
   .triangle {
     display: block;
-    margin: 0 auto 32;
+    margin: 0 auto 32px;
     width: 0;
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 10px solid #fff;
   }
-  
+
   /* -----Right Column ----- */
   /* -----Card Type 3 ----- */
   .type-3col2 {
@@ -156,13 +186,12 @@
   }
 
   .type-3col2-text-container {
-    width: 250;
-    margin: 0 10 0 70;
+    width: 250px;
+    margin: 0 10px 0 70px;
   }
 
   .type-3col2-text {
     width: 100%;
-    
   }
 
   .type-3col2-category {
@@ -175,13 +204,13 @@
   }
 
   .type-3col2-text a h1 {
-    font-family: 'grouchregular', serif;
+    font-family: "grouchregular", serif;
     font-weight: 500;
     font-size: 2.1em;
     margin-top: 0;
-    margin-bottom: 16;
-    line-height: 1.2;
-    letter-spacing: -3;
+    margin-bottom: 16px;
+    line-height: 1.2em;
+    letter-spacing: -3px;
   }
 
   .type-3col2-text a:hover {
@@ -194,10 +223,10 @@
 
   .type-3col2-blurb {
     margin-top: 0;
-    font-family: 'renner', serif;
+    font-family: "renner", serif;
     font-weight: bold;
-    font-size: .95em;
-    line-height: 1.25;
+    font-size: 0.95em;
+    line-height: 1.25em;
   }
 
   /* -----Card Type 4 ----- */
@@ -214,10 +243,10 @@
   }
 
   .type-4col2-text p {
-    font-family: 'renner-light', serif;
-    font-size: .8em;
-    letter-spacing: 1.3;
-    padding-top: 16
+    font-family: "renner-light", serif;
+    font-size: 0.8em;
+    letter-spacing: 1.3px;
+    padding-top: 16px;
   }
 
   .type-4col2 a {
@@ -230,15 +259,15 @@
   }
 
   .type-4col2 a h3 {
-    font-family: 'renner', serif;
+    font-family: "renner", serif;
     font-size: 1em;
-    letter-spacing: 1.1;
-    padding: 0 40;
-    line-height: 1.5;
+    letter-spacing: 1.1px;
+    padding: 0 40px;
+    line-height: 1.5em;
   }
 
   .triangle-up {
-    margin: 32 auto 0;
+    margin: 32px auto 0;
     width: 0;
     height: 0;
     border-left: 10px solid transparent;
@@ -249,7 +278,7 @@
   .type-4col2-blurb {
     display: none;
   }
-  
+
   /* ----- Card BgColors ----- */
   /* -----Card 1 ----- */
   .card1-col2 {
@@ -268,27 +297,27 @@
   .type-4col2 {
     background-color: #fff !important;
   }
-  
+
   .type-4col2-container {
     width: 85%;
   }
-  
+
   /* ----- card-nl ----- */
   .cardnl-col1 {
     padding-top: 0;
   }
-  
+
   .cardnl-col1-text {
     display: none;
   }
-  
+
   .cardnl-col1 img {
     height: 100%;
     width: 100%;
-    object-fit:cover;
+    object-fit: cover;
     object-position: 50% 50%;
   }
-  
+
   .card-nl-col2 {
     background-color: #fadb7f;
     display: flex;
@@ -298,7 +327,7 @@
   }
 
   .card-nl-col2-text-container {
-    width: 350;
+    width: 350px;
     margin: 0 auto;
     text-align: center;
   }
@@ -308,13 +337,13 @@
   }
 
   .card-nl-col2-text h1 {
-    font-family: 'grouchregular', serif;
+    font-family: "grouchregular", serif;
     font-weight: 500;
     font-size: 3.3em;
     margin-top: 0;
     margin-bottom: 0;
-    line-height: 1.2;
-    letter-spacing: -3;
+    line-height: 1.2em;
+    letter-spacing: -3px;
     text-decoration: none;
     color: #000;
   }
@@ -323,12 +352,12 @@
   }
 
   .card-nl-col2-blurb p {
-    margin: 8 0;
-    font-family: 'renner-light', serif;
+    margin: 8px 0;
+    font-family: "renner-light", serif;
     font-weight: normal;
-    font-size: .75em;
-    line-height: 1.4;
-    letter-spacing: 1;
+    font-size: 0.75em;
+    line-height: 1.4em;
+    letter-spacing: 1px;
   }
 
   .card-nl-category {
@@ -337,56 +366,56 @@
 
   .card-nl-newsletter {
     margin: 0 auto;
-    width: 250;
+    width: 250px;
     border: 1px solid #000;
     display: flex;
   }
 
   .card-nl-email {
     border: none;
-    width: 150;
+    width: 150px;
     margin: 0;
-    padding: 0 10;
+    padding: 0 10px;
     height: 44px;
-    letter-spacing: 1.5;
+    letter-spacing: 1.5px;
     cursor: pointer;
     background-color: transparent;
   }
 
   .card-nl-submit {
-    width: 100;
+    width: 100px;
     height: 44px;
     border: none;
     background-color: #000;
     color: #fff;
-    letter-spacing: 1.95;
-    font-size: .6em;
+    letter-spacing: 1.95px;
+    font-size: 0.6em;
     cursor: pointer;
   }
 
   .card-nl-privacy {
-    font-family: 'renner-light', serif;
-    font-size: .6em;
-    margin-top: 8
+    font-family: "renner-light", serif;
+    font-size: 0.6em;
+    margin-top: 8px;
   }
 
   .card-nl-privacy a {
     color: #4f4b4c;
   }
-  
+
   /* ----- card-sub ----- */
   .card-sub-col1 {
     padding-top: 0;
   }
-  
+
   .card-sub-col1-text {
     display: none;
   }
-  
+
   .card-sub-col1 img {
     height: 100%;
     width: 100%;
-    object-fit:cover;
+    object-fit: cover;
     object-position: 50% 50%;
   }
 
@@ -399,14 +428,14 @@
   }
 
   .card-sub-col2-text-container {
-    width: 350;
+    width: 350px;
     margin: 0 auto;
     text-align: center;
   }
 
   .card-sub-col2-logo {
     width: 100%;
-    margin-bottom: 20;
+    margin-bottom: 20px;
   }
 
   .card-sub-col2-logo a img {
@@ -419,17 +448,16 @@
 
   .card-sub-col2-blurb p {
     margin: 0;
-    font-family: 'renner-light', serif;
+    font-family: "renner-light", serif;
     font-weight: normal;
-    font-size: .75em;
-    line-height: 1.4;
-    letter-spacing: 1;
+    font-size: 0.75em;
+    line-height: 1.4em;
+    letter-spacing: 1px;
   }
-
 
   .card-sub-newsletter {
     margin: 0 auto;
-    width: 220;
+    width: 220px;
     border: 1px solid #000;
     display: flex;
   }
@@ -440,27 +468,27 @@
     border: none;
     background-color: #000;
     color: #fff;
-    letter-spacing: 1.95;
-    font-size: .6em;
+    letter-spacing: 1.95px;
+    font-size: 0.6em;
     cursor: pointer;
   }
-  
+
   /* ----- Essay Section ----- */
-  
+
   .end-link {
     position: absolute;
-    bottom: 25;
-    width: 220;
-    padding-left: 32;
+    bottom: 25px;
+    width: 220px;
+    padding-left: 32px;
   }
 
   .end-link p {
-    font-family: 'renner-light', serif;
+    font-family: "renner-light", serif;
     font-weight: normal;
-    font-size: .75em;
-    line-height: 1.4;
-    letter-spacing: 1;
-    padding-bottom: 12;
+    font-size: 0.75em;
+    line-height: 1.4em;
+    letter-spacing: 1px;
+    padding-bottom: 12px;
   }
 
   .end-link a {
@@ -474,26 +502,26 @@
 
   .end-link-blurb {
     margin-top: 0;
-    font-family: 'renner', serif;
+    font-family: "renner", serif;
     font-weight: bold;
     font-size: 1.15em;
-    line-height: 1.4;
+    line-height: 1.4em;
   }
-  
+
   .triangle-side {
     position: absolute;
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;
     border-top: 40px solid transparent;
     transform: rotate(90deg);
-    bottom: 55;
-    left: -60;
+    bottom: 55px;
+    left: -60px;
   }
-  
+
   .triangle-nl {
     border-top: 40px solid #fadb7f;
   }
-  
+
   .triangle-sub {
     border-top: 40px solid #faf9f0;
   }
@@ -505,12 +533,11 @@
   }
 }
 
-
 @media only screen and (min-width: 1024px) {
   .type-3col2-text-container {
-    width: 350;
+    width: 350px;
   }
-  
+
   .type-3col2-text a h1 {
     font-size: 3.1em;
   }
@@ -521,10 +548,6 @@
 
   .type-3col2-blurb {
     font-size: 1.15em;
-    line-height: 1.4;
+    line-height: 1.4em;
   }
-
-
 }
-
-
