@@ -55,8 +55,14 @@ window.addEventListener("resize", () => {
   carouselSlideDown.style.transform = "translateY(" + size * counter + "px)";
 });
 
+//Swipe Action
+window.addEventListener("touchmove", slide)
+
+
 //Next Button Click Action
-next.addEventListener("click", () => {
+next.addEventListener("click", slide)
+
+function slide() {
   if (counter >= carouselImagesUp.length - 1) {
     return;
   }
@@ -71,7 +77,7 @@ next.addEventListener("click", () => {
 
   carouselSlideUp.style.transform = "translateY(" + -size * counter + "px)";
   carouselSlideDown.style.transform = "translateY(" + size * counter + "px)";
-});
+};
 
 // Divs Fade in during slideshow
 function fade() {
