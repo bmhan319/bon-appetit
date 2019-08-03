@@ -186,7 +186,7 @@ body {
 }
 
 .type-1col1-image-container {
-  height: 55%;
+  height: 45%;
 }
 
 .col1-image {
@@ -199,7 +199,7 @@ body {
 
 .mobile-only {
   width: 100%;
-  height: 45%;
+  height: 55%;
 }
 
 .mobile-title {
@@ -208,7 +208,7 @@ body {
   font-weight: 500;
   font-size: 1.5em;
   text-align: center;
-  padding: 64px 64px 32px 64px;
+  padding: 32px 64px 16px;
   line-height: 1.2em;
 }
 
