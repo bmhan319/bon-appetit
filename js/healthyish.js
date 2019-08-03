@@ -54,7 +54,7 @@ window.addEventListener("resize", () => {
 });
 
 //Swipe Action
-window.addEventListener("touchmove", slide)
+window.addEventListener("touchend", slide)
 
 
 //Next Button Click Action
