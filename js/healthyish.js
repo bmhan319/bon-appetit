@@ -4,9 +4,12 @@ function loadHTML() {
   for (var i = 0; i < 15; i++) {
     let image1 = document.querySelector("#card" + (i + 1) + "Image1");
     let title = document.querySelector("#card" + (i + 1) + "Title");
+    let titleM = document.querySelector("#card" + (i + 1) + "TitleM");
     let blurb = document.querySelector("#card" + (i + 1) + "Blurb");
+    let blurbM = document.querySelector("#card" + (i + 1) + "BlurbM");
     let category = document.querySelector("#card" + (i + 1) + "Category");
     let bgColor = document.querySelector("#card" + (i + 1) + "Color");
+    let bgColorM = document.querySelector("#card" + (i + 1) + "ColorM");
 
     let card5 = document.querySelector(".card5-col1");
     let card6Triangle = document.querySelector(".triangle-up");
@@ -16,14 +19,19 @@ function loadHTML() {
       image1.setAttribute("alt", healthArray[0].alt);
       title.innerHTML = healthArray[0].title;
       blurb.innerHTML = healthArray[0].blurb;
+      titleM.innerHTML = healthArray[0].title;
+      blurbM.innerHTML = healthArray[0].blurb;
       category.innerHTML = healthArray[0].category;
     } else {
       image1.setAttribute("src", healthArray[i].image);
       image1.setAttribute("alt", healthArray[i].alt);
       title.innerHTML = healthArray[i].title;
       blurb.innerHTML = healthArray[i].blurb;
+      titleM.innerHTML = healthArray[i].title;
+      blurbM.innerHTML = healthArray[i].blurb;
       category.innerHTML = healthArray[i].category;
       bgColor.style.backgroundColor = healthArray[i].bgColor2;
+      bgColorM.style.backgroundColor = healthArray[i].bgColor2;
     }
     card5.style.backgroundColor = healthArray[4].bgColor1;
     card6Triangle.style.borderBottom = "10px solid" + healthArray[4].bgColor1;
@@ -56,11 +64,10 @@ window.addEventListener("resize", () => {
 });
 
 //Swipe Action
-window.addEventListener("touchend", slide)
-
+window.addEventListener("touchend", slide);
 
 //Next Button Click Action
-next.addEventListener("click", slide)
+next.addEventListener("click", slide);
 
 function slide() {
   if (counter >= carouselImagesUp.length - 1) {
@@ -77,7 +84,7 @@ function slide() {
 
   carouselSlideUp.style.transform = "translateY(" + -size * counter + "px)";
   carouselSlideDown.style.transform = "translateY(" + size * counter + "px)";
-};
+}
 
 // Divs Fade in during slideshow
 function fade() {

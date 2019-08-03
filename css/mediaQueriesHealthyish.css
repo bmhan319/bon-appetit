@@ -149,7 +149,25 @@
     height: 100%;
     top: -1500%;
   }
+  /* -----Card Type 1 ----- */
+  .type-1col1-container {
+    width: 100%;
+    height: 100vh;
+  }
 
+  .type-1col1-image-container {
+    height: 100%;
+  }
+
+  .col1-image {
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
+  .mobile-only {
+    display: none;
+  }
   /* -----Card Type 2 ----- */
   .type-2col1 {
     align-items: center;
@@ -176,6 +194,12 @@
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 10px solid #fff;
+  }
+
+  .type-2col1-image-container {
+    text-align: center;
+    width: 100%;
+    margin: 0;
   }
 
   /* -----Right Column ----- */
@@ -530,6 +554,11 @@
   .aside-window {
     width: 320px;
     left: -320px;
+  }
+
+  /* ----- Mobile ----- */
+  .mobile-only {
+    display: none;
   }
 }
 
