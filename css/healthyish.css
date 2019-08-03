@@ -83,6 +83,8 @@ body {
 
 .nav-logo {
   width: 55%;
+  height: 50%;
+  vertical-align: middle;
 }
 
 .nav-row1-col3 {
