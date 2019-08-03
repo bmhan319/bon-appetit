@@ -35,9 +35,7 @@ const carouselSlideUp = document.querySelector(".carousel-slideUp");
 const carouselSlideDown = document.querySelector(".carousel-slideDown");
 
 const carouselImagesUp = document.querySelectorAll(".carousel-slideUp .divs");
-const carouselImagesDown = document.querySelectorAll(
-  ".carousel-slideDown .divs"
-);
+const carouselImagesDown = document.querySelectorAll(".carousel-slideDown .divs");
 
 const next = document.querySelector(".next");
 let counter = 0;
@@ -55,8 +53,14 @@ window.addEventListener("resize", () => {
   carouselSlideDown.style.transform = "translateY(" + size * counter + "px)";
 });
 
+//Swipe Action
+window.addEventListener("touchmove", slide)
+
+
 //Next Button Click Action
-next.addEventListener("click", () => {
+next.addEventListener("click", slide)
+
+function slide() {
   if (counter >= carouselImagesUp.length - 1) {
     return;
   }
@@ -71,7 +75,7 @@ next.addEventListener("click", () => {
 
   carouselSlideUp.style.transform = "translateY(" + -size * counter + "px)";
   carouselSlideDown.style.transform = "translateY(" + size * counter + "px)";
-});
+};
 
 // Divs Fade in during slideshow
 function fade() {
