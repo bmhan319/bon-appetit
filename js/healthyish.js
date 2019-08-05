@@ -64,7 +64,7 @@ window.addEventListener("resize", () => {
 });
 
 //Swipe Action
-window.addEventListener("touchend", slide);
+document.querySelector(".carousel-slideUp").addEventListener("touchend", slide);
 
 //Next Button Click Action
 next.addEventListener("click", slide);
