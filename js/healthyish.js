@@ -64,7 +64,35 @@ window.addEventListener("resize", () => {
 });
 
 //Swipe Action
-document.querySelector(".carousel-slideUp").addEventListener("touchend", slide);
+let touchstartX = 0;
+let touchstartY = 0;
+let touchendX = 0;
+let touchendY = 0;
+const swipeElement = document.document.querySelector(".carousel-slideUp");
+
+swipeElement.addEventListener(
+  "touchstart",
+  function(event) {
+    touchstartX = event.changedTouches[0].screenX;
+    touchstartY = event.changedTouches[0].screenY;
+  },
+  false
+);
+
+swipeElement.addEventListener(
+  "touchend",
+  function(event) {
+    touchendX = event.changedTouches[0].screenX;
+    touchendY = event.changedTouches[0].screenY;
+    handleGesture();
+  },
+  false
+);
+
+function handleGesture() {
+  if (touchendY < touchstartY) {
+    slide()
+}
 
 //Next Button Click Action
 next.addEventListener("click", slide);
