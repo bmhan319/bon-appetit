@@ -68,7 +68,7 @@ let touchstartX = 0;
 let touchstartY = 0;
 let touchendX = 0;
 let touchendY = 0;
-const swipeElement = document.document.querySelector(".carousel-slideUp");
+const swipeElement = document.querySelector(".carousel-slideUp");
 
 swipeElement.addEventListener(
   "touchstart",
@@ -91,7 +91,8 @@ swipeElement.addEventListener(
 
 function handleGesture() {
   if (touchendY < touchstartY) {
-    slide()
+    slide();
+  }
 }
 
 //Next Button Click Action
