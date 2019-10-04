@@ -1,3 +1,22 @@
+$colors: (
+  yellow: #ffdb00,
+  blue: #33b8ff,
+  mainBG:#f8f8f8,
+  videoBG: #e2e1e1,
+  hOrange: #ffa67a,
+
+);
+
+@function color($alias) {
+  @return map-get($colors, $alias)
+};
+
+@mixin reset() {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 @font-face {
   font-family: "renner";
   src: url("../fonts/renner-medium.otf") format("opentype");
@@ -13,16 +32,14 @@
 }
 
 * {
-  font-family: "renner", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  font-family: "renner", "Helvetica Neue", "Helvetica", "Roboto", "Arial",
+    sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  background-color: #f8f8f8;
+  @include reset;
+  background-color: color(mainBG);
 }
 
 .section-nav {
@@ -32,48 +49,34 @@ body {
   position: fixed;
   top: 0;
   z-index: 99;
-}
 
-.section-nav .nav-row1 {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
+  .nav-row1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
 
-.section-nav .nav-row1 .nav-row1-col1 {
-  width: 33.3333%;
-  height: 100%;
-  color: #fff;
-}
+    .nav-row1-col1 {
+      width: 33.3333%;
+      height: 100%;
+      color: #fff;
+    }
 
-.section-nav .nav-row1 .nav-row1-col2 {
-  width: 33.3333%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
+    .nav-row1-col2 {
+      width: 33.3333%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-.section-nav .nav-row1 .nav-row1-col3 {
-  width: 33.3333%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+    .nav-row1-col3 {
+      width: 33.3333%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
 }
 
 .hamburger-container {
@@ -81,14 +84,14 @@ body {
   height: 50px;
   padding: 20px 0 0 16px;
   cursor: pointer;
-}
 
-.hamburger-container .hamburger-row1,
-.hamburger-container .hamburger-row2,
-.hamburger-container .hamburger-row3 {
-  height: 4px;
-  width: 15px;
-  border-top: 2px solid white;
+  .hamburger-row1,
+  .hamburger-row2,
+  .hamburger-row3 {
+    height: 4px;
+    width: 15px;
+    border-top: 2px solid white;
+  }
 }
 
 .nav-logo {
@@ -104,15 +107,9 @@ body {
 .search-container {
   width: 50px;
   height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 
@@ -132,8 +129,7 @@ body {
   position: absolute;
   top: 20px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   padding: 8px 10px;
   font-family: "renner", sans-serif;
   font-size: 0.7em;
@@ -142,15 +138,9 @@ body {
 
 .text-container {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .line-container {
@@ -161,15 +151,9 @@ body {
   width: 300px;
   margin: 22% 10%;
   min-height: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-link {
@@ -199,13 +183,14 @@ body {
 }
 
 /* ----- Recipe Section ----- */
+
 .recipe1-row1 {
   width: 100%;
   position: relative;
 }
 
 .recipe-header {
-  background-color: #ffdb00;
+  background-color: color(yellow);
 }
 
 .recipe1-row1-col1 {
@@ -214,13 +199,9 @@ body {
 
 .recipe1-row1-col2 {
   width: 100%;
-  background-color: #ffdb00;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: color(yellow);
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .recipe2-row1 {
@@ -238,12 +219,12 @@ body {
 }
 
 .recipe2-text-container {
-  background-color: #ffdb00;
+  background-color: color(yellow);
 }
 
 /* ----- Video Sections ----- */
 .section-video {
-  background-color: #e2e1e1;
+  background-color: color(videoBG);
   width: 100%;
   padding: 26% 0;
 }
@@ -263,29 +244,25 @@ body {
   background-color: #fff;
   width: 80px;
   height: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .video1-box::after,
 .video2-box::after {
   display: block;
   position: relative;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0)), to(#000));
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #000 100%);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0,
+    #000 100%
+  );
   margin-top: -150px;
   height: 150px;
   content: "";
@@ -322,6 +299,7 @@ body {
 
 /*
 /* ----- Culture Product Section ----- */
+
 .section-culture-p {
   width: 100%;
   position: relative;
@@ -346,15 +324,9 @@ body {
 .culture-p-row1-col2 {
   width: 100%;
   background-color: #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .culture-p-title {
@@ -366,6 +338,7 @@ body {
 }
 
 /* ----- Culure Food Section ---- */
+
 .section-culture-food {
   width: 100%;
   background-color: #fff;
@@ -394,10 +367,9 @@ body {
 }
 
 /* ----- Culure MP Section ---- */
+
 .culture-mp-row1 {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
@@ -413,12 +385,8 @@ body {
 
 .culture-mp-text-container {
   padding: 0 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -431,6 +399,7 @@ body {
 }
 
 /* ----- Healthy1 Section ----- */
+
 .section-healthy1 {
   width: 100%;
   position: relative;
@@ -442,7 +411,7 @@ body {
 }
 
 .healthy1-header {
-  background-color: #ffa67a;
+  background-color: color(hOrange);
   color: #000;
   border: 1px solid #000;
 }
@@ -453,16 +422,10 @@ body {
 
 .healthy1-row1-col2 {
   width: 100%;
-  background-color: #ffa67a;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: color(hOrange);
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .healthy1-text-container {
@@ -485,14 +448,12 @@ body {
 
 .healthy2-row1 {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
 
 .healthy2-header {
-  background-color: #ffa67a;
+  background-color: color(hOrange);
   color: #000;
   border: 1px solid #000;
 }
@@ -500,17 +461,17 @@ body {
 .healthy2-row1-col1 {
   width: 100%;
 }
-
 .healthy2-row1-col2,
 .healthy2-row1-col3 {
   display: none;
 }
 
 .healthy2-text-container {
-  background-color: #ffa67a;
+  background-color: color(hOrange);
 }
 
 /* ----- Basically Section ----- */
+
 .section-basic {
   position: relative;
 }
@@ -532,15 +493,9 @@ body {
 .basic-row1-col2 {
   width: 100%;
   background-color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .basic-blurb {
@@ -563,6 +518,7 @@ body {
 }
 
 /* ----- Restuarant1 Section ----- */
+
 .section-restaurant {
   width: 100%;
   position: relative;
@@ -586,15 +542,9 @@ body {
 .restaurant-row1-col2 {
   width: 100%;
   background-color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .restaurant-blurb {
@@ -622,10 +572,11 @@ body {
 }
 
 .restaurant2-text-container {
-  background-color: #33b8ff;
+  background-color: color(blue);
 }
 
 /* ----- Restuarant3 Section ----- */
+
 .restaurant3-row1 {
   width: 100%;
   position: relative;
@@ -659,7 +610,6 @@ body {
   margin: 0 auto;
   text-align: center;
 }
-
 .restaurant3-row1-col2,
 .restaurant3-row1-col3,
 .restaurant3-row1-col4,
@@ -668,7 +618,7 @@ body {
 }
 
 .city {
-  background-color: #ffdb00;
+  background-color: color(yellow);
   color: #000;
   text-decoration: none;
   font-weight: 700;
@@ -712,6 +662,7 @@ body {
 }
 
 /* ----- Podcast Section ----- */
+
 .section-podcast {
   position: relative;
   background-color: #fff;
@@ -728,15 +679,9 @@ body {
 
 .podcast-row1-col2 {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .podcast-blurb {
@@ -744,6 +689,7 @@ body {
 }
 
 /* ----- Footer Section ----- */
+
 .section-tail-text {
   background-color: #fff;
   text-align: center;
@@ -765,8 +711,7 @@ body {
   top: 0;
   left: -150vw;
   opacity: 0;
-  background-color: #f8f8f8;
-  -webkit-transition: left 0.2s ease-in-out;
+  background-color: color(mainBG);
   transition: left 0.2s ease-in-out;
 }
 
@@ -778,8 +723,6 @@ body {
 .aside-title {
   width: 100%;
   height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   cursor: pointer;
@@ -788,15 +731,9 @@ body {
 .aside-close {
   height: 50px;
   width: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .aside-logo-container {
@@ -811,28 +748,18 @@ body {
 }
 
 .aside-menu {
-  width: 100%;
-  padding: 0;
-  margin: 0;
+  @include reset;
   list-style: none;
 }
 
 .aside-menu-item,
 .aside-menu-item-last {
   background-color: #fff;
-  width: 100%;
-  padding: 0;
-  margin: 0;
+  @include reset;
   height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-weight: 700;
   font-size: 0.8em;
   letter-spacing: 1.5px;
@@ -844,7 +771,7 @@ body {
 
 .aside-menu-item:hover,
 .aside-menu-item-last:hover {
-  background-color: #ffdb00;
+  background-color: color(yellow);
 }
 
 .aside-menu-item a,
@@ -852,19 +779,13 @@ body {
   width: 100%;
   text-decoration: none;
   color: #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .aside-bottom {
-  background-color: #f8f8f8;
+  background-color: color(mainBG);
 }
 
 .aside-bottom p {
@@ -878,8 +799,6 @@ body {
   margin: 0 auto;
   width: 250px;
   border: 1px solid #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -924,12 +843,8 @@ body {
 
 .social-media {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .aside-social-containers,
@@ -938,15 +853,9 @@ body {
   border-radius: 50%;
   height: 30px;
   width: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .facebook:hover {
@@ -981,12 +890,8 @@ body {
 .mobile-menu {
   background-color: #000;
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .mobile-menu:hover {
@@ -1013,4 +918,3 @@ body {
 .login {
   margin-right: 32px;
 }
-/*# sourceMappingURL=main.css.map */

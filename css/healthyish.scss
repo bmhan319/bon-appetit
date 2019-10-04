@@ -1,6 +1,22 @@
+$colors: (
+  hOrange: #ffa67a,
+  cement: #f4f2e7,
+);
+
+@function color($alias) {
+  @return map-get($colors, $alias)
+};
+
+@mixin reset() {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 @font-face {
   font-family: "grouchregular";
-  src: url("../fonts/grouch_regular-webfont.woff2") format("woff2"), url("../fonts/grouch_regular-webfont.woff") format("woff");
+  src: url("../fonts/grouch_regular-webfont.woff2") format("woff2"),
+    url("../fonts/grouch_regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -23,14 +39,11 @@
   font-family: futura-pt, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  width: 100%;
-  padding: 0;
-  margin: 0;
+  @include reset;
   height: 100vh;
   background-color: #f8f8f8;
   position: fixed;
@@ -49,8 +62,6 @@ body {
 .nav-row1 {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -64,27 +75,21 @@ body {
   width: 50px;
   height: 50px;
   padding: 20px 0 0 16px;
-}
 
-.hamburger-container .hamburger-row1,
-.hamburger-container .hamburger-row2,
-.hamburger-container .hamburger-row3 {
-  height: 4px;
-  width: 15px;
-  border-top: 2px solid #000;
+  .hamburger-row1,
+  .hamburger-row2,
+  .hamburger-row3 {
+    height: 4px;
+    width: 15px;
+    border-top: 2px solid #000;
+  }
 }
 
 .nav-row1-col2 {
   width: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: relative;
   z-index: -10;
 }
@@ -98,15 +103,9 @@ body {
 .nav-row1-col3 {
   width: 200px;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  align-items: center;
+  justify-content: flex-end;
   position: absolute;
   right: 0;
 }
@@ -136,15 +135,9 @@ body {
 .search-container {
   width: 50px;
   height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 
@@ -170,8 +163,6 @@ body {
 .carousel-container {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   overflow-y: hidden;
 }
@@ -203,13 +194,8 @@ body {
 .type-1col1-container {
   width: 100%;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .type-1col1-image-container {
@@ -220,10 +206,8 @@ body {
   width: 100%;
   height: 100%;
   vertical-align: middle;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 50% 20%;
-     object-position: 50% 20%;
+  object-fit: cover;
+  object-position: 50% 20%;
 }
 
 .mobile-only {
@@ -259,13 +243,9 @@ body {
 /* -----Card Type 2 ----- */
 .type-2col1 {
   position: relative;
-  background-color: #f4f2e7;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: color(cement);
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding-top: 85px;
 }
 
@@ -320,7 +300,7 @@ body {
 
 /* ----- Card 1 ----- */
 .card1-col2-mobile {
-  background-color: #ffa67a !important;
+  background-color: color(hOrange) !important;
 }
 
 /* ----- card-nl ----- */
@@ -337,10 +317,8 @@ body {
 .card-sub-col1 img {
   width: 70%;
   height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: 0;
-     object-position: 0;
+  object-fit: contain;
+  object-position: 0;
 }
 
 /* ----- Aside Section ----- */
@@ -353,7 +331,6 @@ body {
   left: -100%;
   opacity: 0;
   background-color: #f8f8f8;
-  -webkit-transition: left 0.2s ease-in-out;
   transition: left 0.2s ease-in-out;
 }
 
@@ -365,8 +342,6 @@ body {
 .aside-title {
   width: 100%;
   height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   cursor: pointer;
@@ -375,15 +350,9 @@ body {
 .aside-close {
   height: 50px;
   width: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .aside-logo-container {
@@ -398,27 +367,17 @@ body {
 }
 
 .aside-menu {
-  width: 100%;
-  padding: 0;
-  margin: 0;
+  @include reset;
   list-style: none;
 }
 
 .aside-menu-item,
 .aside-menu-item-last {
-  width: 100%;
-  padding: 0;
-  margin: 0;
+  @include reset;
   height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-weight: 700;
   font-size: 0.8em;
   letter-spacing: 1.5px;
@@ -438,15 +397,10 @@ body {
   width: 100%;
   text-decoration: none;
   color: #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .aside-bottom {
@@ -464,8 +418,6 @@ body {
   margin: 0 auto;
   width: 250px;
   border: 1px solid #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -510,12 +462,8 @@ body {
 
 .social-media {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .aside-social-containers,
@@ -524,15 +472,9 @@ body {
   border-radius: 50%;
   height: 30px;
   width: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .facebook:hover {
@@ -596,13 +538,10 @@ body {
 .opacity2-change14,
 .opacity2-change15 {
   opacity: 0;
-  -webkit-transition: opacity 0.1s ease-in 0.4s;
   transition: opacity 0.1s ease-in 0.4s;
 }
 
 .opacity-change0,
 .opacity2-change0 {
-  -webkit-transition: opacity 0.1s ease-in 0.4s;
   transition: opacity 0.1s ease-in 0.4s;
 }
-/*# sourceMappingURL=healthyish.css.map */
